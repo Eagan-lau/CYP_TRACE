@@ -1,0 +1,2 @@
+# Preserve byte-exact source files and SHA256 checks across Windows and Linux.
+* -text

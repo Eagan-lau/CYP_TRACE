@@ -1,4 +1,4 @@
-# CYP-TRACE public repository candidate
+# CYP-TRACE evaluation and fixed-human inference
 
 Evaluation and frozen-inference package for https://github.com/Eagan-lau/CYP_TRACE.
 The project owner confirmed MIT for project-owned code and authorized publication

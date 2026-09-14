@@ -101,6 +101,7 @@ capsule is not silently claimed to have been synchronized with this revision.
 
 Project-owned code is MIT (user confirmed 2026-09-15); the included LICENSE
 preserves the selected Eagan-lau/CYP_TRACE repository's existing notice. The
-destination is https://github.com/Eagan-lau/CYP_TRACE; upload and archival DOI
-remain pending. This supplied local review package is real and executable,
-but is **not yet a public archived release**. No third-party licence is overridden.
+repository is https://github.com/Eagan-lau/CYP_TRACE, where this evaluation
+subset accompanies the inference code. A persistent archival DOI remains
+pending. This ZIP is an executable review supplement, not a persistent archived
+release. No third-party licence is overridden.

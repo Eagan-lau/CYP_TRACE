@@ -43,6 +43,7 @@ scores, protein-group membership and fixed ordering keys. It contains no raw
 database export, sequences or structures. It is a numerical saved-score
 reproduction subset, not an independently reusable biological evidence atlas.
 Its inclusion does not establish permission to redistribute upstream databases.
-Final author/rights review remains required before public deposition.
+Redistribution of the upstream biological atlas requires a separate source-rights
+decision; that atlas is not in this package.
 
 No licence on this repository overrides third-party source conditions.
