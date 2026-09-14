@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyptrace-strategy"
+version = "0.1.0"
+description = "Domain-aware CYP evidence retrieval and fixed-human substrate ranking"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Code: MIT; data: source-specific terms in DATA_CARD.md"}
+dependencies = ["numpy>=1.24", "rdkit>=2023.9"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+cyptrace = "cyptrace_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cyptrace_pipeline = ["data/*.json.gz"]
+

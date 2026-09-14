@@ -1,0 +1,19 @@
+{
+  "status": "AUTHORIZED_SCOPED_REPOSITORY_PACKAGE",
+  "public_release_approved": true,
+  "repository_url": "https://github.com/Eagan-lau/CYP_TRACE",
+  "inspected_repository_head": "8094eddcc6c498a40e60b06336467eb0ca4a6d3f",
+  "release_tag": null,
+  "archive_doi": null,
+  "authors": [],
+  "release_wide_code_license": "MIT for project-owned code; user confirmed 2026-09-15",
+  "existing_inference_license": "MIT (existing notice retained)",
+  "paper_revision": "v5",
+  "inference_version": "0.1.0 (frozen code/model)",
+  "pending": [
+    "Confirm archive author metadata",
+    "Resolve representative public biological data for restricted general analyses",
+    "Review and stage all-six-figure source data and computation code",
+    "Create a versioned persistent archive and replace manuscript availability text with actual accessions"
+  ]
+}

@@ -1,0 +1,7 @@
+method	nominal_release	released	labels	micro_release	reported_positive_hits	isoform_macro_precision	isoform_macro_recall	status
+isoform_specific_knn	0.1	306	3035	0.10082372322899506	208	0.668518459558566	0.20319902636770767	exploratory_fixed_score_comparison
+pooled_chemical_knn	0.1	306	3035	0.10082372322899506	136	0.40427688837474024	0.11358859153409344	exploratory_fixed_score_comparison
+isoform_logistic	0.1	306	3035	0.10082372322899506	199	0.6306267749187536	0.18905139699312892	exploratory_fixed_score_comparison
+isoform_specific_knn	0.25	761	3035	0.25074135090609556	443	0.5442603978960237	0.40120307741419875	exploratory_fixed_score_comparison
+pooled_chemical_knn	0.25	761	3035	0.25074135090609556	331	0.38332917381476966	0.26426362294656985	exploratory_fixed_score_comparison
+isoform_logistic	0.25	761	3035	0.25074135090609556	452	0.5610640325747114	0.4107647794980658	exploratory_fixed_score_comparison

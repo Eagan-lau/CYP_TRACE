@@ -1,0 +1,9 @@
+domain	tie_policy	method	panels	groups	weighted_query_coverage	conditional_MRR	end_to_end_MRR
+own	fixed_hash	esm_cosine_top1	95	27	0.10851202079272254	0.7443327630453379	0.08076905226028033
+own	fixed_hash	mmseqs_top1	95	27	0.07910981156595191	0.8706365503080082	0.06887589343729694
+common	fixed_hash	esm_cosine_top1	3	3	1.0	0.75	0.75
+common	fixed_hash	mmseqs_top1	3	3	1.0	0.75	0.75
+own	tie_average	esm_cosine_top1	95	27	0.10851202079272254	0.5743489345741659	0.06232376353078993
+own	tie_average	mmseqs_top1	95	27	0.07910981156595191	0.6646885694729637	0.0525833874810483
+common	tie_average	esm_cosine_top1	3	3	1.0	0.6591666666666667	0.6591666666666667
+common	tie_average	mmseqs_top1	3	3	1.0	0.6591666666666667	0.6591666666666667

@@ -1,0 +1,9 @@
+method	query	panel	candidate	score	applicability	positive	group	exposure
+homology	query1	panel1	A	0.9	1	1	group1	exact_overlap
+homology	query1	panel1	B	0.1	1	0	group1	exact_overlap
+embedding	query1	panel1	A	0.2	1	1	group1	exact_overlap
+embedding	query1	panel1	B	0.8	1	0	group1	exact_overlap
+homology	query2	panel1	A	0.4	1	0	group2	no_exact_overlap
+homology	query2	panel1	B		0	1	group2	no_exact_overlap
+embedding	query2	panel1	A	0.1	1	0	group2	no_exact_overlap
+embedding	query2	panel1	B	0.9	1	1	group2	no_exact_overlap

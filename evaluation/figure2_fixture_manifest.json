@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "main_baselines_01\\per_query_metrics.jsonl": "a5338f51366a5a96d76ac4f4e96e95cd13ba3cb0fe9a43adb290a434041b0bf8",
+    "main_baselines_01\\block_000_scores.npz": "03f43b95aa6cb807c83bf34f7832d052f23177944d21191d2d6e95a8ff53e8f2",
+    "main_baselines_01\\block_001_scores.npz": "86d03b047375c443d4ed9fe74bf017d6c135ef5c9ae709ea0066780d05d65de5",
+    "main_baselines_01\\block_002_scores.npz": "d4e14aba5472b8d092ac75fdf88db94bc283bababd8e964d2b6547233cd57e92",
+    "main_baselines_01\\block_003_scores.npz": "6c620721cb2cfa473165e2cc8c854735e587fe2796fd67828418c2345708d9b1",
+    "main_baselines_01\\block_004_scores.npz": "b0ff22d631e50ff8735565775e3f84781df5c83bc20aa9228c0b7032ac00d3dc",
+    "conditional_model_01\\per_query_metrics.jsonl": "766cae721c5efe0d4e57cc3b8cbef006c35001ea86dfd4e8b0e96159f57fcaee",
+    "conditional_model_01\\block_000_scores.npz": "999592a8e04beb21eda105edadd61ce9299fcc3f09a4329f9387c2def272bc96",
+    "conditional_model_01\\block_001_scores.npz": "e41a3553db34a0c9ac84c9babb60c0910c980094fce583a7a760c30f8e5fe567",
+    "conditional_model_01\\block_002_scores.npz": "d8f77c8c3e41045a0afc5033e2d2ae46263692e29388dfc3546e24ef6ac46a3b",
+    "conditional_model_01\\block_003_scores.npz": "0b06936129946876a0e50ada48c4911d29b2d28e51de29634fcf95c66487e1ea",
+    "conditional_model_01\\block_004_scores.npz": "f638d04667fefef8c920f19f8f98123fbd0d4acfe7cade9184b832eae0c64ecb"
+  },
+  "output_sha256": "061bb52dc27372c67e3d586b0d292320d2f019f0427d870b20e3eeb1715cd90b",
+  "records": 254790,
+  "identifiers": "SHA256 sequence/group IDs and one-way hashes of reaction IDs; no source assertions, structures, sequences or publication text included"
+}

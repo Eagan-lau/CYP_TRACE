@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "scope": "Post-evaluation exact averaging of within-score-block permutations; no model, eligibility, mask or primary result changed",
+  "input_sha256": "061bb52dc27372c67e3d586b0d292320d2f019f0427d870b20e3eeb1715cd90b",
+  "code_sha256": "0ca2a9a4faaf87966e6fef9501d521834f61b2d7adbbbd6920a6594dbafb2ba0",
+  "evaluator_sha256": "5ae69340638f03a024a6610f5bbadfb7ec73832cfaffe4a152285ad33ebd1836",
+  "all_applicable_scores_one": true,
+  "shared_tie_keys_verified": true,
+  "deterministic": {
+    "schema_version": 1,
+    "rows": 254790,
+    "methods": {
+      "esm_cosine_top1": {
+        "query_panels": 95,
+        "unique_queries": 95,
+        "protein_groups": 27,
+        "weighted_candidate_coverage": 0.002803010370680478,
+        "weighted_positive_instance_coverage": 0.10046528357931866,
+        "micro_positive_instance_coverage": 0.05415162454873646,
+        "weighted_query_coverage": 0.10851202079272254,
+        "end_to_end_MRR": 0.08076905226028033,
+        "conditional_MRR": 0.7443327630453379,
+        "decomposition_error": 0.0,
+        "positive_instances": 277,
+        "covered_positive_instances": 15,
+        "exposure_strata": {
+          "unspecified": {
+            "query_panels": 95,
+            "unique_queries": 95,
+            "protein_groups": 27,
+            "weighted_candidate_coverage": 0.002803010370680478,
+            "weighted_positive_instance_coverage": 0.10046528357931866,
+            "micro_positive_instance_coverage": 0.05415162454873646,
+            "weighted_query_coverage": 0.10851202079272254,
+            "end_to_end_MRR": 0.08076905226028033,
+            "conditional_MRR": 0.7443327630453379,
+            "decomposition_error": 0.0,
+            "positive_instances": 277,
+            "covered_positive_instances": 15
+          }
+        }
+      },
+      "mmseqs_top1": {
+        "query_panels": 95,
+        "unique_queries": 95,
+        "protein_groups": 27,
+        "weighted_candidate_coverage": 0.003616679725108889,
+        "weighted_positive_instance_coverage": 0.06633972752393805,
+        "micro_positive_instance_coverage": 0.032490974729241874,
+        "weighted_query_coverage": 0.07910981156595191,
+        "end_to_end_MRR": 0.06887589343729694,
+        "conditional_MRR": 0.8706365503080082,
+        "decomposition_error": 0.0,
+        "positive_instances": 277,
+        "covered_positive_instances": 9,
+        "exposure_strata": {
+          "unspecified": {
+            "query_panels": 95,
+            "unique_queries": 95,
+            "protein_groups": 27,
+            "weighted_candidate_coverage": 0.003616679725108889,
+            "weighted_positive_instance_coverage": 0.06633972752393805,
+            "micro_positive_instance_coverage": 0.032490974729241874,
+            "weighted_query_coverage": 0.07910981156595191,
+            "end_to_end_MRR": 0.06887589343729694,
+            "conditional_MRR": 0.8706365503080082,
+            "decomposition_error": 0.0,
+            "positive_instances": 277,
+            "covered_positive_instances": 9
+          }
+        }
+      }
+    },
+    "common_domain": [
+      {
+        "left": "esm_cosine_top1",
+        "right": "mmseqs_top1",
+        "eligible_query_panels": 3,
+        "undefined_query_panels": 92,
+        "protein_groups": 3,
+        "common_positive_instances": 6,
+        "left_conditional_MRR": 0.75,
+        "right_conditional_MRR": 0.75,
+        "difference": 0.0
+      }
+    ],
+    "weighting": "equal groups, equal queries within group, equal panels within query; conditional MRR renormalizes original weights; common domain rebuilds hierarchy on eligible units",
+    "ties": "ascending supplied tie_key; defaults to SHA256(candidate)",
+    "positive_definition": "documented target; positive=0 means other supplied alternative, not certified negative",
+    "score_calibration": "not performed",
+    "uncertainty": "not estimated by this evaluator"
+  },
+  "tie_averaged": {
+    "schema_version": 1,
+    "rows": 254790,
+    "methods": {
+      "esm_cosine_top1": {
+        "query_panels": 95,
+        "unique_queries": 95,
+        "protein_groups": 27,
+        "weighted_candidate_coverage": 0.002803010370680478,
+        "weighted_positive_instance_coverage": 0.10046528357931866,
+        "micro_positive_instance_coverage": 0.05415162454873646,
+        "weighted_query_coverage": 0.10851202079272254,
+        "end_to_end_MRR": 0.06232376353078993,
+        "conditional_MRR": 0.5743489345741659,
+        "decomposition_error": 0.0,
+        "positive_instances": 277,
+        "covered_positive_instances": 15,
+        "exposure_strata": {
+          "unspecified": {
+            "query_panels": 95,
+            "unique_queries": 95,
+            "protein_groups": 27,
+            "weighted_candidate_coverage": 0.002803010370680478,
+            "weighted_positive_instance_coverage": 0.10046528357931866,
+            "micro_positive_instance_coverage": 0.05415162454873646,
+            "weighted_query_coverage": 0.10851202079272254,
+            "end_to_end_MRR": 0.06232376353078993,
+            "conditional_MRR": 0.5743489345741659,
+            "decomposition_error": 0.0,
+            "positive_instances": 277,
+            "covered_positive_instances": 15
+          }
+        }
+      },
+      "mmseqs_top1": {
+        "query_panels": 95,
+        "unique_queries": 95,
+        "protein_groups": 27,
+        "weighted_candidate_coverage": 0.003616679725108889,
+        "weighted_positive_instance_coverage": 0.06633972752393805,
+        "micro_positive_instance_coverage": 0.032490974729241874,
+        "weighted_query_coverage": 0.07910981156595191,
+        "end_to_end_MRR": 0.0525833874810483,
+        "conditional_MRR": 0.6646885694729637,
+        "decomposition_error": 0.0,
+        "positive_instances": 277,
+        "covered_positive_instances": 9,
+        "exposure_strata": {
+          "unspecified": {
+            "query_panels": 95,
+            "unique_queries": 95,
+            "protein_groups": 27,
+            "weighted_candidate_coverage": 0.003616679725108889,
+            "weighted_positive_instance_coverage": 0.06633972752393805,
+            "micro_positive_instance_coverage": 0.032490974729241874,
+            "weighted_query_coverage": 0.07910981156595191,
+            "end_to_end_MRR": 0.0525833874810483,
+            "conditional_MRR": 0.6646885694729637,
+            "decomposition_error": 0.0,
+            "positive_instances": 277,
+            "covered_positive_instances": 9
+          }
+        }
+      }
+    },
+    "common_domain": [
+      {
+        "left": "esm_cosine_top1",
+        "right": "mmseqs_top1",
+        "eligible_query_panels": 3,
+        "undefined_query_panels": 92,
+        "protein_groups": 3,
+        "common_positive_instances": 6,
+        "left_conditional_MRR": 0.6591666666666667,
+        "right_conditional_MRR": 0.6591666666666667,
+        "difference": 0.0
+      }
+    ],
+    "weighting": "equal groups, equal queries within group, equal panels within query; conditional MRR renormalizes original weights; common domain rebuilds hierarchy on eligible units",
+    "ties": "exact expectation over uniform permutations within each equal-score block",
+    "positive_definition": "documented target; positive=0 means other supplied alternative, not certified negative",
+    "score_calibration": "not performed",
+    "uncertainty": "not estimated by this evaluator"
+  },
+  "eligible_common_panels": [
+    {
+      "query": "513201b5e9cd85ea1a2bf16f34b4e24f4396b3afdbe931c3ea42723a92c35334",
+      "panel": "protein_cold:p1:cNone",
+      "group": "101f25214cc8265040d6b9b1ef88e19fa0dea19714c447c0192ea9e275fb34b3",
+      "method": "mmseqs_top1",
+      "domain": "common",
+      "candidates": 5,
+      "positives": 1,
+      "deterministic_RR": 1.0,
+      "tie_averaged_RR": 0.45666666666666667,
+      "conditional_defined": true
+    },
+    {
+      "query": "513201b5e9cd85ea1a2bf16f34b4e24f4396b3afdbe931c3ea42723a92c35334",
+      "panel": "protein_cold:p1:cNone",
+      "group": "101f25214cc8265040d6b9b1ef88e19fa0dea19714c447c0192ea9e275fb34b3",
+      "method": "esm_cosine_top1",
+      "domain": "common",
+      "candidates": 5,
+      "positives": 1,
+      "deterministic_RR": 1.0,
+      "tie_averaged_RR": 0.45666666666666667,
+      "conditional_defined": true
+    },
+    {
+      "query": "8ec27a4eea1601958f56757837d36842a51456a8b6100ef7024f8c03ffc5cfe6",
+      "panel": "protein_cold:p2:cNone",
+      "group": "199b31330d7b051d764ea0ed98e5534d71adc32bd2a33f5852ce8c7edce1b3b0",
+      "method": "mmseqs_top1",
+      "domain": "common",
+      "candidates": 4,
+      "positives": 4,
+      "deterministic_RR": 1.0,
+      "tie_averaged_RR": 1.0,
+      "conditional_defined": true
+    },
+    {
+      "query": "8ec27a4eea1601958f56757837d36842a51456a8b6100ef7024f8c03ffc5cfe6",
+      "panel": "protein_cold:p2:cNone",
+      "group": "199b31330d7b051d764ea0ed98e5534d71adc32bd2a33f5852ce8c7edce1b3b0",
+      "method": "esm_cosine_top1",
+      "domain": "common",
+      "candidates": 4,
+      "positives": 4,
+      "deterministic_RR": 1.0,
+      "tie_averaged_RR": 1.0,
+      "conditional_defined": true
+    },
+    {
+      "query": "db82445986c3c5c7bcb87120e3f23fa9423893de8fb554f183c5c666088f41ef",
+      "panel": "protein_cold:p4:cNone",
+      "group": "d798508c370fef6a7323a88845fdb6348ee20f2448419035ce457c39fd94c8a4",
+      "method": "mmseqs_top1",
+      "domain": "common",
+      "candidates": 4,
+      "positives": 1,
+      "deterministic_RR": 0.25,
+      "tie_averaged_RR": 0.5208333333333334,
+      "conditional_defined": true
+    },
+    {
+      "query": "db82445986c3c5c7bcb87120e3f23fa9423893de8fb554f183c5c666088f41ef",
+      "panel": "protein_cold:p4:cNone",
+      "group": "d798508c370fef6a7323a88845fdb6348ee20f2448419035ce457c39fd94c8a4",
+      "method": "esm_cosine_top1",
+      "domain": "common",
+      "candidates": 4,
+      "positives": 1,
+      "deterministic_RR": 0.25,
+      "tie_averaged_RR": 0.5208333333333334,
+      "conditional_defined": true
+    }
+  ]
+}
