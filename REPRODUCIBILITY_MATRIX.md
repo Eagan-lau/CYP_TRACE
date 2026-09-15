@@ -1,4 +1,4 @@
-# Reproduction scope: V13
+# Reproduction scope: V20 code/data supplement to the V19 manuscript
 
 Detailed commands, data dictionary and access boundaries are in
 [`paper/REPRODUCTION_GUIDE.md`](paper/REPRODUCTION_GUIDE.md).
@@ -10,6 +10,7 @@ Detailed commands, data dictionary and access boundaries are in
 | Figure 3 | Pruning-stratum estimates/intervals; paired interaction and structure point estimates from query records | Full protein models, CLEAN assets, structure/features and refitting |
 | Figure 4 | Taxid-macro MRR and coverage from 20,000 panel-metric rows | Census/search/transport score generation |
 | Figures 5–6 | Saved-score AP/release checks, all-label kNN inference and frozen model-asset reconstruction | Original normalization and nested selection are preserved as scientific code, not a turnkey full refit |
+| Exploratory logistic comparison (S14b and paired comparison) | Regenerate fingerprints, repeat 180 development-fold fits to select six models, refit them and recompute all 3,035 external scores and the 5,000-replicate paired interval | Starts from supplied normalized labels and original folds; does not repeat source normalization or establish a new independent test |
 | General biological evidence lookup | Rebuild 375 sequences, 639 reactions, 1,232 UniProt/Rhea edges and test every exact match | Admission decisions are frozen; not a new test or complete mixed-source atlas |
 | Human source data | Original CYPstrate supplement, 12 used Figshare v4 label files, all normalized development/external labels | Original selection workflow is distinct from frozen inference |
 | Supplementary analyses | All 30 table files, figure objects, external identity audits and scientific source scripts in `paper/` | See per-figure dependencies in the guide; not every model refit was rerun |
@@ -21,3 +22,9 @@ current official downloads differ from the frozen input. They were not uploaded.
 CLEAN weights and BRENDA/SABIO-RK bulk exports are also omitted. Open biological
 and human datasets support real reuse without silently substituting current
 provider snapshots for the original general-CYP analysis.
+
+Run `python run_acceptance.py --output acceptance_run` after installing
+`requirements-reproduction.txt` and `./inference`. The detailed access note is
+[`paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md`](paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md).
+Passing this suite does not certify the outstanding third-party access route
+or the journal's acceptance of a restricted-data arrangement.

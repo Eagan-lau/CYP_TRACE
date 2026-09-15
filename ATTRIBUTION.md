@@ -47,3 +47,12 @@ Redistribution of the upstream biological atlas requires a separate source-right
 decision; that atlas is not in this package.
 
 No licence on this repository overrides third-party source conditions.
+
+## V20 reproduction derivatives
+
+The development-fold table preserves assignments already present in the
+normalized CYPstrate labels. Fingerprints are regenerated from those structures
+and the normalized Figshare structures; provenance records compare them with
+the original arrays. These human-data derivatives retain the source-specific
+CC BY 4.0 attribution above. New evaluator/packaging code is project-owned MIT
+code. No additional third-party raw dataset or model weight is added by V20.

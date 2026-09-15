@@ -1,0 +1,11 @@
+# Tested on CPython 3.12.14, Windows x86-64. These are execution dependencies,
+# not the full GPU/search environment for historical upstream model refitting.
+numpy==2.5.2
+rdkit==2026.3.5
+scikit-learn==1.9.0
+scipy==1.18.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+narwhals==2.26.0
+cloudpickle==3.1.2
+Pillow==12.3.0

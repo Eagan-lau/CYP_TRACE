@@ -1,7 +1,7 @@
 # CYP-TRACE evaluation and fixed-human inference
 
 Evaluation and frozen-inference package for https://github.com/Eagan-lau/CYP_TRACE.
-The V13 companion in [`paper/`](paper/) adds assertion/query-level reproduction
+The companion in [`paper/`](paper/) provides assertion/query-level reproduction
 for Figures 1, 3 and 4, original human label inputs, and an open UniProt–Rhea
 subset (375 sequences, 639 reactions, 1,232 edges) with tested reconstruction
 and biological evidence lookup. Start with the
@@ -10,6 +10,32 @@ The project owner confirmed MIT for project-owned code and authorized publicatio
 of this scoped package on 2026-09-15. A persistent archival release and its author
 metadata are not yet completed. See `RELEASE_METADATA.json` and the reproduction
 matrix for what this package does and does not reconstruct.
+
+The V20 reproduction supplement adds development-only logistic parameter
+selection, external refitting/evaluation, original-fold and fingerprint checks,
+and a single acceptance command. It preserves the V19 manuscript results and
+the frozen inference model. Read the
+[restricted-data/access note](paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md)
+before interpreting a passing acceptance result as full upstream reconstruction.
+
+## Complete declared-scope acceptance
+
+Extract or clone a fixed version into a new directory. With Python 3.12 in an
+isolated environment, run from the repository root:
+
+```sh
+python -m venv .venv
+# Activate .venv with the command appropriate to your operating system.
+python -m pip install -r requirements-reproduction.txt
+python -m pip install --no-deps ./inference
+python run_acceptance.py --output acceptance_run
+```
+
+The output directory must not already exist. Tests read only package-relative
+inputs and place generated files in that directory. No network connection is
+used after dependency installation. `ACCEPTANCE.json` and per-command logs
+record exactly what ran. `paper/Provenance/V20_ACCEPTANCE.json` is the release
+author's clean-copy receipt; rerun the command to produce your own receipt.
 
 The paper studies separation of evidence reachability from ranking, and
 fixed-human-isoform conditioning. It does not claim a strongest general CYP

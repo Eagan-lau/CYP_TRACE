@@ -1,15 +1,15 @@
 {
-  "status": "PUBLISHED_CODE_DATA_COMPANION",
+  "status": "VALIDATED_CODE_DATA_COMPANION",
   "initial_publication_commit": "f02a84c3785522759ef2538e62c3b30bee026b8c",
   "public_release_approved": true,
   "repository_url": "https://github.com/Eagan-lau/CYP_TRACE",
-  "inspected_repository_head": "801adaacf622d925e0f96f91e03af9bfde3055bd",
+  "inspected_repository_head": "a52d60723d62c4da0d1324c0f1d2ebd4796f5ec9",
   "release_tag": null,
   "archive_doi": null,
   "authors": [],
   "release_wide_code_license": "MIT for project-owned code; user confirmed 2026-09-15",
   "existing_inference_license": "MIT (existing notice retained)",
-  "paper_revision": "V13",
+  "paper_revision": "V19",
   "inference_version": "0.1.0 (frozen code/model)",
   "pending": [
     "Author/provider permission or approved review access for historical P450Rdb inputs",
@@ -20,5 +20,8 @@
     "sequences": 375,
     "reactions": 639,
     "edges": 1232
-  }
+  },
+  "reproducibility_supplement": "V20",
+  "acceptance": "paper/Provenance/V20_ACCEPTANCE.json",
+  "new_raw_third_party_inputs": false
 }

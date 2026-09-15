@@ -12,14 +12,16 @@ yet been assigned.
 
 ## Install and run
 
-Python 3.10 or newer is required. `Provenance/V13_TEST_ENVIRONMENT.json`
-records the exact environment used for the supplied tests. Install the
-scientific dependencies in a fresh environment:
+The software supports Python 3.10 or newer; the complete V20 acceptance suite
+was tested on Python 3.12.14. `requirements-reproduction.txt` pins its scientific
+dependencies. Install these in a fresh environment:
 
 ```sh
 python -m venv .venv
 # Activate .venv using the command for your operating system.
-python -m pip install ./inference
+python -m pip install -r requirements-reproduction.txt
+python -m pip install --no-deps ./inference
+python run_acceptance.py --output acceptance_run
 ```
 
 Run from the repository root, choosing unused output paths:
@@ -39,10 +41,28 @@ python rebuild_human_bundle.py --output rebuilt_human_model.json.gz
 | `reproduce_general_metrics.py` | Figure 1 overlap from 11,593 assertion audit rows; 15 pruning strata and their 5,000-replicate intervals; 40 interaction and 35 structure comparisons; 14 reverse method/regime summaries from 20,000 panel-metric rows | Fixed predictions, not refitting. Interaction and structure intervals are supplied but not resampled by this command. |
 | `evaluation/evaluate_candidates.py` | Figure 2 metrics from 254,790 candidate rows, 95 panels and 27 groups, including fixed and exact averaged tie handling | Saved scores, labels and applicability masks |
 | `evaluation/check_external.py` | Strict external AP and release comparisons | Same 3,035 labels and frozen scores |
+| `reproduce_external_intervals.py` | Recompute the original paired scaffold intervals in both S7 cohorts | Fixed scores; no refitting |
 | `rebuild_open_core.py` | Exact sequences, reaction-level PubMed links, 642 Rhea reactions, participant conservation and 1,232 edge identities | Open subset; frozen admission decisions |
 | `test_open_evidence.py` | Retrieval of all 1,232 biological edges and unresolved queries | Evidence fidelity, not new prediction accuracy |
 | `test_inference.py` | Both kNN scores for every strict external label and invalid/unknown input paths | Frozen inference |
 | `rebuild_human_bundle.py` | kNN asset from 14,955 normalized development labels | No hyperparameter reselection |
+| `reproduce_logistic.py tune` then `evaluate` | Original five-fold development selection, six final fits, 3,035 external predictions and paired scaffold interval | Exploratory comparison; starts from normalized public structures/labels and frozen folds |
+
+The full suite executes logistic tuning with a data root containing only
+development labels. External records and the saved parameter table are absent
+from that tuning data root. Evaluation subsequently compares the selected
+parameters, fold APs, regenerated fingerprints, predictions and interval with
+the historical records. For separate execution:
+
+```sh
+python paper/reproduce_logistic.py tune --output logistic_selection
+python paper/reproduce_logistic.py evaluate --selection logistic_selection/logistic_selection.json --output logistic_evaluation
+```
+
+`Provenance/LOGISTIC_INPUT_PROVENANCE.json` records hashes of the original
+arrays; `Provenance/human_development_folds.tsv` makes the original fold mapping
+inspectable. `Provenance/original_logistic_functions.py.txt` preserves the
+historical functions, and `reproduce_logistic.py` is their portable implementation.
 
 The integrity checker verifies file hashes; the other commands perform the
 listed numerical/biological operations. A hash match alone is not a scientific
@@ -110,6 +130,10 @@ The author's local copy is not presented as a public archive. The current
 provider version must not be silently substituted. BRENDA raw archives and
 SABIO-RK exports are not bundled; source-specific access is recorded in S1a.
 CLEAN research-use weights must be acquired from their source.
+
+The resource-by-resource access routes, distinction between licensing and
+technical omissions, and outstanding reviewer-access decision are documented
+in `RESTRICTED_DATA_AND_REVIEWER_ACCESS.md`.
 
 The open biological subset and complete normalized human dataset provide
 real reusable examples. They do not certify a full mixed-source model refit

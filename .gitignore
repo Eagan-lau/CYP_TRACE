@@ -7,3 +7,8 @@ open_evidence.json.gz
 fresh_external_sources/
 figure2_fixed.json
 figure2_average.json
+acceptance_run/
+logistic_selection/
+logistic_evaluation/
+*.egg-info/
+build/

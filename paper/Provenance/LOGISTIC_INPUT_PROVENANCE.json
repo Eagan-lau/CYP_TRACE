@@ -1,0 +1,20 @@
+{
+  "original_analysis_script_sha256": "2341de71461225f37a34d6e2cc2565d5a57cf29cb9f1e644b49730b5432572f2",
+  "original_development_npz_sha256": "67320f8c70ef590c9bb3f995eba30a170b24c421b02a0c6ef7569324bd775ac5",
+  "original_external_npz_sha256": "6dc8cde4f75d8fc2a40eee8df45b144fdbbe3de0057c959938bda40c4316ae9c",
+  "development_labels_sha256": "1af15afce0a27a921019144489eb8ec73bd05e0b7fdf7c53ebdeac3ef82f3ea9",
+  "development_fingerprint_bits_sha256": "2d2068799bfea7d258c418a84be04f7d7b16185ab780fdf456850d2fde0be25b",
+  "external_fingerprint_bits_sha256": "e607d3bded57df9c9a9dc9a567c7d33c453080df3967177fab244312ffc9e9a0",
+  "development_folds_int64_le_sha256": "e863aa5b2ae8c512789030d7969f5a18bb983dd6cc57debac7ce30462b383834",
+  "development_compounds": 1768,
+  "external_compounds": 3163,
+  "fingerprint_shape": [
+    2048
+  ],
+  "fingerprint_dtype": "uint8",
+  "fingerprint_order": "sorted compound_inchikey",
+  "exact_array_equality_verified": true,
+  "includes_original_npz_files": false,
+  "regeneration_inputs": "data/development_labels.json and data/external_labels.json",
+  "raw_source_normalization_repeated": false
+}

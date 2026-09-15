@@ -33,7 +33,7 @@ def main():
         macro=sum(values)/len(values)
         assert abs(macro-expected[method])<1e-12,(method,macro)
         release=[]
-        for fraction in (.1,.25):
+        for fraction in (.1,.25,.5,.75,1.0):
             precisions=[];recalls=[];released=hits=0
             for iso in isoforms:
                 local=[r for r in rows if r['isoform']==iso]
@@ -45,6 +45,16 @@ def main():
             release.append(dict(fraction=fraction,released=released,reported_positive_hits=hits,
                 isoform_macro_precision=sum(precisions)/6,isoform_macro_recall=sum(recalls)/6))
         output[method]=dict(macro_AP=macro,release=release)
-    print(json.dumps(dict(status='PASS',labels=3035,isoforms=6,methods=output),indent=2))
+    with (ROOT.parent/'paper/Tables/Table_S13a_selective_release_tradeoffs.tsv').open(encoding='utf-8') as handle:
+        expected_release=list(csv.DictReader(handle,delimiter='\t'))
+    checked=0
+    for expected_row in expected_release:
+        method=expected_row['method']
+        actual=next(r for r in output[method]['release'] if r['fraction']==float(expected_row['target_coverage']))
+        assert actual['released']==int(expected_row['selected_rows'])
+        for a,b in [('isoform_macro_precision','macro_precision'),('isoform_macro_recall','macro_positive_recall')]:
+            assert math.isclose(actual[a],float(expected_row[b]),rel_tol=0,abs_tol=1e-12),(method,a)
+        checked+=1
+    print(json.dumps(dict(status='PASS',labels=3035,isoforms=6,release_rows_checked=checked,methods=output),indent=2))
 
 if __name__=='__main__':main()

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "tool_version": "0.1.0",
+  "rdkit_version": "2026.03.5",
+  "human_model": {
+    "compounds": 1768,
+    "isoforms": [
+      "CYP1A2",
+      "CYP2A6",
+      "CYP2B6",
+      "CYP2C19",
+      "CYP2C8",
+      "CYP2C9",
+      "CYP2D6",
+      "CYP2E1",
+      "CYP3A4"
+    ],
+    "externally_validated_isoforms": [
+      "CYP1A2",
+      "CYP2C19",
+      "CYP2C9",
+      "CYP2D6",
+      "CYP2E1",
+      "CYP3A4"
+    ],
+    "isoform_k": 25,
+    "pooled_k": 51
+  },
+  "general_reaction_route": "exact_evidence_or_abstain",
+  "missing_expert_policy": "domain_weight_zero_not_score_zero"
+}
+

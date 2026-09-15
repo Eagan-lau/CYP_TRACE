@@ -1,0 +1,108 @@
+# Verbatim functions from the historical analysis; excerpt, not a standalone program.
+# Portable executable: paper/reproduce_logistic.py. Original SEED = 20260914.
+
+def average_precision(y: np.ndarray, score: np.ndarray) -> float:
+    """Tie-aware unweighted AP, matching the frozen evaluation implementation."""
+    y = np.asarray(y, dtype=np.int8)
+    score = np.asarray(score, dtype=np.float64)
+    positive = int(y.sum())
+    if positive == 0:
+        return math.nan
+    order = np.argsort(-score, kind="mergesort")
+    sorted_score, sorted_y = score[order], y[order]
+    starts = np.r_[0, np.flatnonzero(sorted_score[1:] != sorted_score[:-1]) + 1]
+    group_n = np.diff(np.r_[starts, len(y)])
+    group_pos = np.add.reduceat(sorted_y, starts)
+    precision = np.cumsum(group_pos) / np.cumsum(group_n)
+    return float(np.dot(precision, group_pos) / positive)
+
+def build_training_matrices(source: Path) -> tuple[list[dict[str, Any]], list[str], list[str], np.ndarray, np.ndarray, np.ndarray]:
+    rows = read_json(source / "human_substrate_01/normalized_labels.json")
+    with np.load(source / "human_substrate_models_01/fingerprint_similarity.npz", allow_pickle=False) as saved:
+        compound_ids = list(saved["compound_ids"])
+        bits = saved["fingerprint_bits"].astype(np.float64)
+        folds = saved["folds"].astype(int)
+    isoforms = sorted({row["isoform"] for row in rows})
+    ci = {value: number for number, value in enumerate(compound_ids)}
+    pi = {value: number for number, value in enumerate(isoforms)}
+    labels = np.full((len(compound_ids), len(isoforms)), np.nan, dtype=float)
+    for row in rows:
+        labels[ci[row["compound_inchikey"]], pi[row["isoform"]]] = row["label"]
+    return rows, compound_ids, isoforms, bits, folds, labels
+
+def logistic_baseline(source: Path, out: Path, external: dict[str, Any]) -> list[dict[str, Any]]:
+    _, train_ids, isoforms, train_bits, folds, labels = build_training_matrices(source)
+    with np.load(source / "external_human_cyp_models_01/fingerprint_similarity.npz", allow_pickle=False) as saved:
+        if list(saved["train_ids"]) != train_ids:
+            raise AssertionError("train compound order mismatch")
+        external_ids = list(saved["external_ids"])
+        external_bits = saved["external_bits"].astype(np.float64)
+    ei = {value: number for number, value in enumerate(external_ids)}
+    pi = {value: number for number, value in enumerate(isoforms)}
+    strict = external["strict_predictions"]
+    parameter_grid = [(c, weight) for c in (0.01, 0.1, 1.0) for weight in (None, "balanced")]
+    table = []
+    for isoform in external["isoforms"]:
+        p = pi[isoform]
+        known = ~np.isnan(labels[:, p])
+        x = train_bits[known]
+        y = labels[known, p].astype(np.int8)
+        local_folds = folds[known]
+        tuning = []
+        for c, class_weight in parameter_grid:
+            fold_aps = []
+            for fold in range(5):
+                train = local_folds != fold
+                test = local_folds == fold
+                model = LogisticRegression(
+                    C=c,
+                    solver="liblinear",
+                    class_weight=class_weight,
+                    max_iter=2000,
+                    random_state=SEED,
+                )
+                model.fit(x[train], y[train])
+                fold_aps.append(average_precision(y[test], model.predict_proba(x[test])[:, 1]))
+            tuning.append((float(np.mean(fold_aps)), c, class_weight))
+        tuning.sort(key=lambda item: (-item[0], item[1], str(item[2])))
+        cv_ap, chosen_c, chosen_weight = tuning[0]
+        model = LogisticRegression(
+            C=chosen_c,
+            solver="liblinear",
+            class_weight=chosen_weight,
+            max_iter=2000,
+            random_state=SEED,
+        )
+        model.fit(x, y)
+        rows = [row for row in strict if row["isoform"] == isoform]
+        indices = np.asarray([ei[row["compound_inchikey"]] for row in rows], dtype=int)
+        scores = model.predict_proba(external_bits[indices])[:, 1]
+        external_ap = average_precision(np.asarray([row["label"] for row in rows]), scores)
+        table.append({
+            "isoform": isoform,
+            "development_rows": len(y),
+            "development_positives": int(y.sum()),
+            "selected_C": chosen_c,
+            "selected_class_weight": "none" if chosen_weight is None else chosen_weight,
+            "mean_five_fold_development_AP": cv_ap,
+            "strict_external_rows": len(rows),
+            "strict_external_AP": external_ap,
+            "production_isoform_specific_kNN_AP": next(row["isoform_specific_kNN_AP"] for row in external["per_isoform"] if row["isoform"] == isoform),
+            "logistic_minus_kNN_AP": external_ap - next(row["isoform_specific_kNN_AP"] for row in external["per_isoform"] if row["isoform"] == isoform),
+            "analysis_status": "post_hoc_supplementary_baseline_after_external_labels_were_opened",
+        })
+    table.append({
+        "isoform": "MACRO",
+        "development_rows": "",
+        "development_positives": "",
+        "selected_C": "",
+        "selected_class_weight": "",
+        "mean_five_fold_development_AP": float(np.mean([row["mean_five_fold_development_AP"] for row in table])),
+        "strict_external_rows": sum(int(row["strict_external_rows"]) for row in table),
+        "strict_external_AP": float(np.mean([row["strict_external_AP"] for row in table])),
+        "production_isoform_specific_kNN_AP": float(np.mean([row["production_isoform_specific_kNN_AP"] for row in table])),
+        "logistic_minus_kNN_AP": float(np.mean([row["logistic_minus_kNN_AP"] for row in table])),
+        "analysis_status": "post_hoc_supplementary_baseline_after_external_labels_were_opened",
+    })
+    write_tsv(out / "tables/logistic_regression_supplement.tsv", table)
+    return table

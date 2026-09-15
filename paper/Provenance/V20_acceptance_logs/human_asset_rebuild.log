@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_sha256": "1af15afce0a27a921019144489eb8ec73bd05e0b7fdf7c53ebdeac3ef82f3ea9",
+  "model_bundle_sha256": "291cceb260f7064e9da43ab7cc8fa41a1488d9cc8dd9a92f2c84710b2303f8e9",
+  "bundle_content_sha256": "95531b96fe949e939c2c2c119b3c2d5da22750b698d975752272108899fac872",
+  "normalized_pairs": 14955,
+  "unique_compounds": 1768,
+  "isoforms": [
+    "CYP1A2",
+    "CYP2A6",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2C8",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP2E1",
+    "CYP3A4"
+  ]
+}
+{"status": "BYTE_IDENTICAL_FROZEN_BUNDLE_REBUILD", "scope": "Frozen kNN asset reconstruction, not hyperparameter selection"}
+
