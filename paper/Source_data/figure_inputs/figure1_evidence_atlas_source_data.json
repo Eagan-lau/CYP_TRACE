@@ -1,0 +1,81 @@
+{
+  "source_assertions": [
+    {
+      "source": "P450Rdb",
+      "source_assertions": 3821,
+      "admitted_assertions": 1888
+    },
+    {
+      "source": "SABIO_RK",
+      "source_assertions": 5191,
+      "admitted_assertions": 0
+    },
+    {
+      "source": "SwissProt",
+      "source_assertions": 3809,
+      "admitted_assertions": 1245
+    },
+    {
+      "source": "UniProt_API",
+      "source_assertions": 3963,
+      "admitted_assertions": 1245
+    }
+  ],
+  "rate_sources": [
+    "P450Rdb",
+    "SABIO_RK",
+    "SwissProt",
+    "UniProt_API"
+  ],
+  "rate_metrics": [
+    "unique_sequence_link_available",
+    "linked_sequence_has_PF00067",
+    "has_recorded_publication",
+    "complete_component_set_parseable",
+    "exact_component_set_edge_matches_initial_core"
+  ],
+  "rates": [
+    [
+      1.0,
+      0.5613713687516357,
+      0.8602460088981941,
+      0.9583878565820466,
+      0.5030096833289714
+    ],
+    [
+      0.9872856867655557,
+      0.9056058562897322,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.9902861643475978,
+      0.4736151220792859,
+      0.7427146232606984,
+      0.008663691257547913
+    ],
+    [
+      1.0,
+      0.9518041887458996,
+      0.4610143830431491,
+      0.7138531415594247,
+      0.008327024981074944
+    ]
+  ],
+  "edge_union": {
+    "p450_unique": 1072,
+    "shared": 797,
+    "uniprot_unique": 435,
+    "union": 2304,
+    "swissprot_uniprot_same_lineage": true
+  },
+  "core": {
+    "sequences": 600,
+    "edges": 2304,
+    "transformations": 1341,
+    "single_pair": 1225,
+    "multicomponent": 116
+  }
+}

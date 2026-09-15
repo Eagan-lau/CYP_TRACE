@@ -1,0 +1,12 @@
+﻿Category	Resource	Data used	Analysis or result	Acquisition entry
+Reaction evidence	P450Rdb	Sequence-linked reaction assertions	Figs 1-4; S1-S2	https://www.cellknowledge.com.cn/p450rdb_v2/download.html
+Reaction evidence	UniProtKB / Swiss-Prot	Sequences, catalytic assertions and publication identifiers	Figs 1-4; S1-S2; S4	https://rest.uniprot.org/uniprotkb/search?query=%28xref%3Apfam-PF00067%29&format=tsv
+Human substrate labels	CYPstrate supplement	Fixed-human development compounds and labels	Figs 5-6; S3	https://doi.org/10.3390/molecules26154678
+Human substrate labels	Curated CYP450 interaction dataset	External substrate labels and original chemical structures	Figs 5-6; S3	https://doi.org/10.6084/m9.figshare.26630515.v4
+Reaction identity	Rhea	Directional reaction SMILES and reaction identifiers	Figs 1-4; S1-S2	https://ftp.expasy.org/databases/rhea/
+Reaction identity	ChEBI	FMNH2 and FMN reference identities	Fig 1; reaction identity methods	https://www.ebi.ac.uk/chebi/CHEBI:57618
+Family qualification	Pfam PF00067 via UniProt	Embedded CYP-family annotations	Figs 1-4; S1	https://www.ebi.ac.uk/interpro/entry/pfam/PF00067/
+Structure	Protein Data Bank	Deposited coordinates and derived heme-contact templates	Fig 3; S4	https://www.rcsb.org/
+Taxonomic controls	NCBI Taxonomy	Ancestor features for lineage-conditioned controls	SI taxonomic conditional models	https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/
+Evidence audit	BRENDA	Typed biochemical context and accession-linked EC coverage	Methods; Tables S1c-S1d	https://www.brenda-enzymes.org/download.php
+Evidence audit	SABIO-RK	Annotation resolution and named-reaction context	Fig S1; Tables S2 and S1d	https://sabiork.h-its.org/

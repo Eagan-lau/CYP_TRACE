@@ -1,0 +1,132 @@
+{
+  "status": "COMPUTED_QC_PENDING",
+  "created_utc": "2026-09-12T17:33:44.380813+00:00",
+  "summaries": [
+    {
+      "cell": "seen_reaction__new_positive",
+      "method": "blast_nearest_positive",
+      "query_panels": 162,
+      "taxids": 21,
+      "taxid_macro_mrr": 0.18910315565677766,
+      "documented_positive_coverage": 0.47924528301886793,
+      "mean_candidate_coverage": 0.5572756241145642
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "method": "blast_weighted_positive",
+      "query_panels": 162,
+      "taxids": 21,
+      "taxid_macro_mrr": 0.18909398849509432,
+      "documented_positive_coverage": 0.47924528301886793,
+      "mean_candidate_coverage": 0.5572756241145642
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "method": "mmseqs_nearest_positive",
+      "query_panels": 162,
+      "taxids": 21,
+      "taxid_macro_mrr": 0.19890670800204788,
+      "documented_positive_coverage": 0.5660377358490566,
+      "mean_candidate_coverage": 0.6261558856864392
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "method": "mmseqs_weighted_positive",
+      "query_panels": 162,
+      "taxids": 21,
+      "taxid_macro_mrr": 0.19887325187626162,
+      "documented_positive_coverage": 0.5660377358490566,
+      "mean_candidate_coverage": 0.6261558856864392
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "method": "training_label_count_prior",
+      "query_panels": 162,
+      "taxids": 21,
+      "taxid_macro_mrr": 0.3326477746089836,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 1.0
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "method": "uniform_expectation",
+      "query_panels": 162,
+      "taxids": 21,
+      "taxid_macro_mrr": 0.4257157485666025,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 1.0
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "method": "blast_homology_chemical_transport",
+      "query_panels": 4382,
+      "taxids": 133,
+      "taxid_macro_mrr": 0.5399685742440745,
+      "documented_positive_coverage": 0.9451923076923077,
+      "mean_candidate_coverage": 0.9722155141951448
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "method": "mmseqs_homology_chemical_transport",
+      "query_panels": 4382,
+      "taxids": 133,
+      "taxid_macro_mrr": 0.5477818285704138,
+      "documented_positive_coverage": 0.9519230769230769,
+      "mean_candidate_coverage": 0.9758158177568478
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "method": "training_label_count_prior",
+      "query_panels": 4382,
+      "taxids": 133,
+      "taxid_macro_mrr": 0.48351530565643513,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 1.0
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "method": "uniform_expectation",
+      "query_panels": 4382,
+      "taxids": 133,
+      "taxid_macro_mrr": 0.5321822206398329,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 1.0
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "method": "blast_homology_chemical_transport",
+      "query_panels": 375,
+      "taxids": 17,
+      "taxid_macro_mrr": 0.5552995302528809,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 0.990009427123744
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "method": "mmseqs_homology_chemical_transport",
+      "query_panels": 375,
+      "taxids": 17,
+      "taxid_macro_mrr": 0.5626851708106697,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 0.9979866461222394
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "method": "training_label_count_prior",
+      "query_panels": 375,
+      "taxids": 17,
+      "taxid_macro_mrr": 0.5671596914899328,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 1.0
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "method": "uniform_expectation",
+      "query_panels": 375,
+      "taxids": 17,
+      "taxid_macro_mrr": 0.4125717603863078,
+      "documented_positive_coverage": 1.0,
+      "mean_candidate_coverage": 1.0
+    }
+  ]
+}

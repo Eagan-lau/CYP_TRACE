@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-09T09:50:32.531419+00:00",
+  "checks": {
+    "BRENDA_denominator_preserved": true,
+    "SABIO_denominator_preserved": true,
+    "one_output_per_source_assertion": true,
+    "no_new_labels_or_independent_claims": true,
+    "qualified_links_have_existing_core_edge": true,
+    "qualified_BRENDA_links_not_inhibitor_or_kinetic_endpoints": true,
+    "raw_store_hash_unchanged": true
+  },
+  "source_counts": {
+    "BRENDA": {
+      "source_assertions": 17429,
+      "complete_name_dictionary_resolution": 27,
+      "valid_main_projection": 25,
+      "same_order_core_edge_matches_before_context_gates": 0,
+      "qualified_named_context_matches_not_new_labels": 0
+    },
+    "SABIO_RK": {
+      "source_assertions": 5191,
+      "complete_name_dictionary_resolution": 340,
+      "valid_main_projection": 340,
+      "same_order_core_edge_matches_before_context_gates": 141,
+      "qualified_named_context_matches_not_new_labels": 119
+    }
+  },
+  "endpoint_counts": {
+    "BRENDA": {
+      "reaction": 530,
+      "natural_substrates_products": 1701,
+      "substrates_products": 5779,
+      "km_value": 2245,
+      "turnover_number": 1162,
+      "inhibitor": 4198,
+      "ki_value": 462,
+      "ic50_value": 1352
+    },
+    "SABIO_RK": {
+      "kinetic_reaction_context": 5191
+    }
+  },
+  "nonexclusive_resolution_reasons": {
+    "BRENDA": {
+      "source_protein_or_sequence_not_unique": 13563,
+      "exact_sequence_PF00067_confirmation_unavailable": 13828,
+      "no_recorded_publication": 1524,
+      "some_named_participants_unresolved": 7949,
+      "no_exact_reference_sequence_main_core_edge_match": 17429,
+      "endpoint_not_an_explicit_substrate_product_equation": 9453,
+      "explicit_variant_text_requires_adjudication": 1041,
+      "empty_product_after_auxiliary_separation": 2,
+      "empty_substrate_after_auxiliary_separation": 2,
+      "identity_main_transformation": 2,
+      "no_carbon_containing_product": 2,
+      "no_carbon_containing_substrate": 2,
+      "reference_accession_taxonomy_not_unique": 14,
+      "not_one_explicit_equation": 34
+    },
+    "SABIO_RK": {
+      "exact_sequence_PF00067_confirmation_unavailable": 490,
+      "some_named_participants_unresolved": 4851,
+      "no_exact_reference_sequence_main_core_edge_match": 5050,
+      "explicit_variant_text_requires_adjudication": 1429,
+      "source_taxonomy_disagreement": 558,
+      "source_protein_or_sequence_not_unique": 66,
+      "reference_accession_taxonomy_not_unique": 152
+    }
+  },
+  "unique_core_edges_with_qualified_named_context": {
+    "BRENDA": 0,
+    "SABIO_RK": 14
+  },
+  "exact_case_dictionary_entries": 3510,
+  "ambiguous_source_name_entries": 56,
+  "exact_model_positives_added": 0,
+  "independent_validation": false,
+  "limitation": "Name matching is an adjudication aid, not certified compound identity, direction, construct or independent evidence.",
+  "BRENDA_reversibility_source": "https://brenda-enzymes.org/schemas/docs/2.0.0/brenda.schema.html",
+  "license_sensitive_records_remain_private_workspace_outputs": true
+}

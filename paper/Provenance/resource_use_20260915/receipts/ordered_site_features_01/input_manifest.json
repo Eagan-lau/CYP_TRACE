@@ -1,0 +1,10 @@
+{
+  "build_ordered_site_features.py": "dc286e5e1a93924ed8a970beb52e6b514e7068c771362fd5ecbffd495c796a90",
+  "ORDERED_SITE_PROJECTION_V1.md": "bfe50272e45d128895f3e8ec3778b72d1463efcee966e3dcea3eb95b850d45e3",
+  "ordered_anchor_01/reference.json": "b1cabe6fda9d8e1ad55c035da0bf7a8ca5700ff8a3a6e447b8b98c9af93670c2",
+  "ordered_anchor_01/structure_to_reference.tsv": "27e64388afe36f8f1ab407e21cf787c80e0087d19356f360b28655072b78a9e5",
+  "structure_blast_01/core_to_resolved_chains.tsv": "7b5d51d0ba382deca6391227bec8df9f284800427340673883165121b7cd7237",
+  "structure_mapping_audit_02/primary_representatives.json": "e599ac9b219978418f297003f72aa9d77985c05a62cdaa462c8c63c1a7ac299d",
+  "dataset_02/core_sequences.fasta": "8ced8f70d7540e421a543c93c2e206a1b46a5883588353512c490ac34ef2d6b6",
+  "foldseek_raw_01/structure_sequences.fasta": "35cfe56b812f647571ac6eef5e09afbace863bd9573779f1a5f0faa3f6942ee6"
+}

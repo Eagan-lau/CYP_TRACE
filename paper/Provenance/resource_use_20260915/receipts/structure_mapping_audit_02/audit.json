@@ -1,0 +1,18 @@
+{
+  "status": "ASSOCIATIONS_COMPUTED_NOT_MODEL_EVALUATION",
+  "created_utc": "2026-09-09T12:41:37.336067+00:00",
+  "counts": {
+    "alignment_rows": 622568,
+    "qualified_aliases_unmapped_to_foldseek": 40
+  },
+  "core_sequences": 600,
+  "primary_structure_sequences": 36,
+  "identity95_sensitivity_sequences": 57,
+  "complete_sequence_geometry_sequences": 0,
+  "mapped_foldseek_chains": 1926,
+  "unmatched_foldseek_entries": 77,
+  "all_blast_aligned_residues_reconstructed": true,
+  "selection_uses_reaction_labels_or_scores": false,
+  "independent_biological_validation": false,
+  "structural_functional_performance_evaluated": false
+}

@@ -1,0 +1,264 @@
+{
+  "status": "COMPUTED_QC_PENDING",
+  "created_utc": "2026-09-12T17:02:03.025275+00:00",
+  "comparisons": [
+    {
+      "cell": "new_protein_seen_chemistry_with_homologue",
+      "all": {
+        "query_panels": 93,
+        "unique_queries": 93,
+        "protein_groups": 25,
+        "selected_mrr": 0.06968475760224326,
+        "unpruned_mrr": 0.07226223263284534,
+        "difference": -0.0025774750306021056,
+        "conditional_protein_bootstrap_95ci": [
+          -0.06443055793261325,
+          0.05947611521839381
+        ]
+      },
+      "clean_exact_exposed": {
+        "query_panels": 72,
+        "unique_queries": 72,
+        "protein_groups": 19,
+        "selected_mrr": 0.08997752527724864,
+        "unpruned_mrr": 0.05727058517008854,
+        "difference": 0.03270694010716009,
+        "conditional_protein_bootstrap_95ci": [
+          -0.01709522612631388,
+          0.09787250722628552
+        ]
+      },
+      "clean_exact_unexposed": {
+        "query_panels": 21,
+        "unique_queries": 21,
+        "protein_groups": 10,
+        "selected_mrr": 0.023371378812758126,
+        "unpruned_mrr": 0.0760338955663554,
+        "difference": -0.05266251675359727,
+        "conditional_protein_bootstrap_95ci": [
+          -0.16805744180125215,
+          0.0321087414861981
+        ]
+      },
+      "pre_pruning_positive_instances": 274,
+      "selected_covered_positive_instances": 81,
+      "mean_selected_candidate_coverage": 0.05531636649652614,
+      "selected_mode_frequencies": {
+        "none": 0,
+        "open_L2": 0,
+        "open_L3": 0,
+        "open_L4": 15,
+        "strict_L2": 0,
+        "strict_L3": 21,
+        "strict_L4": 57
+      }
+    },
+    {
+      "cell": "new_protein_unseen_chemistry_with_homologue__chemical_cold_accounting",
+      "all": {
+        "query_panels": 622,
+        "unique_queries": 554,
+        "protein_groups": 138,
+        "selected_mrr": 0.16549876918725515,
+        "unpruned_mrr": 0.05254918190385403,
+        "difference": 0.11294958728340111,
+        "conditional_protein_bootstrap_95ci": [
+          0.059789777555420864,
+          0.1699744604809586
+        ]
+      },
+      "clean_exact_exposed": {
+        "query_panels": 323,
+        "unique_queries": 292,
+        "protein_groups": 64,
+        "selected_mrr": 0.39075477322298713,
+        "unpruned_mrr": 0.03646363865998442,
+        "difference": 0.35429113456300265,
+        "conditional_protein_bootstrap_95ci": [
+          0.2551362536247869,
+          0.4551746880375452
+        ]
+      },
+      "clean_exact_unexposed": {
+        "query_panels": 299,
+        "unique_queries": 262,
+        "protein_groups": 97,
+        "selected_mrr": 0.02821898592006895,
+        "unpruned_mrr": 0.05937145804901865,
+        "difference": -0.0311524721289497,
+        "conditional_protein_bootstrap_95ci": [
+          -0.06207432103324079,
+          -0.0021908997973001457
+        ]
+      },
+      "pre_pruning_positive_instances": 1636,
+      "selected_covered_positive_instances": 566,
+      "mean_selected_candidate_coverage": 0.06628369969906327,
+      "selected_mode_frequencies": {
+        "none": 0,
+        "open_L2": 0,
+        "open_L3": 0,
+        "open_L4": 0,
+        "strict_L2": 0,
+        "strict_L3": 0,
+        "strict_L4": 622
+      }
+    },
+    {
+      "cell": "new_protein_unseen_chemistry_with_homologue__double_cold",
+      "all": {
+        "query_panels": 725,
+        "unique_queries": 578,
+        "protein_groups": 140,
+        "selected_mrr": 0.14513510660518958,
+        "unpruned_mrr": 0.021159707296400734,
+        "difference": 0.12397539930878888,
+        "conditional_protein_bootstrap_95ci": [
+          0.07414615590606027,
+          0.17442031407682237
+        ]
+      },
+      "clean_exact_exposed": {
+        "query_panels": 448,
+        "unique_queries": 328,
+        "protein_groups": 68,
+        "selected_mrr": 0.3326769972379795,
+        "unpruned_mrr": 0.01065090301062837,
+        "difference": 0.322026094227351,
+        "conditional_protein_bootstrap_95ci": [
+          0.2340927620391939,
+          0.41396549509019187
+        ]
+      },
+      "clean_exact_unexposed": {
+        "query_panels": 277,
+        "unique_queries": 250,
+        "protein_groups": 96,
+        "selected_mrr": 0.022146208466094098,
+        "unpruned_mrr": 0.025547125336982654,
+        "difference": -0.0034009168708885504,
+        "conditional_protein_bootstrap_95ci": [
+          -0.0369037839274135,
+          0.02894667810845914
+        ]
+      },
+      "pre_pruning_positive_instances": 2138,
+      "selected_covered_positive_instances": 675,
+      "mean_selected_candidate_coverage": 0.01883449011590913,
+      "selected_mode_frequencies": {
+        "none": 0,
+        "open_L2": 0,
+        "open_L3": 0,
+        "open_L4": 0,
+        "strict_L2": 0,
+        "strict_L3": 0,
+        "strict_L4": 725
+      }
+    },
+    {
+      "cell": "new_protein_unseen_chemistry_with_homologue__protein_cold",
+      "all": {
+        "query_panels": 559,
+        "unique_queries": 559,
+        "protein_groups": 138,
+        "selected_mrr": 0.140261825112651,
+        "unpruned_mrr": 0.07113159179283994,
+        "difference": 0.06913023331981107,
+        "conditional_protein_bootstrap_95ci": [
+          0.020751175019379803,
+          0.12153978844216508
+        ]
+      },
+      "clean_exact_exposed": {
+        "query_panels": 311,
+        "unique_queries": 311,
+        "protein_groups": 66,
+        "selected_mrr": 0.32868608812565947,
+        "unpruned_mrr": 0.09246095159630063,
+        "difference": 0.2362251365293588,
+        "conditional_protein_bootstrap_95ci": [
+          0.1432946227846906,
+          0.3335848867109647
+        ]
+      },
+      "clean_exact_unexposed": {
+        "query_panels": 248,
+        "unique_queries": 248,
+        "protein_groups": 96,
+        "selected_mrr": 0.02672008474869307,
+        "unpruned_mrr": 0.05221623235953493,
+        "difference": -0.025496147610841863,
+        "conditional_protein_bootstrap_95ci": [
+          -0.06422765421906747,
+          0.009875421528545618
+        ]
+      },
+      "pre_pruning_positive_instances": 1892,
+      "selected_covered_positive_instances": 551,
+      "mean_selected_candidate_coverage": 0.02324872993714275,
+      "selected_mode_frequencies": {
+        "none": 0,
+        "open_L2": 0,
+        "open_L3": 0,
+        "open_L4": 0,
+        "strict_L2": 0,
+        "strict_L3": 0,
+        "strict_L4": 559
+      }
+    },
+    {
+      "cell": "represented_protein_unseen_chemistry",
+      "all": {
+        "query_panels": 66,
+        "unique_queries": 24,
+        "protein_groups": 4,
+        "selected_mrr": 0.1413526281441414,
+        "unpruned_mrr": 0.22958281584292115,
+        "difference": -0.08823018769877974,
+        "conditional_protein_bootstrap_95ci": [
+          -0.3490859747489256,
+          0.058332730871577726
+        ]
+      },
+      "clean_exact_exposed": {
+        "query_panels": 58,
+        "unique_queries": 20,
+        "protein_groups": 4,
+        "selected_mrr": 0.14453202362150147,
+        "unpruned_mrr": 0.2087709130936642,
+        "difference": -0.06423888947216275,
+        "conditional_protein_bootstrap_95ci": [
+          -0.27865281084364296,
+          0.05884630779643384
+        ]
+      },
+      "clean_exact_unexposed": {
+        "query_panels": 8,
+        "unique_queries": 4,
+        "protein_groups": 2,
+        "selected_mrr": 0.008899421967942888,
+        "unpruned_mrr": 0.3386621617172806,
+        "difference": -0.3297627397493377,
+        "conditional_protein_bootstrap_95ci": [
+          -0.6666666666666666,
+          0.007141187167991227
+        ]
+      },
+      "pre_pruning_positive_instances": 318,
+      "selected_covered_positive_instances": 255,
+      "mean_selected_candidate_coverage": 0.4313788560548364,
+      "selected_mode_frequencies": {
+        "none": 0,
+        "open_L2": 0,
+        "open_L3": 20,
+        "open_L4": 25,
+        "strict_L2": 8,
+        "strict_L3": 0,
+        "strict_L4": 13
+      }
+    }
+  ],
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260914,
+  "interval_scope": "Conditional fixed-fit protein-group bootstrap; no split, chemistry, mapping, model-refit, external or multiplicity uncertainty"
+}

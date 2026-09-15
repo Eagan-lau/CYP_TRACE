@@ -1,0 +1,15 @@
+{
+  "run_structure_matched_v2.py": "469eec908b63ff175bb821601cf5f709843347f4d58836407e70d33723b0e666",
+  "STRUCTURE_MATCHED_ANALYSIS_V1.md": "09a48a12ae31ae3928e6ee68ddc518022a2c9d942f2263d8bc577b267636cfdd",
+  "run_main_baselines.py": "001fa06fc11322008f4005ff67a1b0e789c56383c6db6ae311aca79539c96935",
+  "dataset_02/core_edges.json": "535a33c919b293fa9fb9a73bd7e6b9cf2823ef757f21dac8d3980ff8302404e3",
+  "dataset_02/core_reactions.json": "6a2fd6533ba8aee02ff1a576c7efbb6b80f8ce87e869fb70b0cbb7d24bdb40b0",
+  "multiaxis_split_01/outer_inner_blocks.json": "37a56fd8ca4734f5a8bedb81aafd2fc24883321e6322873c29c56044c9ad015c",
+  "multiaxis_split_01/axis_assignments.json": "7c6ae1e383ad25d9d569db37a954e7a452e4917d59d7bc7fd365f9afbd9cd064",
+  "structure_mapping_audit_02/primary_representatives.json": "e599ac9b219978418f297003f72aa9d77985c05a62cdaa462c8c63c1a7ac299d",
+  "structure_mapping_audit_02/availability_census.json": "d119a3cf5184d50e3814b8e8f0130b9694afbb18ea7d6f9c6117a1e33c1eee69",
+  "structure_association_validation_02/INDEPENDENT_QC.json": "091c35b8e2a4ef2a9dc087b8242072e54eb3c559ed9177c6ed4bbc8d77767d97",
+  "foldseek_raw_01/all_vs_all.tsv": "9020250f97352856097c07c9fc96d46cc712e7839ceb78718d067decae006ea2",
+  "esm_global_01/global_features.npz": "830a15d9423d5783466edb0a73fa9386d3ce850905ba7694c018906931fdefd7",
+  "main_baselines_01/fresh_representations.npz": "be8d3592c91eb0914e1cdf302fefc9de8b89d5e941eef7888d0e4e0eabcbba8e"
+}

@@ -1,0 +1,4 @@
+task	outer_blocks	evaluable_blocks	test_edges	query_panels	unique_queries
+protein_cold	5	5	2304	600	600
+chemical_cold	5	5	2304	772	600
+double_cold	25	25	2304	772	600

@@ -1,0 +1,6 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.5.2",
+  "rdkit": "2026.03.5",
+  "tested_scope": "reconstruction, fixed-prediction metrics, frozen inference"
+}

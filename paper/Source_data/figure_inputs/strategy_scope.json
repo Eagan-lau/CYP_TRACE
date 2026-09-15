@@ -1,0 +1,29 @@
+{
+  "source": "paper_revision_dd_20260914/manuscript/WORKING_MANUSCRIPT_REVISED.md, Results Question 5 and Software implementation and inference boundary; paper_rebuild_20260909/joint_tool_verify_11154750.out",
+  "fixed_human": {
+    "isoforms_in_tool": 9,
+    "externally_evaluated_isoforms": 6,
+    "development_only_isoforms": 3,
+    "training_compounds": 1768,
+    "neighbour_count": 25,
+    "returned_neighbours": 5,
+    "output": "isoform-specific chemical-neighbour score, exposure diagnostics, nearest labelled evidence"
+  },
+  "general_sequence_reaction": {"exact_documented_edge": "return source evidence", "non_exact_case": "abstain"},
+  "no_portable_external_binary_cutoff": true,
+  "runtime_validation": {
+    "external_scores_recomputed": 14519,
+    "external_scores_expected": 14519,
+    "maximum_absolute_score_difference": 0.0,
+    "exact_edge_keys_retrieved": 2304,
+    "exact_edge_keys_expected": 2304,
+    "evidence_index_sequences": 600,
+    "evidence_index_reactions": 1341,
+    "evidence_index_edges": 2304,
+    "new_sequence_abstains": true,
+    "unknown_reaction_abstains": true,
+    "clean_install_doctor": true,
+    "clean_install_prediction": true,
+    "verified_platforms": ["Windows", "NIC5"]
+  }
+}

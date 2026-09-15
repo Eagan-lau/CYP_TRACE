@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-09-08T23:28:04.471091+00:00",
+  "counts": {
+    "all_source_ec_blocks_scanned": 8129,
+    "selected_context_ec_blocks": 255,
+    "ec_blocks_with_current_CYP_accession_link": 222,
+    "context_assertions_retained": 17429,
+    "assertions_explicitly_linking_current_CYP_accession": 4510,
+    "assertions_with_PMID": 15905,
+    "variant_text_flagged_assertions": 1041,
+    "assertions_with_broken_protein_reference": 0,
+    "assertions_with_broken_literature_reference": 0
+  },
+  "per_field": {
+    "reaction": 530,
+    "natural_substrates_products": 1701,
+    "substrates_products": 5779,
+    "km_value": 2245,
+    "turnover_number": 1162,
+    "inhibitor": 4198,
+    "ki_value": 462,
+    "ic50_value": 1352
+  },
+  "scopes": {
+    "EC_CONTEXT_NO_PROTEIN_LINK": 522,
+    "SOURCE_PROTEIN_CONTEXT_NO_LINK_TO_CURRENT_CYP_SEQUENCE_STORE": 12397,
+    "SINGLE_SOURCE_PROTEIN_ACCESSION_LINK_NOT_CONSTRUCT_VERIFIED": 3866,
+    "MULTIPLE_SOURCE_PROTEIN_LINKS_NOT_EXPANDED": 644
+  },
+  "status": "TYPED_SOURCE_EXTRACTION_COMPLETE_CHEMICAL_ADJUDICATION_PENDING",
+  "source_path": "/scratch/users/y/u/yugenliu/CYP_TRACE/data/raw/brenda/2026_1/brenda_2026_1.json.tar.gz",
+  "source_sha256": "bb2549d02b7255de2272b35701c331493caad16b82eb38a41adb2e03bbb0d2e1",
+  "member": "brenda_2026_1.json",
+  "release": "2026.1",
+  "format_version": "1",
+  "fresh_raw_store_sha256": "5edfbf99691043838b9e18db1de00b3248075d9fa5c6ced9e1958f0cb3404725",
+  "script_sha256": "a8eb1ff232aad658762bb29ebeb347d9c1cfc9dad925d39b2c37e0d842881722",
+  "exact_model_positives_added": 0,
+  "source_assertions_not_independent_experiments": true,
+  "not_a_complete_CYP_census": true,
+  "independent_validation": false,
+  "paper_complete": false,
+  "limitations": [
+    "Context includes mixed enzyme classes and organism-level protein records",
+    "Known accession linkage is not exact assayed construct verification",
+    "Text variant flags require adjudication; absence does not prove wild type",
+    "Named substrate/product terms are not silently converted to precise chemical structures",
+    "Inhibitor/Ki/IC50 records remain separate from substrate positives",
+    "License-sensitive source records are private workspace outputs, not a public release"
+  ]
+}

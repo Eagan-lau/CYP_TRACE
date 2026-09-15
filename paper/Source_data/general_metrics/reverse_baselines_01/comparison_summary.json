@@ -1,0 +1,232 @@
+{
+  "status": "COMPUTED_QC_PENDING",
+  "created_utc": "2026-09-12T17:33:44.382258+00:00",
+  "comparisons": [
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "mmseqs_nearest_positive",
+      "right_method": "training_label_count_prior",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.1989067080020479,
+      "right_mrr": 0.33264777460898354,
+      "difference": -0.1337410666069357,
+      "taxid_bootstrap_95ci": [
+        -0.235845757257208,
+        -0.029544032805054823
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "mmseqs_nearest_positive",
+      "right_method": "uniform_expectation",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.1989067080020479,
+      "right_mrr": 0.4257157485666023,
+      "difference": -0.2268090405645546,
+      "taxid_bootstrap_95ci": [
+        -0.35178308613215203,
+        -0.10605517876187995
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "mmseqs_weighted_positive",
+      "right_method": "training_label_count_prior",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.19887325187626162,
+      "right_mrr": 0.33264777460898354,
+      "difference": -0.13377452273272195,
+      "taxid_bootstrap_95ci": [
+        -0.23898096967962507,
+        -0.028748746052070936
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "mmseqs_weighted_positive",
+      "right_method": "uniform_expectation",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.19887325187626162,
+      "right_mrr": 0.4257157485666023,
+      "difference": -0.22684249669034084,
+      "taxid_bootstrap_95ci": [
+        -0.3556677946731117,
+        -0.10626594091875495
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "blast_nearest_positive",
+      "right_method": "training_label_count_prior",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.18910315565677763,
+      "right_mrr": 0.33264777460898354,
+      "difference": -0.1435446189522059,
+      "taxid_bootstrap_95ci": [
+        -0.2419081637925424,
+        -0.03965296657538233
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "blast_nearest_positive",
+      "right_method": "uniform_expectation",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.18910315565677763,
+      "right_mrr": 0.4257157485666023,
+      "difference": -0.2366125929098248,
+      "taxid_bootstrap_95ci": [
+        -0.36112517176324344,
+        -0.10974806512696202
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "blast_weighted_positive",
+      "right_method": "training_label_count_prior",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.1890939884950943,
+      "right_mrr": 0.33264777460898354,
+      "difference": -0.14355378611388928,
+      "taxid_bootstrap_95ci": [
+        -0.24755266416992153,
+        -0.04055169508156977
+      ]
+    },
+    {
+      "cell": "seen_reaction__new_positive",
+      "left_method": "blast_weighted_positive",
+      "right_method": "uniform_expectation",
+      "query_panels": 162,
+      "taxids": 21,
+      "left_mrr": 0.1890939884950943,
+      "right_mrr": 0.4257157485666023,
+      "difference": -0.23662176007150812,
+      "taxid_bootstrap_95ci": [
+        -0.3581232436402856,
+        -0.10679392769087147
+      ]
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "left_method": "mmseqs_homology_chemical_transport",
+      "right_method": "training_label_count_prior",
+      "query_panels": 4382,
+      "taxids": 133,
+      "left_mrr": 0.5477818285704139,
+      "right_mrr": 0.48351530565643513,
+      "difference": 0.06426652291397866,
+      "taxid_bootstrap_95ci": [
+        0.024284642654211895,
+        0.10550334518654012
+      ]
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "left_method": "mmseqs_homology_chemical_transport",
+      "right_method": "uniform_expectation",
+      "query_panels": 4382,
+      "taxids": 133,
+      "left_mrr": 0.5477818285704139,
+      "right_mrr": 0.5321822206398328,
+      "difference": 0.015599607930580883,
+      "taxid_bootstrap_95ci": [
+        -0.01425295929167927,
+        0.04546248274653957
+      ]
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "left_method": "blast_homology_chemical_transport",
+      "right_method": "training_label_count_prior",
+      "query_panels": 4382,
+      "taxids": 133,
+      "left_mrr": 0.5399685742440745,
+      "right_mrr": 0.48351530565643513,
+      "difference": 0.05645326858763941,
+      "taxid_bootstrap_95ci": [
+        0.015672572783015693,
+        0.09863584089758302
+      ]
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "left_method": "blast_homology_chemical_transport",
+      "right_method": "uniform_expectation",
+      "query_panels": 4382,
+      "taxids": 133,
+      "left_mrr": 0.5399685742440745,
+      "right_mrr": 0.5321822206398328,
+      "difference": 0.007786353604241629,
+      "taxid_bootstrap_95ci": [
+        -0.02239187636847969,
+        0.037725041067015574
+      ]
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "left_method": "mmseqs_homology_chemical_transport",
+      "right_method": "training_label_count_prior",
+      "query_panels": 375,
+      "taxids": 17,
+      "left_mrr": 0.5626851708106698,
+      "right_mrr": 0.5671596914899328,
+      "difference": -0.004474520679263082,
+      "taxid_bootstrap_95ci": [
+        -0.13565292405072332,
+        0.13325913023074795
+      ]
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "left_method": "mmseqs_homology_chemical_transport",
+      "right_method": "uniform_expectation",
+      "query_panels": 375,
+      "taxids": 17,
+      "left_mrr": 0.5626851708106698,
+      "right_mrr": 0.4125717603863078,
+      "difference": 0.150113410424362,
+      "taxid_bootstrap_95ci": [
+        0.06109093315120367,
+        0.25215138122996045
+      ]
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "left_method": "blast_homology_chemical_transport",
+      "right_method": "training_label_count_prior",
+      "query_panels": 375,
+      "taxids": 17,
+      "left_mrr": 0.5552995302528809,
+      "right_mrr": 0.5671596914899328,
+      "difference": -0.011860161237051822,
+      "taxid_bootstrap_95ci": [
+        -0.15425888223430323,
+        0.14287649538391156
+      ]
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "left_method": "blast_homology_chemical_transport",
+      "right_method": "uniform_expectation",
+      "query_panels": 375,
+      "taxids": 17,
+      "left_mrr": 0.5552995302528809,
+      "right_mrr": 0.4125717603863078,
+      "difference": 0.14272776986657323,
+      "taxid_bootstrap_95ci": [
+        0.049813249093320466,
+        0.2445418294062893
+      ]
+    }
+  ],
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "taxid"
+}

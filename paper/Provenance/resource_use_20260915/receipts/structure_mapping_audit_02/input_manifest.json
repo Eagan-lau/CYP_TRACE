@@ -1,0 +1,10 @@
+{
+  "audit_structure_mapping_v2.py": "6aaad260cc466b5f8b162537c3c525b72317d5cca828d7c5aba80404c2c1de74",
+  "STRUCTURE_EXPERT_PROTOCOL_V1.md": "416c0d37ac698cde7c1868821d5e7b29bf42096267c90d2314e8dfae56c3c885",
+  "structure_assets_01/source_manifest.json": "439ebd6b507c5a246865696a6f2341d0bd0abef3138980b8804bed9e0d9ce77e",
+  "structure_mapping_01/sequence_to_chain_assets.json": "0d6a3f361019cd778781627e99411d46d0782a6440b0f49713037aabd6b1b280",
+  "structure_mapping_01/resolved_chain_sequences.fasta": "181dfbe87d79f297154c0146fc3914329c495f22837b1e46c0e106f9a67abbfc",
+  "dataset_02/core_sequences.fasta": "8ced8f70d7540e421a543c93c2e206a1b46a5883588353512c490ac34ef2d6b6",
+  "structure_blast_01/core_to_resolved_chains.tsv": "7b5d51d0ba382deca6391227bec8df9f284800427340673883165121b7cd7237",
+  "foldseek_raw_01/structure_sequences.fasta": "35cfe56b812f647571ac6eef5e09afbace863bd9573779f1a5f0faa3f6942ee6"
+}

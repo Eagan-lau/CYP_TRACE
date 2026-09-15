@@ -1,0 +1,581 @@
+{
+  "created_utc": "2026-09-08T22:42:10.255168+00:00",
+  "source_sha256": "14f9836e68ba1c7a2ace29faeebfa51200f99854fe59da3194f9cfb02b54bb07",
+  "counts": {
+    "raw_rows": 15508,
+    "source_label_0": 13331,
+    "structure_unresolved_rows": 549,
+    "source_label_1": 2177,
+    "duplicate_row_excess": 4
+  },
+  "normalized_pairs": 14955,
+  "unique_compounds": 1768,
+  "scaffold_components": 1144,
+  "isoforms": [
+    "CYP1A2",
+    "CYP2A6",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2C8",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP2E1",
+    "CYP3A4"
+  ],
+  "partition_counts": [
+    {
+      "isoform": "CYP1A2",
+      "fold": 0,
+      "label": 0,
+      "rows": 263
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 0,
+      "label": 1,
+      "rows": 66
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 1,
+      "label": 0,
+      "rows": 262
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 1,
+      "label": 1,
+      "rows": 80
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 2,
+      "label": 0,
+      "rows": 290
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 2,
+      "label": 1,
+      "rows": 46
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 3,
+      "label": 0,
+      "rows": 284
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 3,
+      "label": 1,
+      "rows": 46
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 4,
+      "label": 0,
+      "rows": 268
+    },
+    {
+      "isoform": "CYP1A2",
+      "fold": 4,
+      "label": 1,
+      "rows": 57
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 0,
+      "label": 0,
+      "rows": 307
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 0,
+      "label": 1,
+      "rows": 27
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 1,
+      "label": 0,
+      "rows": 311
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 1,
+      "label": 1,
+      "rows": 23
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 2,
+      "label": 0,
+      "rows": 316
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 2,
+      "label": 1,
+      "rows": 20
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 3,
+      "label": 0,
+      "rows": 308
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 3,
+      "label": 1,
+      "rows": 18
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 4,
+      "label": 0,
+      "rows": 304
+    },
+    {
+      "isoform": "CYP2A6",
+      "fold": 4,
+      "label": 1,
+      "rows": 19
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 0,
+      "label": 0,
+      "rows": 295
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 0,
+      "label": 1,
+      "rows": 37
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 1,
+      "label": 0,
+      "rows": 301
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 1,
+      "label": 1,
+      "rows": 33
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 2,
+      "label": 0,
+      "rows": 304
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 2,
+      "label": 1,
+      "rows": 31
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 3,
+      "label": 0,
+      "rows": 304
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 3,
+      "label": 1,
+      "rows": 22
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 4,
+      "label": 0,
+      "rows": 296
+    },
+    {
+      "isoform": "CYP2B6",
+      "fold": 4,
+      "label": 1,
+      "rows": 27
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 0,
+      "label": 0,
+      "rows": 288
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 0,
+      "label": 1,
+      "rows": 50
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 1,
+      "label": 0,
+      "rows": 274
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 1,
+      "label": 1,
+      "rows": 57
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 2,
+      "label": 0,
+      "rows": 294
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 2,
+      "label": 1,
+      "rows": 40
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 3,
+      "label": 0,
+      "rows": 283
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 3,
+      "label": 1,
+      "rows": 49
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 4,
+      "label": 0,
+      "rows": 281
+    },
+    {
+      "isoform": "CYP2C19",
+      "fold": 4,
+      "label": 1,
+      "rows": 45
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 0,
+      "label": 0,
+      "rows": 300
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 0,
+      "label": 1,
+      "rows": 36
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 1,
+      "label": 0,
+      "rows": 306
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 1,
+      "label": 1,
+      "rows": 28
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 2,
+      "label": 0,
+      "rows": 306
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 2,
+      "label": 1,
+      "rows": 25
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 3,
+      "label": 0,
+      "rows": 300
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 3,
+      "label": 1,
+      "rows": 27
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 4,
+      "label": 0,
+      "rows": 292
+    },
+    {
+      "isoform": "CYP2C8",
+      "fold": 4,
+      "label": 1,
+      "rows": 33
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 0,
+      "label": 0,
+      "rows": 285
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 0,
+      "label": 1,
+      "rows": 53
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 1,
+      "label": 0,
+      "rows": 283
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 1,
+      "label": 1,
+      "rows": 52
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 2,
+      "label": 0,
+      "rows": 287
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 2,
+      "label": 1,
+      "rows": 43
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 3,
+      "label": 0,
+      "rows": 284
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 3,
+      "label": 1,
+      "rows": 47
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 4,
+      "label": 0,
+      "rows": 269
+    },
+    {
+      "isoform": "CYP2C9",
+      "fold": 4,
+      "label": 1,
+      "rows": 58
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 0,
+      "label": 0,
+      "rows": 270
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 0,
+      "label": 1,
+      "rows": 69
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 1,
+      "label": 0,
+      "rows": 267
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 1,
+      "label": 1,
+      "rows": 71
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 2,
+      "label": 0,
+      "rows": 276
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 2,
+      "label": 1,
+      "rows": 57
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 3,
+      "label": 0,
+      "rows": 279
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 3,
+      "label": 1,
+      "rows": 46
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 4,
+      "label": 0,
+      "rows": 272
+    },
+    {
+      "isoform": "CYP2D6",
+      "fold": 4,
+      "label": 1,
+      "rows": 60
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 0,
+      "label": 0,
+      "rows": 290
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 0,
+      "label": 1,
+      "rows": 41
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 1,
+      "label": 0,
+      "rows": 293
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 1,
+      "label": 1,
+      "rows": 41
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 2,
+      "label": 0,
+      "rows": 313
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 2,
+      "label": 1,
+      "rows": 22
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 3,
+      "label": 0,
+      "rows": 305
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 3,
+      "label": 1,
+      "rows": 24
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 4,
+      "label": 0,
+      "rows": 294
+    },
+    {
+      "isoform": "CYP2E1",
+      "fold": 4,
+      "label": 1,
+      "rows": 28
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 0,
+      "label": 0,
+      "rows": 233
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 0,
+      "label": 1,
+      "rows": 105
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 1,
+      "label": 0,
+      "rows": 240
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 1,
+      "label": 1,
+      "rows": 99
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 2,
+      "label": 0,
+      "rows": 232
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 2,
+      "label": 1,
+      "rows": 114
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 3,
+      "label": 0,
+      "rows": 245
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 3,
+      "label": 1,
+      "rows": 95
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 4,
+      "label": 0,
+      "rows": 228
+    },
+    {
+      "isoform": "CYP3A4",
+      "fold": 4,
+      "label": 1,
+      "rows": 106
+    }
+  ],
+  "checks": {
+    "all_source_rows_accounted": true,
+    "all_normalized_keys_unique": true,
+    "compound_in_single_fold": true,
+    "no_silent_structure_repairs": true,
+    "no_independent_test_claim": true
+  },
+  "status": "PASS_WITH_UNRESOLVED_STRUCTURES",
+  "invalid_structures_retained_in_raw_denominator": true,
+  "source_train_test_not_independent": true,
+  "independent_validation": false,
+  "models_trained": false,
+  "scope": "Nine human isoforms only. No product, assay-matched activity or pan-CYP negative truth.",
+  "script_sha256": "2ca044984d282d5747bc4c7438b7190ffcefe874b97c7d2aef6237ee051af35b"
+}

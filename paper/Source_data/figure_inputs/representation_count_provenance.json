@@ -1,0 +1,7 @@
+{
+  "complete_component_shared_relationships": 31,
+  "main_transformation_shared_relationships": 797,
+  "source": "paper_revision_dd_20260914/manuscript/WORKING_MANUSCRIPT_REVISED.md, Results Question 1",
+  "main_count_crosscheck": "figure1_evidence_atlas_source_data.json:edge_union.shared",
+  "interpretation": "Different reaction identities on the same admitted source assertions; unique-edge denominators differ. These are connectivity counts, not additional independent experiments."
+}

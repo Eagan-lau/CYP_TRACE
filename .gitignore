@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+rebuilt_open_core/
+rebuilt_human_model.json.gz
+open_evidence.json.gz
+fresh_external_sources/
+figure2_fixed.json
+figure2_average.json

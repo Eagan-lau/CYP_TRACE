@@ -1,0 +1,6 @@
+﻿resource	reason	previous_role
+alphafold	Historical download/availability context; no input path in the current matched-structure or ordered-site chain.	Predicted-structure availability and sensitivity context
+pubchem	No PubChem lookup or bulk-data input traced to the current computations. External *_PF files were acquired but Morgan models use original structures, not supplied PubChem fingerprint matrices.	Structure resolution and identity cross-checks
+pubmed	PMIDs used for admission and publication purges are fields of P450Rdb/UniProt assertions; separate PubMed retrievals are not a traced model input.	Publication identifier reconciliation
+europe_pmc	Literature access and metadata service; no current numerical-analysis input/output traced.	Publication metadata and full-text availability checks
+crossref	Reference metadata verification only; not a biological or chemical analytical dataset.	DOI metadata reconciliation

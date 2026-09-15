@@ -1,0 +1,13 @@
+﻿figure	panels	saved_input	tables	scope
+1	A-C	Source_data/figure_inputs/figure1_evidence_atlas_source_data.json	Table_S2_table_s2_annotation_resolution.tsv	Identity audit and normalized lineage union
+2	A	Source_data/figure_inputs/figure2_split_design_source_data.json	Table_S3_table_s3_split_denominators.tsv	Retrospective split design
+2	B-C	See exact-value tables	Table_S9_coverage_ranking_decomposition.tsv; Table_S22b_figure2_tie_per_panel.tsv	95-panel expert decomposition and three shared panels
+3	A-C	Source_data/figure_inputs/figure5_coverage_controls_source_data.json	Table_S5_table_s5_expert_availability.tsv; Table_S10a_interaction_four_group_sensitivity.tsv; Table_S10b_interaction_leave_one_group_out.tsv	Availability, exact training exposure and fixed-prediction sensitivity
+4	A-C	Source_data/figure_inputs/figure4_reverse_retrieval_source_data.json	Table_S6_table_s6_reverse_retrieval.tsv	Taxid-macro reverse retrieval and conjunctive acceptance
+5	A-C	Source_data/figure_inputs/figure6_external_transfer_source_data.json	Table_S7_table_s7_external_transfer.tsv; Table_S16_external_AP_context.tsv	Original external strata; logistic comparison exploratory
+6	A-B	See exact-value tables	Table_S13a_selective_release_tradeoffs.tsv	Five matched release fractions; not a continuous calibrated curve
+6	C	Source_data/figure_inputs/figure6_runtime_example.json	Table_2_Operational_output_strategy.tsv	Executable examples and output boundaries
+S1	A-C	Source_data/figure_inputs/figure2_split_design_source_data.json	Table_S2_table_s2_annotation_resolution.tsv; Table_S3_table_s3_split_denominators.tsv	Source resolution and group concentration
+S2	A-B	Source_data/figure_inputs/figure3_domain_methods_source_data.json	Table_S4_table_s4_general_model_effects.tsv	Accounting cells and conditional general-model effects
+S3	A-B	See exact-value tables	Table_S12a_external_chemical_distance_quantiles.tsv; Table_S12b_external_chemical_distance_bins.tsv; Table_S14a_equal_k_sensitivity.tsv; Table_S14b_logistic_regression_supplement.tsv	Distance and post-evaluation model checks
+S4	A-E	Source_data/figure_inputs/figure5_coverage_controls_source_data.json	Table_S4_table_s4_general_model_effects.tsv; Table_S10a_interaction_four_group_sensitivity.tsv	Detailed protein controls

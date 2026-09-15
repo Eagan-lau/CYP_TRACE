@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-09T09:47:16.367665+00:00",
+  "checks": {
+    "raw_store_hash_unchanged": true,
+    "membership_denominators_preserved": true,
+    "source_assertion_admission_reconciles": true,
+    "unique_sequence_main_edges": true,
+    "all_main_chemistry_and_sequences_present": true,
+    "all_admitted_assertions_have_one_main_label": true,
+    "all_edges_have_admissible_publications": true,
+    "all_sequences_exact_family_confirmed": true,
+    "full_component_multiset_conserved": true,
+    "conflicting_helper_source_rows_not_admitted": true,
+    "construct_or_independence_not_claimed": true
+  },
+  "source_counts": {
+    "P450Rdb": {
+      "source_assertions": 3821,
+      "admitted_assertions": 1888,
+      "parseable_complete_chemistry_assertions": 3662,
+      "candidate_main_transformation_assertions": 3662
+    },
+    "SwissProt": {
+      "source_assertions": 3809,
+      "admitted_assertions": 1245,
+      "parseable_complete_chemistry_assertions": 2829,
+      "candidate_main_transformation_assertions": 2829
+    },
+    "UniProt_API": {
+      "source_assertions": 3963,
+      "admitted_assertions": 1245,
+      "parseable_complete_chemistry_assertions": 2829,
+      "candidate_main_transformation_assertions": 2829
+    }
+  },
+  "nonexclusive_exclusion_counts": {
+    "P450Rdb": {
+      "accession_sequence_ambiguous_or_unavailable": 1072,
+      "accession_taxonomy_ambiguous_or_unavailable": 1108,
+      "exact_sequence_PF00067_confirmation_unavailable": 1676,
+      "missing_traceable_publication": 534,
+      "empty_product_after_auxiliary_separation": 23,
+      "empty_substrate_after_auxiliary_separation": 24,
+      "identity_main_transformation": 27,
+      "no_carbon_containing_product": 25,
+      "no_carbon_containing_substrate": 26,
+      "no_parseable_complete_reaction": 159,
+      "product_incomplete_structure": 157,
+      "substrate_incomplete_structure": 152,
+      "product_no_valid_structure": 5,
+      "substrate_no_valid_structure": 8,
+      "unpaired_known_auxiliary_remains": 13,
+      "heavy_atom_formula_conflict": 26,
+      "helper_name_structure_conflict": 7,
+      "accession_taxonomy_disagreement_requires_adjudication": 36,
+      "missing_or_noncanonical_sequence": 11,
+      "no_valid_explicit_sequence": 11,
+      "missing_or_invalid_taxonomy": 1,
+      "identity_reaction": 1
+    },
+    "SwissProt": {
+      "reaction_level_experimental_PubMed_evidence_unavailable": 2100,
+      "Rhea_chemistry_unresolved_component:generic_query_not_exact_molecule": 259,
+      "no_parseable_complete_reaction": 980,
+      "explicit_directional_Rhea_structure_unavailable": 721,
+      "exact_sequence_PF00067_confirmation_unavailable": 37,
+      "unadjudicated_macromolecule_participant": 66,
+      "no_valid_explicit_sequence": 40,
+      "declared_Rhea_identifier_unresolved_in_frozen_release": 14,
+      "accession_taxonomy_ambiguous_or_unavailable": 15,
+      "unpaired_known_auxiliary_remains": 57
+    },
+    "UniProt_API": {
+      "Rhea_chemistry_unresolved_component:generic_query_not_exact_molecule": 260,
+      "no_parseable_complete_reaction": 1134,
+      "reaction_level_experimental_PubMed_evidence_unavailable": 2231,
+      "exact_sequence_PF00067_confirmation_unavailable": 191,
+      "explicit_directional_Rhea_structure_unavailable": 874,
+      "unadjudicated_macromolecule_participant": 205,
+      "no_valid_explicit_sequence": 40,
+      "unpaired_known_auxiliary_remains": 57,
+      "accession_taxonomy_ambiguous_or_unavailable": 15,
+      "declared_Rhea_identifier_unresolved_in_frozen_release": 14
+    }
+  },
+  "labelled_sequences": 600,
+  "unique_edges": 2304,
+  "directed_main_transformations": 1341,
+  "single_pair_transformations": 1225,
+  "multicomponent_transformations": 116,
+  "unique_edges_by_export": {
+    "P450Rdb": 1869,
+    "SwissProt": 1232,
+    "UniProt_API": 1232
+  },
+  "cross_source_edge_overlap": [
+    {
+      "source_a": "P450Rdb",
+      "source_b": "SwissProt",
+      "shared_unique_edges": 797,
+      "source_a_edge_denominator": 1869,
+      "source_b_edge_denominator": 1232,
+      "independent_evidence_certified": false,
+      "same_source_lineage": false
+    },
+    {
+      "source_a": "P450Rdb",
+      "source_b": "UniProt_API",
+      "shared_unique_edges": 797,
+      "source_a_edge_denominator": 1869,
+      "source_b_edge_denominator": 1232,
+      "independent_evidence_certified": false,
+      "same_source_lineage": false
+    },
+    {
+      "source_a": "SwissProt",
+      "source_b": "UniProt_API",
+      "shared_unique_edges": 1232,
+      "source_a_edge_denominator": 1232,
+      "source_b_edge_denominator": 1232,
+      "independent_evidence_certified": false,
+      "same_source_lineage": true
+    }
+  ],
+  "source_lineage_counts_are_not_independent_evidence_counts": true,
+  "quarantined_helper_name_structure_components": 7,
+  "quarantined_helper_name_structure_parent_assertions": 7,
+  "reaction_scope": "source-linked main transformation, not exact assayed construct certified",
+  "independent_test_records_certified": 0,
+  "model_performance_evaluated": false,
+  "paper_complete": false,
+  "rdkit_version": "2026.03.5",
+  "fresh_raw_sha256": "5edfbf99691043838b9e18db1de00b3248075d9fa5c6ced9e1958f0cb3404725",
+  "limitations": [
+    "Historical data remain development-exposed",
+    "UniProt exports share a lineage; distinct databases are not independent experiments",
+    "Exact reference sequence is not necessarily the experimental construct",
+    "CYP domain activity in multifunctional proteins is not certified",
+    "Main compound protonation and tautomer differences are deliberately not merged",
+    "Incomplete source stoichiometry and unidentified auxiliary participants may remain",
+    "This changed label estimand cannot be compared directly with full-component MRR"
+  ]
+}

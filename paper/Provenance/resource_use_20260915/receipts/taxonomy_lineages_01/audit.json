@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "created_utc": "2026-09-12T14:48:16.378480+00:00",
+  "sequences": 600,
+  "input_unique_taxids": 219,
+  "multi_taxid_sequences": 4,
+  "sequences_with_redirected_taxids": 0,
+  "feature_ranks": [
+    "domain",
+    "phylum",
+    "class",
+    "order",
+    "family",
+    "genus"
+  ],
+  "feature_columns": 343,
+  "active_features_per_sequence": 6,
+  "missing_rank_counts": {
+    "domain": 0,
+    "phylum": 2,
+    "class": 3,
+    "order": 3,
+    "family": 4,
+    "genus": 0
+  },
+  "lca_used_sequences": 4,
+  "outcome_fields_used": [],
+  "transductive_label_free_vocabulary": true,
+  "independent_biological_validation": false
+}

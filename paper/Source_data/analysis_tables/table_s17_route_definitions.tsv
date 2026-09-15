@@ -1,0 +1,7 @@
+route	representation_or_score	selected_reference	applicability	figure2
+MMseqs2 top-1 label transfer	Binary retained reaction labels	Maximum positive alignment bit score; E-value <=0.001; query and reference coverage >=0.5; ascending sequence hash tie	Only reactions annotated for the selected retained labelled reference	Yes
+ESM cosine top-1 label transfer	Binary retained reaction labels	Maximum cosine of L2-normalized mean ESM2 layer-33 vectors among retained labelled proteins; ascending sequence hash tie; no cosine threshold	Only reactions annotated for the selected retained labelled reference	Yes
+MMseqs2 weighted label transfer	Sum of qualifying alignment bit scores for retained reaction-positive references	All qualifying retained labelled references	Reactions receiving positive transferred mass	No
+ESM top-1 chemical transport	Selected reference unit-mass reaction profile multiplied by chemical kernel	Same cosine top-1 reference selection	All supplied catalogue candidates when a labelled reference is available	No
+Homology-weighted chemical transport	Alignment-weighted unit-mass per-protein profiles multiplied by chemical kernel	Qualifying retained labelled references	All supplied candidates when a qualifying labelled reference is available	No
+Chemical prior	Mean kernel-transported unit-mass retained protein profiles	No query-protein conditioning	Supplied catalogue	No

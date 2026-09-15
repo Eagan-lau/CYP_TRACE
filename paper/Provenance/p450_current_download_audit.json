@@ -1,0 +1,134 @@
+[
+  {
+    "url": "http://www.cellknowledge.com.cn/p450rdb_v2/download/1.%20Reactions.CSV",
+    "historical_bytes": 5327020,
+    "historical_sha256": "6c99772e73b0f1f3c5ff5c41803fc947ffad0e3c41ffe861ff94751ce6275c31",
+    "final_url": "http://www.cellknowledge.com.cn/p450rdb_v2/download/1.%20Reactions.CSV",
+    "headers": {
+      "Server": "nginx/1.14.1",
+      "Date": "Tue, 15 Sep 2026 16:38:56 GMT",
+      "Content-Type": "text/csv",
+      "Content-Length": "5393478",
+      "Connection": "close",
+      "Last-Modified": "Sat, 12 Sep 2026 06:24:01 GMT",
+      "ETag": "\"524c46-65b433f357bd2\"",
+      "Accept-Ranges": "bytes"
+    },
+    "bytes": 5393478,
+    "sha256": "e624d4de21f6636f42292d7245a479f40c02ba518fca1b678aa663ac78107427",
+    "exact_match": false,
+    "utf-8-sig": {
+      "decodable": false
+    },
+    "cp1252": {
+      "text_equal": false,
+      "normalized_newline_equal": false,
+      "rows": 3849,
+      "historical_rows_found": 0,
+      "headers": [
+        "Symbol",
+        "Name",
+        "Gene ID",
+        "Uniprot ID",
+        "EC number",
+        "Species name"
+      ],
+      "first_row_changed_fields": [
+        "sub_Smiles1",
+        "location",
+        "sequence",
+        "reaction",
+        "bond"
+      ],
+      "cp1252_restored_sha256": "e624d4de21f6636f42292d7245a479f40c02ba518fca1b678aa663ac78107427"
+    },
+    "gb18030": {
+      "text_equal": false,
+      "normalized_newline_equal": false,
+      "rows": 3849,
+      "historical_rows_found": 0,
+      "headers": [
+        "Symbol",
+        "Name",
+        "Gene ID",
+        "Uniprot ID",
+        "EC number",
+        "Species name"
+      ],
+      "first_row_changed_fields": [
+        "sub_Smiles1",
+        "location",
+        "sequence",
+        "reaction",
+        "bond"
+      ]
+    },
+    "historical_rows": 3821
+  },
+  {
+    "url": "http://www.cellknowledge.com.cn/p450rdb_v2/download/2.%20P450s.CSV",
+    "historical_bytes": 685417,
+    "historical_sha256": "41a5b9c20c27fd00615a36aca945836b01d6227ef54f85a8b7d497713a37e8a0",
+    "final_url": "http://www.cellknowledge.com.cn/p450rdb_v2/download/2.%20P450s.CSV",
+    "headers": {
+      "Server": "nginx/1.14.1",
+      "Date": "Tue, 15 Sep 2026 16:39:04 GMT",
+      "Content-Type": "text/csv",
+      "Content-Length": "685991",
+      "Connection": "close",
+      "Last-Modified": "Sat, 12 Sep 2026 06:59:17 GMT",
+      "ETag": "\"a77a7-65b43bd52b84f\"",
+      "Accept-Ranges": "bytes"
+    },
+    "bytes": 685991,
+    "sha256": "2aae5a4745c474235afc21031c5c6787bfbe130d81b49547c7a7e93f7ef5d89e",
+    "exact_match": false,
+    "utf-8-sig": {
+      "text_equal": false,
+      "normalized_newline_equal": false,
+      "rows": 1015,
+      "historical_rows_found": 0,
+      "headers": [
+        "Symbol",
+        "Name",
+        "GID",
+        "Uniprot",
+        "EC number",
+        "Species1"
+      ],
+      "first_row_changed_fields": [
+        "Gene ID",
+        "Uniprot ID",
+        "Species name",
+        "Sequence",
+        "Remarks"
+      ]
+    },
+    "cp1252": {
+      "decodable": false
+    },
+    "gb18030": {
+      "text_equal": false,
+      "normalized_newline_equal": false,
+      "rows": 1015,
+      "historical_rows_found": 0,
+      "headers": [
+        "锘縎ymbol",
+        "Name",
+        "GID",
+        "Uniprot",
+        "EC number",
+        "Species1"
+      ],
+      "first_row_changed_fields": [
+        "Symbol",
+        "Gene ID",
+        "Uniprot ID",
+        "Species name",
+        "Sequence",
+        "Remarks"
+      ]
+    },
+    "historical_rows": 1012
+  }
+]

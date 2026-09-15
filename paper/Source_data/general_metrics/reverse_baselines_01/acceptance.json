@@ -1,0 +1,49 @@
+{
+  "status": "COMPUTED_QC_PENDING",
+  "by_cell": {
+    "seen_reaction__new_positive": {
+      "primary_method": "mmseqs_weighted_positive",
+      "accepted": false,
+      "gates": {
+        "positive_vs_training_label_count_prior": false,
+        "positive_vs_uniform_expectation": false,
+        "at_least_20_taxids": true,
+        "documented_positive_coverage_at_least_0_8": false,
+        "protein_permutation_exact_p_at_most_0_05": false
+      },
+      "taxids": 21,
+      "documented_positive_coverage": 0.5660377358490566,
+      "permutation_exact_p": 0.88
+    },
+    "unseen_reaction__new_positive": {
+      "primary_method": "mmseqs_homology_chemical_transport",
+      "accepted": false,
+      "gates": {
+        "positive_vs_training_label_count_prior": true,
+        "positive_vs_uniform_expectation": false,
+        "at_least_20_taxids": true,
+        "documented_positive_coverage_at_least_0_8": true,
+        "protein_permutation_exact_p_at_most_0_05": true
+      },
+      "taxids": 133,
+      "documented_positive_coverage": 0.9519230769230769,
+      "permutation_exact_p": 0.03
+    },
+    "unseen_reaction__represented_positive": {
+      "primary_method": "mmseqs_homology_chemical_transport",
+      "accepted": false,
+      "gates": {
+        "positive_vs_training_label_count_prior": false,
+        "positive_vs_uniform_expectation": true,
+        "at_least_20_taxids": false,
+        "documented_positive_coverage_at_least_0_8": true,
+        "protein_permutation_exact_p_at_most_0_05": true
+      },
+      "taxids": 17,
+      "documented_positive_coverage": 1.0,
+      "permutation_exact_p": 0.01
+    }
+  },
+  "source_observed_candidate_panel_not_complete_proteome": true,
+  "independent_biological_validation": false
+}

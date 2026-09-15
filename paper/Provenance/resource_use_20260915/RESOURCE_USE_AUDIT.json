@@ -1,0 +1,32 @@
+{
+  "retained_resource_groups": 11,
+  "retained_resource_and_model_entries": 15,
+  "retained_historical_inventory_entries": 42,
+  "excluded_from_active": {
+    "alphafold": "Historical download/availability context; no input path in the current matched-structure or ordered-site chain.",
+    "pubchem": "No PubChem lookup or bulk-data input traced to the current computations. External *_PF files were acquired but Morgan models use original structures, not supplied PubChem fingerprint matrices.",
+    "pubmed": "PMIDs used for admission and publication purges are fields of P450Rdb/UniProt assertions; separate PubMed retrievals are not a traced model input.",
+    "europe_pmc": "Literature access and metadata service; no current numerical-analysis input/output traced.",
+    "crossref": "Reference metadata verification only; not a biological or chemical analytical dataset."
+  },
+  "copied_receipts": 25,
+  "raw_data_copied": false,
+  "models_refitted": false,
+  "alphafold": {
+    "decision": "EXCLUDE_FROM_CURRENT_ANALYTICAL_RESOURCES",
+    "scope": "Current core, matched structure and ordered-site analyses; not a claim that AlphaFold was never downloaded or explored.",
+    "raw_consumed_entries": 56,
+    "alphafold_in_consumed_raw_inputs": 0,
+    "deposited_PDB_coordinate_files": 1072,
+    "primary_core_structure_representatives": 36,
+    "all_primary_representatives_resolve_to_PDB_manifest": true,
+    "structure_manifests_checked": [
+      "structure_mapping_audit_02/input_manifest.json",
+      "structure_matched_02/input_manifest.json",
+      "ordered_anchor_01/input_manifest.json",
+      "ordered_site_features_01/input_manifest.json"
+    ],
+    "alphafold_paths_in_these_manifests": 0,
+    "download_inventory_is_not_analytical_use": true
+  }
+}

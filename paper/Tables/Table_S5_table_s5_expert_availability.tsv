@@ -1,0 +1,6 @@
+expert	available_sequences	denominator	availability_fraction
+ESM2 global	600	600	1.0
+CLEAN	582	600	0.97
+ordered sequence-site vector	289	600	0.4816666666666667
+primary associated structure	36	600	0.06
+ordered structure-site vector	23	600	0.03833333333333333

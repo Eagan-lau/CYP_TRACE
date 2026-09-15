@@ -1,0 +1,32 @@
+class	name	source	drug_name	dose	interaction
+Glucocorticoids	Prednisolone	FDA label (NDA 21-959/S-004)	Orapred ODT	10 mg to 60 mg	CYP3A4 substrate
+Glucocorticoids	Prednisolone	FDA label (Reference ID: 2960745)	Flo-Pred	5 mg to 60 mg	CYP3A4 substrate
+Glucocorticoids	Prednisolone	FDA label (Reference ID: 3165107)	RAYOS (prednisone)	5 mg	CYP3A4 substrate
+Glucocorticoids	Betamethasone	FDA label (Reference ID: 4217397)	CELESTONE SOLUSPAN	—	CYP3A4 substrate
+Glucocorticoids	Betamethasone	Tamihida Matsunaga et al. 2012	—	—	—
+Glucocorticoids	Betamethasone	Petra Matouková et al. 2014	—	—	—
+Glucocorticoids	Dexamethasone	FDA label (Reference ID: 4500185)	HEMADY	20 mg or 40 mg	CYP3A4 substrate
+Glucocorticoids	Dexamethasone	FDA label (NDA 11-664/S-062)	DECADRON (DEXAMETHASONE TABLETS)	—	CYP3A4 substrate
+Glucocorticoids	Dexamethasone	Yi Ling Lee et al. 2012	—	—	—
+Glucocorticoids	Dexamethasone	Raucy JL et al. 2002	—	—	—
+Glucocorticoids	Dexamethasone	Radim Vrzal et al. 2008	—	—	—
+Glucocorticoids	Hydrocortisone	FDA (Reference ID: 4678054)	ALKINDI® SPRINKLE (hydrocortisone) oral granules	0.5 mg or 1 mg	CYP3A4 substrate
+Glucocorticoids	Hydrocortisone	Wafaa El-Sankary et al. 2002	—	—	—
+Glucocorticoids	Hydrocortisone	Matouková P et al. 2014	—	—	—
+Glucocorticoids	Methylprednisolone	FDA label (Reference ID: 3032293)	SOLU-MEDROL	—	CYP3A4 substrate
+Glucocorticoids	Methylprednisolone	FDA label (Reference ID: 3982392)	DEPO-MEDROL	20 mg/mL, 40 mg/mL, 80 mg/mL	CYP3A4 substrate
+Glucocorticoids	Usui T et al. 2003	—	—	—	—
+Glucocorticoids	Usui T et al. 2003	Matouková P et al. 2014	—	—	—
+Glucocorticoids	Deflazacort	FDA label (Reference ID: 4053971)	EMFLAZA	0.9 mg/day	CYP3A4 substrate
+Mineralocorticoid	Fludrocortisone	Omodunho Ogbu, PharmD 2019	—	—	CYP3A4 substrate
+Other Steroids	Testosterone	Sylvie K Kandiel et al. 2017	—	—	CYP3A4 substrate
+Other Steroids	Testosterone	Yamazaki H et al. 1997	—	—	CYP2C19 substrate
+Other Steroids	Testosterone	Yamazaki H et al. 1997	—	—	CYP2C19 substrate
+Other Steroids	Cholic acid	M Paolini et al. 1999	—	—	CYP1A2 inhibitor
+Other Steroids	Lanosterol	D Rozman et al. 1996	—	—	—
+Other Steroids	Progesterone	FDA label (Reference ID: 3037212)	PROMETRIUM (progesterone capsules)	100 mg per day to 300 mg	CYP3A4 substrate
+Other Steroids	Progesterone	FDA label	Endometrin (progesterone Vaginal Insert)	200-300 mg	CYP2C19 substrate
+Other Steroids	Medrogestone	H P E Tugster et al. 1993	—	—	CYP2C19 substrate
+Other Steroids	β-Sitosterol	Binkowska M et al. 2014	—	—	CYP2B6 inhibitor
+Other Steroids	Cholesterol	Vijayakumar TM et al. 2014	—	—	CYP2B6 inhibitor
+Other Steroids	5α-cholestanol	William J Griffiths et al. 2019	—	—	—

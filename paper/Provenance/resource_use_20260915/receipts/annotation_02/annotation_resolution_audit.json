@@ -1,0 +1,317 @@
+{
+  "created_utc": "2026-09-08T23:23:38.880081+00:00",
+  "source_counts": {
+    "P450Rdb": {
+      "source_assertions": 3821,
+      "source_has_explicit_sequence": 3821,
+      "unique_sequence_link_available": 3821,
+      "linked_sequence_has_PF00067": 2145,
+      "has_recorded_publication": 3287,
+      "declared_Rhea_link_resolves": 0,
+      "declared_directional_Rhea_structure_available": 0,
+      "complete_component_set_parseable": 3662,
+      "exact_component_set_edge_matches_initial_core": 1922,
+      "multiple_accessions": 0,
+      "accession_has_multiple_sequence_versions": 0
+    },
+    "SABIO_RK": {
+      "source_assertions": 5191,
+      "source_has_explicit_sequence": 0,
+      "unique_sequence_link_available": 5125,
+      "linked_sequence_has_PF00067": 4701,
+      "has_recorded_publication": 5191,
+      "declared_Rhea_link_resolves": 0,
+      "declared_directional_Rhea_structure_available": 0,
+      "complete_component_set_parseable": 0,
+      "exact_component_set_edge_matches_initial_core": 0,
+      "multiple_accessions": 66,
+      "accession_has_multiple_sequence_versions": 61
+    },
+    "SwissProt": {
+      "source_assertions": 3809,
+      "source_has_explicit_sequence": 3809,
+      "unique_sequence_link_available": 3809,
+      "linked_sequence_has_PF00067": 3772,
+      "has_recorded_publication": 1804,
+      "declared_Rhea_link_resolves": 3792,
+      "declared_directional_Rhea_structure_available": 3088,
+      "complete_component_set_parseable": 2829,
+      "exact_component_set_edge_matches_initial_core": 33,
+      "multiple_accessions": 0,
+      "accession_has_multiple_sequence_versions": 0
+    },
+    "UniProt_API": {
+      "source_assertions": 3963,
+      "source_has_explicit_sequence": 3963,
+      "unique_sequence_link_available": 3963,
+      "linked_sequence_has_PF00067": 3772,
+      "has_recorded_publication": 1827,
+      "declared_Rhea_link_resolves": 3934,
+      "declared_directional_Rhea_structure_available": 3089,
+      "complete_component_set_parseable": 2829,
+      "exact_component_set_edge_matches_initial_core": 33,
+      "multiple_accessions": 0,
+      "accession_has_multiple_sequence_versions": 0
+    }
+  },
+  "source_assertion_rates": {
+    "P450Rdb": {
+      "source_has_explicit_sequence": {
+        "numerator": 3821,
+        "denominator": 3821,
+        "fraction": 1.0
+      },
+      "unique_sequence_link_available": {
+        "numerator": 3821,
+        "denominator": 3821,
+        "fraction": 1.0
+      },
+      "linked_sequence_has_PF00067": {
+        "numerator": 2145,
+        "denominator": 3821,
+        "fraction": 0.5613713687516357
+      },
+      "has_recorded_publication": {
+        "numerator": 3287,
+        "denominator": 3821,
+        "fraction": 0.8602460088981941
+      },
+      "declared_Rhea_link_resolves": {
+        "numerator": 0,
+        "denominator": 3821,
+        "fraction": 0.0
+      },
+      "declared_directional_Rhea_structure_available": {
+        "numerator": 0,
+        "denominator": 3821,
+        "fraction": 0.0
+      },
+      "complete_component_set_parseable": {
+        "numerator": 3662,
+        "denominator": 3821,
+        "fraction": 0.9583878565820466
+      },
+      "exact_component_set_edge_matches_initial_core": {
+        "numerator": 1922,
+        "denominator": 3821,
+        "fraction": 0.5030096833289714
+      },
+      "multiple_accessions": {
+        "numerator": 0,
+        "denominator": 3821,
+        "fraction": 0.0
+      },
+      "accession_has_multiple_sequence_versions": {
+        "numerator": 0,
+        "denominator": 3821,
+        "fraction": 0.0
+      }
+    },
+    "SABIO_RK": {
+      "source_has_explicit_sequence": {
+        "numerator": 0,
+        "denominator": 5191,
+        "fraction": 0.0
+      },
+      "unique_sequence_link_available": {
+        "numerator": 5125,
+        "denominator": 5191,
+        "fraction": 0.9872856867655557
+      },
+      "linked_sequence_has_PF00067": {
+        "numerator": 4701,
+        "denominator": 5191,
+        "fraction": 0.9056058562897322
+      },
+      "has_recorded_publication": {
+        "numerator": 5191,
+        "denominator": 5191,
+        "fraction": 1.0
+      },
+      "declared_Rhea_link_resolves": {
+        "numerator": 0,
+        "denominator": 5191,
+        "fraction": 0.0
+      },
+      "declared_directional_Rhea_structure_available": {
+        "numerator": 0,
+        "denominator": 5191,
+        "fraction": 0.0
+      },
+      "complete_component_set_parseable": {
+        "numerator": 0,
+        "denominator": 5191,
+        "fraction": 0.0
+      },
+      "exact_component_set_edge_matches_initial_core": {
+        "numerator": 0,
+        "denominator": 5191,
+        "fraction": 0.0
+      },
+      "multiple_accessions": {
+        "numerator": 66,
+        "denominator": 5191,
+        "fraction": 0.012714313234444231
+      },
+      "accession_has_multiple_sequence_versions": {
+        "numerator": 61,
+        "denominator": 5191,
+        "fraction": 0.011751107686380274
+      }
+    },
+    "SwissProt": {
+      "source_has_explicit_sequence": {
+        "numerator": 3809,
+        "denominator": 3809,
+        "fraction": 1.0
+      },
+      "unique_sequence_link_available": {
+        "numerator": 3809,
+        "denominator": 3809,
+        "fraction": 1.0
+      },
+      "linked_sequence_has_PF00067": {
+        "numerator": 3772,
+        "denominator": 3809,
+        "fraction": 0.9902861643475978
+      },
+      "has_recorded_publication": {
+        "numerator": 1804,
+        "denominator": 3809,
+        "fraction": 0.4736151220792859
+      },
+      "declared_Rhea_link_resolves": {
+        "numerator": 3792,
+        "denominator": 3809,
+        "fraction": 0.9955368863218692
+      },
+      "declared_directional_Rhea_structure_available": {
+        "numerator": 3088,
+        "denominator": 3809,
+        "fraction": 0.8107114728275138
+      },
+      "complete_component_set_parseable": {
+        "numerator": 2829,
+        "denominator": 3809,
+        "fraction": 0.7427146232606984
+      },
+      "exact_component_set_edge_matches_initial_core": {
+        "numerator": 33,
+        "denominator": 3809,
+        "fraction": 0.008663691257547913
+      },
+      "multiple_accessions": {
+        "numerator": 0,
+        "denominator": 3809,
+        "fraction": 0.0
+      },
+      "accession_has_multiple_sequence_versions": {
+        "numerator": 0,
+        "denominator": 3809,
+        "fraction": 0.0
+      }
+    },
+    "UniProt_API": {
+      "source_has_explicit_sequence": {
+        "numerator": 3963,
+        "denominator": 3963,
+        "fraction": 1.0
+      },
+      "unique_sequence_link_available": {
+        "numerator": 3963,
+        "denominator": 3963,
+        "fraction": 1.0
+      },
+      "linked_sequence_has_PF00067": {
+        "numerator": 3772,
+        "denominator": 3963,
+        "fraction": 0.9518041887458996
+      },
+      "has_recorded_publication": {
+        "numerator": 1827,
+        "denominator": 3963,
+        "fraction": 0.4610143830431491
+      },
+      "declared_Rhea_link_resolves": {
+        "numerator": 3934,
+        "denominator": 3963,
+        "fraction": 0.9926823113802675
+      },
+      "declared_directional_Rhea_structure_available": {
+        "numerator": 3089,
+        "denominator": 3963,
+        "fraction": 0.7794600050466818
+      },
+      "complete_component_set_parseable": {
+        "numerator": 2829,
+        "denominator": 3963,
+        "fraction": 0.7138531415594247
+      },
+      "exact_component_set_edge_matches_initial_core": {
+        "numerator": 33,
+        "denominator": 3963,
+        "fraction": 0.008327024981074944
+      },
+      "multiple_accessions": {
+        "numerator": 0,
+        "denominator": 3963,
+        "fraction": 0.0
+      },
+      "accession_has_multiple_sequence_versions": {
+        "numerator": 0,
+        "denominator": 3963,
+        "fraction": 0.0
+      }
+    }
+  },
+  "exact_sequence_cross_source_links": [
+    {
+      "source_a": "P450Rdb",
+      "source_b": "SwissProt",
+      "unique_exact_sequences_shared": 630,
+      "source_a_sequence_denominator": 1012,
+      "source_b_sequence_denominator": 1904,
+      "independent_sources": null,
+      "cross_database_evidence_independence_certified": false
+    },
+    {
+      "source_a": "P450Rdb",
+      "source_b": "UniProt_API",
+      "unique_exact_sequences_shared": 630,
+      "source_a_sequence_denominator": 1012,
+      "source_b_sequence_denominator": 2065,
+      "independent_sources": null,
+      "cross_database_evidence_independence_certified": false
+    },
+    {
+      "source_a": "SwissProt",
+      "source_b": "UniProt_API",
+      "unique_exact_sequences_shared": 1904,
+      "source_a_sequence_denominator": 1904,
+      "source_b_sequence_denominator": 2065,
+      "independent_sources": false,
+      "cross_database_evidence_independence_certified": false
+    }
+  ],
+  "uniprot_source_lineage_overlap": {
+    "API_sequence_master_Rhea_pairs": 3882,
+    "SwissProt_sequence_master_Rhea_pairs": 3748,
+    "shared_pairs": 3748,
+    "union_pairs": 3882,
+    "direction_not_distinguished_in_this_overlap_count": true,
+    "these_exports_are_not_independent_databases": true
+  },
+  "status": "SOURCE_RESOLUTION_AUDIT_COMPLETE_ADJUDICATION_PENDING",
+  "fresh_raw_sha256": "5edfbf99691043838b9e18db1de00b3248075d9fa5c6ced9e1958f0cb3404725",
+  "script_sha256": "46911dadec6da44b773c4bb0b4a0979d4b4b672617cc20061ecac493ad93ed1d",
+  "independent_validation": false,
+  "paper_complete": false,
+  "limitations": [
+    "No metadata link is proof of catalytic activity, physiological use or exact assayed construct",
+    "All-component exact matching is conservative; cofactor, protonation and tautomer differences remain",
+    "Absent explicit reaction direction is not imputed from a master Rhea ID",
+    "Protein-source inventory includes candidate/name-only entries; PF00067 is reported separately",
+    "BRENDA typed assertions and named SABIO chemistry still require separate chemical adjudication",
+    "Per-source assertion rates are not independent experimental sample sizes"
+  ]
+}

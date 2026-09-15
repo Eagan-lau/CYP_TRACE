@@ -1,0 +1,210 @@
+{
+  "router_cells": [
+    {
+      "cell": "new_protein_seen_chemistry_with_homologue",
+      "label": "New protein\nseen chemistry",
+      "query_panels": 93,
+      "protein_groups": 25,
+      "mrr": {
+        "chemistry_prior": 0.02308096258991736,
+        "homology_chemical_transport": 0.0387127640720463,
+        "mmseqs_top1": 0.0743859649122807,
+        "global_residual": null,
+        "joint_global_interaction": null,
+        "uniform_expectation": 0.01443473133722585
+      }
+    },
+    {
+      "cell": "new_protein_unseen_chemistry_with_homologue__chemical_cold_accounting",
+      "label": "New protein\nunseen chemistry",
+      "query_panels": 622,
+      "protein_groups": 138,
+      "mrr": {
+        "chemistry_prior": 0.018355813552151476,
+        "homology_chemical_transport": 0.05254918190385403,
+        "mmseqs_top1": null,
+        "global_residual": null,
+        "joint_global_interaction": null,
+        "uniform_expectation": 0.033506105732336006
+      }
+    },
+    {
+      "cell": "new_protein_unseen_chemistry_with_homologue__double_cold",
+      "label": "Double cold",
+      "query_panels": 725,
+      "protein_groups": 140,
+      "mrr": {
+        "chemistry_prior": 0.006461471966224725,
+        "homology_chemical_transport": 0.021159707296400734,
+        "mmseqs_top1": null,
+        "global_residual": null,
+        "joint_global_interaction": null,
+        "uniform_expectation": 0.02509484996907892
+      }
+    },
+    {
+      "cell": "represented_protein_unseen_chemistry",
+      "label": "Represented protein\nunseen chemistry",
+      "query_panels": 66,
+      "protein_groups": 4,
+      "mrr": {
+        "chemistry_prior": 0.0769880061893164,
+        "homology_chemical_transport": null,
+        "mmseqs_top1": null,
+        "global_residual": 0.21606525430943865,
+        "joint_global_interaction": 0.22958281584292115,
+        "uniform_expectation": 0.04152339095059592
+      }
+    }
+  ],
+  "router_methods": [
+    {
+      "key": "chemistry_prior",
+      "label": "Chemistry prior"
+    },
+    {
+      "key": "homology_chemical_transport",
+      "label": "Homology transport"
+    },
+    {
+      "key": "mmseqs_top1",
+      "label": "MMseqs2 top-1"
+    },
+    {
+      "key": "global_residual",
+      "label": "Global residual"
+    },
+    {
+      "key": "joint_global_interaction",
+      "label": "Joint interaction"
+    },
+    {
+      "key": "uniform_expectation",
+      "label": "Uniform expectation"
+    }
+  ],
+  "global_effects": [
+    {
+      "task": "chemical_cold_all",
+      "label": "Chemical cold",
+      "difference": 0.007648128834203126,
+      "ci": [
+        0.004167736452589676,
+        0.011953970999136893
+      ],
+      "left": 0.00994085314740795,
+      "right": 0.0022927243132048226,
+      "query_panels": 772,
+      "protein_groups": 145
+    },
+    {
+      "task": "protein_cold_all",
+      "label": "Protein cold",
+      "difference": 0.0038212905610204686,
+      "ci": [
+        -0.0028055112688895037,
+        0.010196385041230388
+      ],
+      "left": 0.012455345112572326,
+      "right": 0.00863405455155186,
+      "query_panels": 600,
+      "protein_groups": 145
+    },
+    {
+      "task": "double_cold_all",
+      "label": "Double cold",
+      "difference": 0.0014121272717085836,
+      "ci": [
+        0.0003521315706321872,
+        0.0028973303766758225
+      ],
+      "left": 0.00375713911512854,
+      "right": 0.002345011843419956,
+      "query_panels": 772,
+      "protein_groups": 145
+    }
+  ],
+  "interaction_effects": [
+    {
+      "task": "chemical_cold_all",
+      "label": "Chemical cold",
+      "difference": 0.00044435288104783003,
+      "ci": [
+        8.264486313979849e-05,
+        0.000853494500037665
+      ],
+      "left": 0.005325150342707457,
+      "right": 0.004880797461659627,
+      "query_panels": 356,
+      "protein_groups": 48
+    },
+    {
+      "task": "protein_cold_all",
+      "label": "Protein cold",
+      "difference": -0.007512073997929498,
+      "ci": [
+        -0.02513448804852439,
+        0.004169771833590532
+      ],
+      "left": 0.013887030445459414,
+      "right": 0.02139910444338891,
+      "query_panels": 289,
+      "protein_groups": 48
+    },
+    {
+      "task": "double_cold_all",
+      "label": "Double cold",
+      "difference": -0.00038979645761227596,
+      "ci": [
+        -0.0013686625688294092,
+        0.00013463143061877045
+      ],
+      "left": 0.00331311662778486,
+      "right": 0.0037029130853971372,
+      "query_panels": 356,
+      "protein_groups": 48
+    }
+  ],
+  "availability": [
+    {
+      "label": "ESM global",
+      "sequences": 600
+    },
+    {
+      "label": "CLEAN supported",
+      "sequences": 582
+    },
+    {
+      "label": "Ordered sequence sites",
+      "sequences": 289
+    },
+    {
+      "label": "Ordered structure sites",
+      "sequences": 23
+    }
+  ],
+  "control_effects": [
+    {
+      "control": "protein_position_permutation",
+      "label": "Protein positions permuted",
+      "primary_gain": 0.00044435288104783047,
+      "control_gain": -0.00010228896934159872,
+      "difference": 0.0005466418503894292,
+      "ci": [
+        7.75795556170144e-05,
+        0.0011090583481439598
+      ]
+    },
+    {
+      "control": "reaction_center_row_permutation",
+      "label": "Reaction-center rows permuted",
+      "primary_gain": 0.00044435288104783047,
+      "control_gain": 5.340078914845155e-05,
+      "difference": 0.0003909520918993789,
+      "ci": [
+        -3.3934630711868065e-05,
+        0.0009022398328807044
+      ]
+    }
+  ]
+}

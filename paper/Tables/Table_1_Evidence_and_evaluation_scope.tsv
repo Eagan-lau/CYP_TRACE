@@ -1,0 +1,5 @@
+﻿endpoint	reference_evidence	units	evaluation_status	interpretation
+General reaction atlas	P450Rdb and one UniProt lineage	600 exact sequences; 2,304 edges; 1,341 transformations	Retrospective development	Evidence identity and candidate retrieval, not complete catalytic truth
+Species-matched reverse retrieval	Source-observed CYP census and documented edges	1,803 sequences in census; 4,880 panels; 133 evaluated taxids	Internally documented protocol; no route passed every criterion	Same-taxid prioritization; unannotated candidates remain unknown
+Fixed-human development	CYPstrate supplementary XLS data	14,955 labels; 1,768 compounds; nine isoforms	Historical train/test labels reused only for development	Known-isoform chemical conditioning
+Qualified external substrate evaluation	Figshare 26630515 version 4	4,301 primary labels; 3,035 after original scaffold exclusion; six isoforms	Original locked model and exclusion rules; later audits separated	Source-reported substrate classifications, not assay-harmonized negatives

@@ -1,0 +1,9 @@
+{
+  "edges": 1232,
+  "sequences": 375,
+  "reactions": 639,
+  "edge_identity_sha256": "7b83a60e0f9106a11bb9d155d9340bcbde3ed43595901a90885cb85c7b5c77f4",
+  "source_lineage": "UniProt (Swiss-Prot and API are duplicate representations, not independent evidence)",
+  "role": "Representative open subset of the published development core, not a new test set",
+  "qualification": "Frozen admission decisions; original mixed-source ambiguity screening is not repeated"
+}

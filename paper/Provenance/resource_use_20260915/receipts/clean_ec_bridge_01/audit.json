@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_INDEPENDENT_QC_PENDING",
+  "created_utc": "2026-09-12T16:33:47.405060+00:00",
+  "core_sequences": 600,
+  "core_reactions": 1341,
+  "core_edges": 2304,
+  "clean_exact_ec_catalog": 5203,
+  "reactions_with_direct_clean_exact_ec": 769,
+  "reaction_mapping_fraction": 0.5734526472781506,
+  "edges_with_direct_clean_exact_ec": 1397,
+  "edges_with_leave_query_sequence_out_candidate_ec": 981,
+  "leave_query_sequence_out_edge_fraction": 0.42578125,
+  "sequences_with_direct_clean_exact_ec": 404,
+  "sequences_with_brenda_clean_exact_ec_context": 227,
+  "brenda_accession_assertion_links": 3740,
+  "source_assertions_scanned": {
+    "P450Rdb": 1888,
+    "SwissProt": 1245,
+    "UniProt_API": 1245
+  },
+  "old_integrated_label_table_used": false,
+  "brenda_used_as_precise_reaction_mapping": false,
+  "independent_biological_validation": false
+}

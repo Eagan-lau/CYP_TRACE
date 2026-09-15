@@ -1,0 +1,43 @@
+resource	raw_files	raw_bytes	empty_files	primary_manuscript_role	used_in_main_analysis	licence_or_access_status	release_treatment
+alphafold	12694	2271109748	0	Predicted-structure availability and sensitivity context	yes	CC BY 4.0	Attribution required
+atted_ii	285	64742312756	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+bkms_react	10	1690026	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+brenda	6	158591655	0	Licensed EC/context audit; not upgraded to protein--reaction truth	yes	Licensed user access	Private workspace only
+chebi	64	765493863	0	Chemical identifiers and reaction participants	yes	CC BY 4.0	Attribution required
+croppal	11	147901	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+crossref	1	35083	0	DOI metadata reconciliation	yes	Metadata terms apply	Identifiers and hashes only
+ensembl_plants	441	4293101553	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+enzymemap	9	193306037	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+europe_pmc	70608	7490528441	0	Publication metadata and full-text availability checks	yes	Record/article-specific rights	No article text redistributed
+expression_atlas	6578	9803635898	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+geo_sra	49	3906154	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+intact	9	1356003595	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+jgi_plant_gene_atlas	3	3515	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+knapsack	3	31673	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+literature	9	20398942	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+lotus	9	111003766	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+metabolights	3	42617	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+ncbi_genomes	2	3060939732	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+ncbi_taxonomy	5	158684666	0	Taxonomic identifier reconciliation	yes	US government resource; policy review retained	Identifiers only
+p450atlas	10	575115	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+p450rdb	10	7144486	0	Core sequence--reaction assertions	yes	Academic offline access; explicit redistribution licence not certified	Raw records excluded; derived identifiers require final permission review
+pdb	6152	585908342	0	Experimentally determined structure availability	yes	CC0 1.0	Attribution to entries and archive retained
+pfam_interpro	39	18710132869	0	PF00067 CYP-family support	yes	Release terms require final record-level review	Derived family-support flag only
+plant_p450_database	22	398818085	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+plant_reactome	89	3659951808	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+plantismash	3	72445790	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+postfreeze_resolved_reference_evidence_v1	14	7188272	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+pubchem	169	22803808	0	Structure resolution and identity cross-checks	yes	Contributor-specific terms	No blanket redistribution assumption
+pubmed	15	19780755	0	Publication identifier reconciliation	yes	NLM policies apply	Identifiers only
+rcsb_cyp_ligand_templates_v1	1077	271307045	0	Heme/ligand geometry templates derived from PDB	yes	PDB archive CC0 1.0	Derived identifiers and geometry may be released with attribution
+rhea	67	328176613	0	Directional reaction structures and identifiers	yes	CC BY 4.0	Attribution required
+sabio_rk	158	6799324	0	Annotation-resolution audit; not admitted to exact core	yes	Redistribution terms not certified	Raw records excluded
+single_cell_expression_atlas	3	215982	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+suba5	10	134611	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+uniprot	72	1746114453	0	Sequence and catalytic-activity annotations	yes	CC BY 4.0	Attribution required
+uniprot_proteomes	261	1666665222	0	Downloaded inventory; not used in primary numerical claims	no	Not adjudicated for release	Excluded from manuscript redistribution bundle
+uniprot_swissprot	1	6450	0	Reviewed UniProt flat-file lineage	yes	CC BY 4.0	Attribution required; not counted as independent from UniProt API
+cypstrate	not enumerated in run_03 inventory	not enumerated in run_03 inventory	not applicable	Nine-isoform fixed-human development labels	yes	Publicly accessible source; redistribution terms not certified	Raw records excluded; derived model bundle carries source notice
+figshare_26630515_v4	26	33384548	0	Independently qualified fixed-human external labels	yes	CC BY 4.0	Attribution and source DOI required
+CLEAN_v1.0.0	external software assets	not included	not applicable	EC-context/pruning analysis	yes	Non-exclusive research-use licence	Weights and licensed assets excluded
+ESM2_650M	external model assets	not included	not applicable	Global protein embeddings	yes	Upstream model terms apply	Checkpoint excluded; feature hashes and specification retained

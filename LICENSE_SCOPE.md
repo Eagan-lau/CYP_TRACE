@@ -13,6 +13,12 @@ https://github.com/Eagan-lau/CYP_TRACE at commit
 The owner subsequently authorized public upload of this scoped package.
 Archive author metadata and DOI deposition remain separate steps.
 
+The V13 addition in `paper/Source_data/open_biological_core/` is a UniProt/Rhea
+subset under CC BY 4.0 with attribution and transformation details in
+`paper/ATTRIBUTION_OPEN_CORE.md`. Original human label inputs retain the source
+terms in `paper/ATTRIBUTION_HUMAN_DATA.md`. These additions were authorized for
+publication separately from the excluded mixed-source database.
+
 BRENDA exports, CLEAN model assets, and the mixed-source general evidence index
 are excluded. P450Rdb/SABIO-RK redistribution terms were not established in the
 project audit. Authorized local acquisition does not imply public redistribution

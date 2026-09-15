@@ -1,0 +1,204 @@
+{
+  "purpose": "Illustrative software execution, not an independent prediction benchmark.",
+  "selection": {
+    "chemical": "First distributed human_queries.tsv demo row",
+    "exact_evidence": "Lexicographically first stored sequence-reaction key"
+  },
+  "source_sha256": {
+    "paper_rebuild_20260909/joint_tool_01/examples/human_queries.tsv": "46bfdafa5190133487a7b6102d421bcdb9b8545a1e00b2d6edb89be0976d309c",
+    "paper_rebuild_20260909/joint_tool_validation_windows_03/local_evidence_index_v1.json.gz": "95a5f48f3fd8197d1b1885746f16c8a429733e1400e73b781fccb95e0fee081b",
+    "paper_rebuild_20260909/joint_tool_validation_windows_03/validation.json": "2d95bb8566f2207a409313225e7963e409c0586fe06922574c96338b6d56933e",
+    "paper_revision_dd_20260914/manuscript_visual_v2/build_figure6_runtime_example.py": "5711c3b2d2aadd9c09ed0c6c0a4659219d1730b0d6a936a3f43b1127934b252f",
+    "paper_rebuild_20260909/joint_tool_01/src/cyptrace_pipeline/human.py": "49c6c20e8cbb9f41de138a341934d32e0243e20001135bf9166c108e433a7f4f",
+    "paper_rebuild_20260909/joint_tool_01/src/cyptrace_pipeline/evidence.py": "eb99e4394bcf87b3966ce97d33bca7fb984062b1bfe554f4a1bbed0d16cc7574",
+    "paper_rebuild_20260909/joint_tool_01/src/cyptrace_pipeline/data/human_model_v1.json.gz": "291cceb260f7064e9da43ab7cc8fa41a1488d9cc8dd9a92f2c84710b2303f8e9"
+  },
+  "chemical_input": {
+    "id": "erlotinib_like_external_case",
+    "smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+    "isoform": "CYP1A2"
+  },
+  "chemical_output": {
+    "isoform": "CYP1A2",
+    "input_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+    "canonical_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+    "compound_inchikey": "AAKJLRGGTJKAMG-UHFFFAOYSA-N",
+    "scaffold_group": "ring:c1ccc(Nc2ncnc3ccccc23)cc1",
+    "route": "FIXED_HUMAN_EXTERNALLY_VALIDATED",
+    "abstained": false,
+    "score": 0.4231106211301273,
+    "score_kind": "uncalibrated_similarity_weighted_substrate_ranking_score",
+    "pooled_chemistry_score": 0.4036091957139856,
+    "isoform_conditioning_delta": 0.019501425416141693,
+    "domain": {
+      "fixed_human_isoform": true,
+      "isoform_externally_validated": true,
+      "exact_training_compound": false,
+      "training_scaffold_seen": false,
+      "maximum_training_tanimoto": 0.40789473056793213,
+      "new_protein_supported": false,
+      "product_or_reaction_centre_supported": false
+    },
+    "nearest_labelled_neighbours": [
+      {
+        "compound_inchikey": "XGALLCVXEZPNRQ-UHFFFAOYSA-N",
+        "similarity": 0.40789473056793213,
+        "source_label": 0
+      },
+      {
+        "compound_inchikey": "YBLIQJGXRLZBCZ-UHFFFAOYSA-N",
+        "similarity": 0.22857142984867096,
+        "source_label": 1
+      },
+      {
+        "compound_inchikey": "TXEFUSAHPIYZHD-UHFFFAOYSA-N",
+        "similarity": 0.2142857164144516,
+        "source_label": 0
+      },
+      {
+        "compound_inchikey": "BSXAHDOWMOSVAP-UHFFFAOYSA-N",
+        "similarity": 0.20512820780277252,
+        "source_label": 1
+      },
+      {
+        "compound_inchikey": "OVCDSSHSILBFBN-UHFFFAOYSA-N",
+        "similarity": 0.19230769574642181,
+        "source_label": 0
+      }
+    ],
+    "interpretation": "Use for within-isoform ranking only; this score is not an assay-harmonized probability or a clinical decision."
+  },
+  "evidence_input": {
+    "sequence_sha256": "001f0852654463e16f4f0a330d80120f7740e78c96d2de7492ff77b3973cf232",
+    "sequence_prefix": "MTALSPLADPSIVA",
+    "sequence_length": 406,
+    "reaction_key": "MAIN:3035415785b050798b1bbf3c42539775ff27a6949c16e70246574de200b1ca78"
+  },
+  "evidence_output": {
+    "query_id": "documented_sequence",
+    "sequence_sha256": "001f0852654463e16f4f0a330d80120f7740e78c96d2de7492ff77b3973cf232",
+    "candidate_id": "documented_example",
+    "reaction_key": "MAIN:3035415785b050798b1bbf3c42539775ff27a6949c16e70246574de200b1ca78",
+    "candidate_resolution": "reaction_key",
+    "route": "DOCUMENTED_EXACT_EVIDENCE",
+    "abstained": false,
+    "domain": {
+      "exact_reference_sequence": true,
+      "exact_reaction_observed": true,
+      "exact_sequence_reaction_edge": true,
+      "homology_expert_contribution": "not_scored",
+      "structure_expert_contribution": "not_scored",
+      "clean_expert_contribution": "context_only_not_scored"
+    },
+    "evidence": [
+      {
+        "accessions": [
+          "L7F3F8"
+        ],
+        "assertion_ids": [
+          "b400fc64aae58fdd25443fd1ba5a04caee18fc67ebebbf987c7a9466d4932607"
+        ],
+        "publication_ids": [
+          "PMID:26690878"
+        ],
+        "source_lineages": [
+          "P450Rdb"
+        ],
+        "sources": [
+          "P450Rdb"
+        ],
+        "taxids": [
+          "698760"
+        ]
+      }
+    ],
+    "score": null,
+    "interpretation": "Source evidence was retrieved for the exact sequence and exact normalized reaction; this is not a novel prediction."
+  },
+  "abstention_controls": {
+    "unseen_sequence": {
+      "query_id": "sequence_control",
+      "sequence_sha256": "054f1a946a02fe93d64c70b50a55e0215ca5d50eb50c3f71223438e1c62d4dbf",
+      "candidate_id": "documented_example",
+      "reaction_key": "MAIN:3035415785b050798b1bbf3c42539775ff27a6949c16e70246574de200b1ca78",
+      "candidate_resolution": "reaction_key",
+      "route": "ABSTAIN_UNVALIDATED_GENERAL_REACTION_ROUTE",
+      "abstained": true,
+      "domain": {
+        "exact_reference_sequence": false,
+        "exact_reaction_observed": true,
+        "exact_sequence_reaction_edge": false,
+        "homology_expert_contribution": "not_scored",
+        "structure_expert_contribution": "not_scored",
+        "clean_expert_contribution": "context_only_not_scored"
+      },
+      "evidence": [],
+      "score": null,
+      "interpretation": "No validated generalization route is available. Missing evidence is UNKNOWN, not a negative label or a zero expert score."
+    },
+    "unknown_reaction": {
+      "query_id": "documented_sequence",
+      "sequence_sha256": "001f0852654463e16f4f0a330d80120f7740e78c96d2de7492ff77b3973cf232",
+      "candidate_id": "reaction_control",
+      "reaction_key": null,
+      "candidate_resolution": "reaction_key",
+      "route": "ABSTAIN_UNVALIDATED_GENERAL_REACTION_ROUTE",
+      "abstained": true,
+      "domain": {
+        "exact_reference_sequence": true,
+        "exact_reaction_observed": false,
+        "exact_sequence_reaction_edge": false,
+        "homology_expert_contribution": "not_scored",
+        "structure_expert_contribution": "not_scored",
+        "clean_expert_contribution": "context_only_not_scored"
+      },
+      "evidence": [],
+      "score": null,
+      "interpretation": "No validated generalization route is available. Missing evidence is UNKNOWN, not a negative label or a zero expert score."
+    }
+  },
+  "existing_full_software_verification": {
+    "status": "PASS",
+    "checks": {
+      "model_file_hash": true,
+      "model_content_hash": true,
+      "model_source_hash": true,
+      "all_external_rows_recomputed": true,
+      "external_specific_scores_exact": true,
+      "external_pooled_scores_exact": true,
+      "evidence_counts": true,
+      "all_exact_edge_keys_retrievable": true,
+      "new_sequence_abstains": true,
+      "unknown_reaction_abstains": true,
+      "structure_pair_resolves_exact_reaction": true,
+      "clean_install_doctor": true,
+      "clean_install_prediction": true
+    },
+    "external_rows_recomputed": 14519,
+    "external_score_max_absolute_difference": {
+      "isoform_specific": 0.0,
+      "pooled": 0.0
+    },
+    "external_route_counts": {
+      "FIXED_HUMAN_EXTERNALLY_VALIDATED": 14519
+    },
+    "evidence_build": {
+      "status": "PASS",
+      "output": "C:\\Users\\yugen\\Documents\\ChatGPT\\CYP_TRACE\\paper_rebuild_20260909\\joint_tool_validation_windows_03\\local_evidence_index_v1.json.gz",
+      "output_sha256": "95a5f48f3fd8197d1b1885746f16c8a429733e1400e73b781fccb95e0fee081b",
+      "sequences": 600,
+      "reactions": 1341,
+      "edges": 2304
+    },
+    "exact_edge_keys_retrieved": 2304,
+    "input_sha256": {
+      "human_model": "291cceb260f7064e9da43ab7cc8fa41a1488d9cc8dd9a92f2c84710b2303f8e9",
+      "external_predictions": "67671dfa5cba3e5451eb00059b7540976221b8a50b30c760f41d349e28105329",
+      "dataset_core_edges": "535a33c919b293fa9fb9a73bd7e6b9cf2823ef757f21dac8d3980ff8302404e3",
+      "dataset_core_reactions": "6a2fd6533ba8aee02ff1a576c7efbb6b80f8ce87e869fb70b0cbb7d24bdb40b0",
+      "dataset_core_sequences": "8ced8f70d7540e421a543c93c2e206a1b46a5883588353512c490ac34ef2d6b6"
+    },
+    "claim_boundary": "Fixed-human new-chemistry scores are reproduced; exact general evidence is retrievable; unseen-sequence and unseen-reaction cases abstain.",
+    "validation_script_sha256": "2294963c549cf69f3f69bc75b389063cc3856a67db4283de15c5dfc16c4dee3b"
+  }
+}

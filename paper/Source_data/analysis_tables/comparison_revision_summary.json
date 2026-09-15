@@ -1,0 +1,68 @@
+{
+  "analysis_status": "exploratory_after_external_inspection",
+  "seed": 20260914,
+  "analysis_code_sha256": "ecfa43f587fc5edb7785fdad97e8c7184e8924eeca19cb4420a7d361cbacc5be",
+  "versions": {
+    "numpy": "2.5.2",
+    "scikit-learn": "1.9.0"
+  },
+  "strict_rows": 3035,
+  "scaffold_clusters": 844,
+  "macro": {
+    "prevalence": 0.3590135011998236,
+    "exact_random_order_AP": 0.3673844689609374,
+    "pooled_AP": 0.41097145717927014,
+    "specific_AP": 0.5428801073616204,
+    "logistic_AP": 0.5341034089854914
+  },
+  "knn_minus_logistic": 0.008776698376129044,
+  "paired_fixed_fit_95_interval": [
+    -0.0138065970683089,
+    0.03224923874662922
+  ],
+  "bootstrap_requested": 5000,
+  "bootstrap_valid": 5000,
+  "refit_within_bootstrap": false,
+  "retuned_on_external": false,
+  "interval_scope": "Fixed predictions; shared scaffold multiplicities preserve isoform pairing; no refitting uncertainty.",
+  "reverse_panel_statistics": {
+    "candidate_count": {
+      "min": 2,
+      "q1": 4.0,
+      "median": 13.0,
+      "q3": 59.0,
+      "max": 141
+    },
+    "positive_count": {
+      "min": 1,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 9
+    }
+  },
+  "reverse_protocols": {
+    "REVERSE_RETRIEVAL_V1.md": {
+      "sha256": "3f9a924a5ce1b22dc2dd7cd842aad7ded50898c99b30d06394f4cac1c1a8e940",
+      "matches_frozen_reverse_input_manifest": true,
+      "chronology": "Sequence described in the contemporaneous protocol; hash verifies content, not independent timestamp."
+    },
+    "REVERSE_RETRIEVAL_ACCEPTANCE_V1.md": {
+      "sha256": "05d3242e78efb6da1deaac7836133c25c6564d1217a088f26e930cde97082332",
+      "matches_frozen_reverse_input_manifest": true,
+      "chronology": "Sequence described in the contemporaneous protocol; hash verifies content, not independent timestamp."
+    }
+  },
+  "verification": "Six logistic AP values reproduce the prior table to 1e-12; finite-sample AP and tied weighted AP unit checks passed.",
+  "input_sha256": {
+    "human_substrate_01/normalized_labels.json": "1af15afce0a27a921019144489eb8ec73bd05e0b7fdf7c53ebdeac3ef82f3ea9",
+    "human_substrate_models_01/fingerprint_similarity.npz": "67320f8c70ef590c9bb3f995eba30a170b24c421b02a0c6ef7569324bd775ac5",
+    "external_human_cyp_models_01/fingerprint_similarity.npz": "6dc8cde4f75d8fc2a40eee8df45b144fdbbe3de0057c959938bda40c4316ae9c",
+    "external_human_cyp_models_01/external_predictions.jsonl": "67671dfa5cba3e5451eb00059b7540976221b8a50b30c760f41d349e28105329",
+    "reverse_candidate_census_01/query_panels.jsonl": "bc23f7d92939a13baffc59d2cec272175b74d0c5ce2eef7b06f90249d6b24791",
+    "reverse_baselines_01/input_manifest.json": "7a933d259289334bee107fb088222cea0d45b08d26d4e717f1a4a23ff01cc490",
+    "REVERSE_RETRIEVAL_V1.md": "3f9a924a5ce1b22dc2dd7cd842aad7ded50898c99b30d06394f4cac1c1a8e940",
+    "REVERSE_RETRIEVAL_ACCEPTANCE_V1.md": "05d3242e78efb6da1deaac7836133c25c6564d1217a088f26e930cde97082332"
+  },
+  "parameter_table_sha256": "f3c3266ca182eb3d1a46fbbc6b25b3d6c069217064da1267397a5b81fba59309"
+}

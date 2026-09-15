@@ -1,6 +1,11 @@
 # CYP-TRACE evaluation and fixed-human inference
 
 Evaluation and frozen-inference package for https://github.com/Eagan-lau/CYP_TRACE.
+The V13 companion in [`paper/`](paper/) adds assertion/query-level reproduction
+for Figures 1, 3 and 4, original human label inputs, and an open UniProt–Rhea
+subset (375 sequences, 639 reactions, 1,232 edges) with tested reconstruction
+and biological evidence lookup. Start with the
+[reproduction guide](paper/REPRODUCTION_GUIDE.md).
 The project owner confirmed MIT for project-owned code and authorized publication
 of this scoped package on 2026-09-15. A persistent archival release and its author
 metadata are not yet completed. See `RELEASE_METADATA.json` and the reproduction
@@ -46,7 +51,9 @@ development labels (1,768 compounds); it does not repeat model selection.
 The inference check recalculates every retained external label's two kNN scores
 and compares them with the frozen values, and tests invalid-input, unseen-
 protein and synthetic exact-evidence/abstention paths. The synthetic evidence
-fixture checks software behavior only, not biological validity.
+fixture checks software behavior only, not biological validity. The additional
+`paper/test_open_evidence.py` checks all 1,232 biological edges in the rebuilt
+open subset without treating retrieval as novel prediction.
 
 The historical model schema uses `FIXED_HUMAN_EXTERNALLY_VALIDATED` to identify
 six isoforms covered by the original external evaluation. It does not certify
@@ -65,9 +72,10 @@ package dependency ranges are not a guarantee of identical chemistry behavior.
 `LICENSE_SCOPE.md` distinguishes the existing inference-code notice from
 source-data terms. No BRENDA export,
 CLEAN weights, or mixed-source general sequence/reaction index is included.
-The manuscript and full plotting workspace remain separate local artifacts
-pending a file-level publication review. This subset must not be described as
-the complete raw-data reproduction of all six figures.
+The paper companion now contains the scientific analysis and earlier plotting
+code. Final author-edited figure PDFs and the manuscript remain submission
+files, not a pixel-identical plotting-code output. Full mixed-source raw/model
+refitting is still outside the executable public scope.
 
 `SHA256SUMS.txt` and `verify_package.py` check all packaged payload hashes.
 Archive metadata must be finalized by the authors before a persistent release

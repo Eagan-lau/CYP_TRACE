@@ -1,0 +1,325 @@
+{
+  "created_utc": "2026-09-12T18:27:25.912262+00:00",
+  "status": "PASS",
+  "checks": {
+    "complete_acquisition": true,
+    "twelve_label_files": true,
+    "all_labels_binary": true,
+    "all_sources_recognized": true,
+    "unique_normalized_keys": true,
+    "no_models_or_scores_calculated": true
+  },
+  "counts": {
+    "raw_rows": 15005,
+    "unresolved_structure_rows": 366,
+    "inchi_reconstruction_failed_rows": 1,
+    "duplicate_row_excess": 113,
+    "exact_pair_overlap_groups": 9992,
+    "exact_pair_agree": 9827,
+    "exact_pair_conflict": 158,
+    "conflicting_isoform_compound_groups": 7,
+    "exact_pair_not_comparable": 7,
+    "development_exposed_source_rows": 7999
+  },
+  "raw_files": [
+    {
+      "file": "CYP1A2_testingset.csv",
+      "isoform": "CYP1A2",
+      "source_split": "testing",
+      "rows": 345,
+      "sha256": "bf0a753b445538c33b5c9cb618d117b956d8a8329b73335792cbbb5accefbac8"
+    },
+    {
+      "file": "CYP1A2_trainingset.csv",
+      "isoform": "CYP1A2",
+      "source_split": "training",
+      "rows": 1996,
+      "sha256": "dc6d38a18dbbe1336d97fa8301a02782357db14bca47ca8f788a434e3b3b6b67"
+    },
+    {
+      "file": "CYP2C19_testingset.csv",
+      "isoform": "CYP2C19",
+      "source_split": "testing",
+      "rows": 345,
+      "sha256": "376f8b6ae68793be87027b699ca9d0402cf8b57dbaeb9a711163ccfc52ece46f"
+    },
+    {
+      "file": "CYP2C19_trainingset.csv",
+      "isoform": "CYP2C19",
+      "source_split": "training",
+      "rows": 1953,
+      "sha256": "408f2f7dd85f9ceab2da6a23c923023108d4e6d20493e410d885161c293b368d"
+    },
+    {
+      "file": "CYP2C9_testingset.csv",
+      "isoform": "CYP2C9",
+      "source_split": "testing",
+      "rows": 345,
+      "sha256": "4f775ed56794c11aededa23210544c813c4d2412efc06a1b7702c3eac0558d0b"
+    },
+    {
+      "file": "CYP2C9_trainingset.csv",
+      "isoform": "CYP2C9",
+      "source_split": "training",
+      "rows": 2216,
+      "sha256": "3cff01c58e5edcbcd3f9f70303ed3ea9a83c7229acf7cd481873c820fff5fbc7"
+    },
+    {
+      "file": "CYP2D6_testingset.csv",
+      "isoform": "CYP2D6",
+      "source_split": "testing",
+      "rows": 346,
+      "sha256": "eeebb6021992afcfc293ec69d7de4e2ce8d96d0782d500236f157602c703ac8a"
+    },
+    {
+      "file": "CYP2D6_trainingset.csv",
+      "isoform": "CYP2D6",
+      "source_split": "training",
+      "rows": 2258,
+      "sha256": "e58a3973ce9a70f975e4aeb6a1a9b59ae06103a31a55b56de5e3745f9af73c60"
+    },
+    {
+      "file": "CYP2E1_testingset.csv",
+      "isoform": "CYP2E1",
+      "source_split": "testing",
+      "rows": 343,
+      "sha256": "85a118fca9235c1417fa6af038760cb9458b293c05a89ae661085a9418d3323e"
+    },
+    {
+      "file": "CYP2E1_trainingset.csv",
+      "isoform": "CYP2E1",
+      "source_split": "training",
+      "rows": 1893,
+      "sha256": "1b143c391259144ba048993f8288ffc9c43543d2f8ee4193432506d2dc6d6379"
+    },
+    {
+      "file": "CYP3A4_testingset.csv",
+      "isoform": "CYP3A4",
+      "source_split": "testing",
+      "rows": 352,
+      "sha256": "ca04311596bc53e474d3b626baa1943cd10d256d944e796162fe9863192b24a6"
+    },
+    {
+      "file": "CYP3A4_trainingset.csv",
+      "isoform": "CYP3A4",
+      "source_split": "training",
+      "rows": 2613,
+      "sha256": "11f501f7acf1b30800ac249c5e05f21e20eb08f7b79d21c7eeca91c21237ac1e"
+    }
+  ],
+  "observed_sources": [
+    "CYP Knowledgebase",
+    "DrugBank",
+    "Holmer",
+    "Mayo Clinic Laboratories",
+    "Michielan",
+    "Mishra",
+    "Siyang_Tian",
+    "SuperCYP",
+    "Tao_Zhang",
+    "Yamashita",
+    "Yap"
+  ],
+  "unknown_sources": [],
+  "normalized_groups": 14526,
+  "strata": {
+    "all_parseable_unique": {
+      "rows": 14519,
+      "unique_compounds": 3163,
+      "scaffold_groups": 2006,
+      "by_isoform": [
+        {
+          "isoform": "CYP1A2",
+          "positives": 534,
+          "negatives": 1730
+        },
+        {
+          "isoform": "CYP2C19",
+          "positives": 391,
+          "negatives": 1827
+        },
+        {
+          "isoform": "CYP2C9",
+          "positives": 426,
+          "negatives": 2053
+        },
+        {
+          "isoform": "CYP2D6",
+          "positives": 570,
+          "negatives": 1950
+        },
+        {
+          "isoform": "CYP2E1",
+          "positives": 303,
+          "negatives": 1860
+        },
+        {
+          "isoform": "CYP3A4",
+          "positives": 1321,
+          "negatives": 1554
+        }
+      ]
+    },
+    "exact_novel": {
+      "rows": 4380,
+      "unique_compounds": 1396,
+      "scaffold_groups": 982,
+      "by_isoform": [
+        {
+          "isoform": "CYP1A2",
+          "positives": 236,
+          "negatives": 341
+        },
+        {
+          "isoform": "CYP2C19",
+          "positives": 142,
+          "negatives": 393
+        },
+        {
+          "isoform": "CYP2C9",
+          "positives": 174,
+          "negatives": 618
+        },
+        {
+          "isoform": "CYP2D6",
+          "positives": 267,
+          "negatives": 563
+        },
+        {
+          "isoform": "CYP2E1",
+          "positives": 144,
+          "negatives": 342
+        },
+        {
+          "isoform": "CYP3A4",
+          "positives": 791,
+          "negatives": 369
+        }
+      ]
+    },
+    "scaffold_novel": {
+      "rows": 3092,
+      "unique_compounds": 1021,
+      "scaffold_groups": 858,
+      "by_isoform": [
+        {
+          "isoform": "CYP1A2",
+          "positives": 149,
+          "negatives": 235
+        },
+        {
+          "isoform": "CYP2C19",
+          "positives": 100,
+          "negatives": 268
+        },
+        {
+          "isoform": "CYP2C9",
+          "positives": 134,
+          "negatives": 430
+        },
+        {
+          "isoform": "CYP2D6",
+          "positives": 180,
+          "negatives": 413
+        },
+        {
+          "isoform": "CYP2E1",
+          "positives": 91,
+          "negatives": 228
+        },
+        {
+          "isoform": "CYP3A4",
+          "positives": 618,
+          "negatives": 246
+        }
+      ]
+    },
+    "lineage_eligible": {
+      "rows": 4301,
+      "unique_compounds": 1365,
+      "scaffold_groups": 963,
+      "by_isoform": [
+        {
+          "isoform": "CYP1A2",
+          "positives": 220,
+          "negatives": 340
+        },
+        {
+          "isoform": "CYP2C19",
+          "positives": 140,
+          "negatives": 392
+        },
+        {
+          "isoform": "CYP2C9",
+          "positives": 158,
+          "negatives": 613
+        },
+        {
+          "isoform": "CYP2D6",
+          "positives": 260,
+          "negatives": 558
+        },
+        {
+          "isoform": "CYP2E1",
+          "positives": 138,
+          "negatives": 341
+        },
+        {
+          "isoform": "CYP3A4",
+          "positives": 773,
+          "negatives": 368
+        }
+      ]
+    },
+    "scaffold_and_lineage_eligible": {
+      "rows": 3035,
+      "unique_compounds": 1001,
+      "scaffold_groups": 844,
+      "by_isoform": [
+        {
+          "isoform": "CYP1A2",
+          "positives": 136,
+          "negatives": 234
+        },
+        {
+          "isoform": "CYP2C19",
+          "positives": 99,
+          "negatives": 267
+        },
+        {
+          "isoform": "CYP2C9",
+          "positives": 123,
+          "negatives": 426
+        },
+        {
+          "isoform": "CYP2D6",
+          "positives": 175,
+          "negatives": 408
+        },
+        {
+          "isoform": "CYP2E1",
+          "positives": 88,
+          "negatives": 227
+        },
+        {
+          "isoform": "CYP3A4",
+          "positives": 607,
+          "negatives": 245
+        }
+      ]
+    }
+  },
+  "source_label_scope": "source-reported binary human CYP substrate/non-substrate; not assay harmonized",
+  "source_split_used_for_independence": false,
+  "models_evaluated": false,
+  "rdkit_version": "2026.03.5",
+  "input_hashes": {
+    "acquisition_manifest": "a355fc962d15a7c795a549f24aef6474b225b858daccd056b7db9b94b96cfa50",
+    "cypstrate_normalized_labels": "1af15afce0a27a921019144489eb8ec73bd05e0b7fdf7c53ebdeac3ef82f3ea9",
+    "protocol": "6d24398df03300b3a21bf435421fc50913f3f9d51d9daa8fc16218901b82ffc8",
+    "protocol_clarification_1": "b2077acfdd95861d74bf8fc376667e7fce25b8cbf2bb448e18a6d5f8bc97c3bd",
+    "protocol_clarification_2": "b69fe428f7cc62fe96ecd7fbcac7fd8cd5ae92b8249f0c6d3de072100fcab65e",
+    "protocol_clarification_3": "09bdedf2eec1e33b9c152b339fbb24871c4d05fe58b52544600b60f31cb00224",
+    "script": "f9f8a5cb0711e9ab03b20e6918de174990f99002a646c5c5dd722f894c24b6cb"
+  }
+}

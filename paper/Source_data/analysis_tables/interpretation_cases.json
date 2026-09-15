@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FIXED_SCORE_REPRODUCTION",
+  "selection": "Within the original strict set, retain top-10% specific but not top-10% pooled; exclude parent overlap and uncertain identities. Select the smallest SHA256(isoform|InChIKey) separately among reported positives and negatives.",
+  "eligible_positive": 124,
+  "eligible_negative": 48,
+  "status_note": "Post-evaluation illustrations deliberately conditioned on label agreement/disagreement. Not a new validation set, mechanistic evidence, or binary error rate.",
+  "cases": [
+    {
+      "case": 1,
+      "reported_label": 1,
+      "isoform": "CYP2D6",
+      "compound_inchikey": "IQXXEPZFOOTTBA-UHFFFAOYSA-N",
+      "names": "benzylpiperazine",
+      "canonical_smiles": "c1ccc(CN2CCNCC2)cc1",
+      "source_locators": "[{\"file\": \"CYP2D6_trainingset.csv\", \"split\": \"training\", \"row\": 303, \"source\": \"Yamashita\", \"name\": \"benzylpiperazine\"}]",
+      "isoform_labels": 583,
+      "specific_rank": 39,
+      "pooled_rank": 148,
+      "interpretation": "reported-positive enrichment",
+      "specific_score": 0.6941090075293297,
+      "specific_mean_support_label": 0.68,
+      "specific_maximum_tanimoto": 0.3611111044883728,
+      "pooled_score": 0.36680285888504444,
+      "pooled_mean_support_label": 0.36955337690631807,
+      "pooled_maximum_tanimoto": 0.3611111044883728
+    },
+    {
+      "case": 2,
+      "reported_label": 0,
+      "isoform": "CYP2E1",
+      "compound_inchikey": "VQKLRVZQQYVIJW-UHFFFAOYSA-N",
+      "names": "dihydralazine",
+      "canonical_smiles": "NN=c1[nH][nH]c(=NN)c2ccccc12",
+      "source_locators": "[{\"file\": \"CYP2E1_trainingset.csv\", \"split\": \"training\", \"row\": 428, \"source\": \"Yamashita\", \"name\": \"dihydralazine\"}]",
+      "isoform_labels": 315,
+      "specific_rank": 4,
+      "pooled_rank": 50,
+      "interpretation": "high-ranked reported-negative disagreement",
+      "specific_score": 0.6540906184695351,
+      "specific_mean_support_label": 0.64,
+      "specific_maximum_tanimoto": 0.30434781312942505,
+      "pooled_score": 0.38056135092063514,
+      "pooled_mean_support_label": 0.36598194833488956,
+      "pooled_maximum_tanimoto": 0.30434781312942505
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-08T23:19:41.442374+00:00",
+  "counts": {
+    "files_attempted": 1072,
+    "files_with_recognized_iron_heme": 1070,
+    "physical_heme_instances": 1962,
+    "resolved_protein_chains": 2001,
+    "heme_contact_residue_rows": 66427,
+    "cross_chain_contact_rows": 14,
+    "files_without_recognized_iron_heme": 2
+  },
+  "errors": [],
+  "status": "RAW_GEOMETRY_COMPLETE",
+  "definition": "First deposited model; Bio.PDB selected altlocs; protein heavy atoms within 5 A of HEM/HEC/HEA with iron; cross-chain contacts retained and flagged",
+  "not_implemented": [
+    "other heme chemical components",
+    "query-specific substrate contacts",
+    "channel dynamics",
+    "canonical-query transfer",
+    "a trained structural expert"
+  ],
+  "independent_validation": false,
+  "legacy_features_read": false,
+  "script_sha256": "f8ef93d3d11df402dafa05bf3715336797c88db0f154ba36e5cafe37c0d0ead9",
+  "paper_complete": false
+}

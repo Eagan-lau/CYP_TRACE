@@ -1,0 +1,3 @@
+shared_neighbor_count_k	strict_rows	isoforms	pooled_macro_AP	isoform_specific_macro_AP	isoform_specific_minus_pooled_AP	analysis_status
+25	3035	6	0.4153327129144584	0.5428801073616204	0.127547394447162	post_hoc_sensitivity_after_external_labels_were_opened
+51	3035	6	0.41097145717927014	0.5418950376813948	0.13092358050212466	post_hoc_sensitivity_after_external_labels_were_opened

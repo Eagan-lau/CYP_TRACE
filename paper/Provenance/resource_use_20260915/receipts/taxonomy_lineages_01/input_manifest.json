@@ -1,0 +1,6 @@
+{
+  "prepare_taxonomic_lineages.py": "89cf4b6e8fd828529516b71af4a600dd211cf09ee8afe9cb490b9c285802b5f8",
+  "TAXONOMIC_LINEAGE_CONTROL_V1.md": "da650fe77a006eae8bf7dbe097434bcb1afb216edf991788500aca6c16d08bf9",
+  "dataset_02/core_edges.json": "535a33c919b293fa9fb9a73bd7e6b9cf2823ef757f21dac8d3980ff8302404e3",
+  "../data/raw/ncbi_taxonomy/new_taxdump.tar.gz": "a24cb255890ff24a853e6d09eb83ba2e0532647dd033be0332bd546f993e45f6"
+}

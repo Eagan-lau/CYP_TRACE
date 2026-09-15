@@ -1,0 +1,130 @@
+{
+  "stages": [
+    {
+      "label": "Unique evaluable pairs",
+      "rows": 14519
+    },
+    {
+      "label": "Exact-new compounds",
+      "rows": 4380
+    },
+    {
+      "label": "+ eligible lineage",
+      "rows": 4301
+    },
+    {
+      "label": "+ scaffold novel",
+      "rows": 3035
+    }
+  ],
+  "audit_flags": {
+    "raw_rows": 15005,
+    "unresolved_structure_rows": 366,
+    "exact_pair_overlaps": 9992,
+    "exact_pair_label_conflicts": 158,
+    "direct_exposed_source_rows": 7999
+  },
+  "aggregate": [
+    {
+      "stratum": "lineage_eligible",
+      "label": "Exact-new +\nlineage-eligible",
+      "rows": 4301,
+      "compounds": 1365,
+      "scaffolds": 963,
+      "pooled_ap": 0.401715096036451,
+      "specific_ap": 0.5392172106554336,
+      "pooled_auc": 0.5428034204927845,
+      "specific_auc": 0.6725381205666383,
+      "ap_difference": 0.1375021146189826,
+      "ap_ci": [
+        0.11463932591098845,
+        0.1571825647698241
+      ],
+      "auc_difference": 0.1297347000738538,
+      "auc_ci": [
+        0.11038166642518049,
+        0.14739965936504157
+      ],
+      "permutation_p": 0.01
+    },
+    {
+      "stratum": "scaffold_and_lineage_eligible",
+      "label": "+ scaffold-novel",
+      "rows": 3035,
+      "compounds": 1001,
+      "scaffolds": 844,
+      "pooled_ap": 0.41097145717927,
+      "specific_ap": 0.5428801073616204,
+      "pooled_auc": 0.550724392545219,
+      "specific_auc": 0.6767614650022752,
+      "ap_difference": 0.13190865018235037,
+      "ap_ci": [
+        0.10806726348022931,
+        0.15714035854241562
+      ],
+      "auc_difference": 0.1260370724570562,
+      "auc_ci": [
+        0.1036811619214452,
+        0.14777678122655868
+      ],
+      "permutation_p": 0.01
+    }
+  ],
+  "strict_per_isoform": [
+    {
+      "isoform": "CYP1A2",
+      "rows": 370,
+      "positives": 136,
+      "negatives": 234,
+      "pooled_ap": 0.5342996465927252,
+      "specific_ap": 0.6600505713842293
+    },
+    {
+      "isoform": "CYP2C19",
+      "rows": 366,
+      "positives": 99,
+      "negatives": 267,
+      "pooled_ap": 0.3245925454395424,
+      "specific_ap": 0.37634289925016634
+    },
+    {
+      "isoform": "CYP2C9",
+      "rows": 549,
+      "positives": 123,
+      "negatives": 426,
+      "pooled_ap": 0.2442795300157306,
+      "specific_ap": 0.36275750615112895
+    },
+    {
+      "isoform": "CYP2D6",
+      "rows": 583,
+      "positives": 175,
+      "negatives": 408,
+      "pooled_ap": 0.4134485490327461,
+      "specific_ap": 0.5376429016602239
+    },
+    {
+      "isoform": "CYP2E1",
+      "rows": 315,
+      "positives": 88,
+      "negatives": 227,
+      "pooled_ap": 0.21541544163842533,
+      "specific_ap": 0.5169578167181929
+    },
+    {
+      "isoform": "CYP3A4",
+      "rows": 852,
+      "positives": 607,
+      "negatives": 245,
+      "pooled_ap": 0.7337930303564508,
+      "specific_ap": 0.803528949005781
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "predictions_verified": 14519,
+    "similarity_cells_verified": 5592184,
+    "bootstrap_replicates_per_stratum": 5000,
+    "permutations_per_stratum": 99
+  }
+}

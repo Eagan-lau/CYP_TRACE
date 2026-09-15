@@ -1,0 +1,11 @@
+quantity	value
+original_strict_labels	3035
+original_strict_positive_labels	1228
+original_strict_negative_labels	1807
+strict_parent_overlap_labels	171
+strict_parent_overlap_compounds	37
+strict_uncertain_identity_labels	97
+strict_uncertain_identity_compounds	33
+strict_explicit_indirect_role_matches	0
+strict_steroid_topology_negative_flags	95
+individually_assay_verified_labels	0

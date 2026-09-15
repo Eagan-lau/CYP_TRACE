@@ -1,0 +1,434 @@
+{
+  "reaction_identity": {
+    "selection_rule": "shortest role-stripped main transformation among cross-lineage edges with at least two distinct full-reaction records",
+    "sequence_sha256": "62283812d53c9d06ab66dc83bc3507ed0e28332e7803e0a87524ed7d9900501b",
+    "accessions": [
+      "Q0D1W9"
+    ],
+    "publication_ids": [
+      "PMID:32147902"
+    ],
+    "sources": [
+      "P450Rdb",
+      "SwissProt",
+      "UniProt_API"
+    ],
+    "source_lineages": [
+      "P450Rdb",
+      "UniProt"
+    ],
+    "main_reaction_key": "MAIN:a55e193249ca03736a93889836ac57328726be6e50da054b4b7a1a2616be5450",
+    "main_transformation": {
+      "substrates": [
+        "CCCCCCCCCC"
+      ],
+      "products": [
+        "CCCCCCCC(O)CC"
+      ],
+      "single_pair": true
+    },
+    "full_records": [
+      {
+        "full_reaction_key": "RXN:0793593ed01561924794f2cb69b211042c858d8e5c17de63b453299a1a640420",
+        "substrates": [
+          "CCCCCCCCCC"
+        ],
+        "products": [
+          "CCCCCCCC(O)CC"
+        ],
+        "reaction_key": "MAIN:a55e193249ca03736a93889836ac57328726be6e50da054b4b7a1a2616be5450",
+        "single_pair": true,
+        "removed_participants": [
+          {
+            "side": "substrate",
+            "smiles": "O=O",
+            "role": "dioxygen",
+            "rule": "closed_inorganic_list"
+          },
+          {
+            "side": "product",
+            "smiles": "O",
+            "role": "water",
+            "rule": "closed_inorganic_list"
+          },
+          {
+            "side": "product",
+            "smiles": "[H+]",
+            "role": "proton",
+            "rule": "closed_inorganic_list"
+          },
+          {
+            "side": "substrate",
+            "smiles": "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c1[nH]c(=O)[nH]c(=O)c1N2",
+            "role": "FMNH2",
+            "rule": "opposite_redox_carrier_pair"
+          },
+          {
+            "side": "product",
+            "smiles": "Cc1cc2nc3c(=O)[n-]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C",
+            "role": "FMN",
+            "rule": "opposite_redox_carrier_pair"
+          }
+        ],
+        "problems": [],
+        "main_charge_stereochemistry_and_multiplicity_preserved": true,
+        "full_reaction": {
+          "substrates": [
+            "CCCCCCCCCC",
+            "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c1[nH]c(=O)[nH]c(=O)c1N2",
+            "O=O"
+          ],
+          "products": [
+            "CCCCCCCC(O)CC",
+            "Cc1cc2nc3c(=O)[n-]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C",
+            "O",
+            "[H+]"
+          ]
+        }
+      },
+      {
+        "full_reaction_key": "RXN:ed7efdd3fabe0d760b6317293dd3b072ed3a61d39dc6ee9e09b9ce8497ea12f4",
+        "substrates": [
+          "CCCCCCCCCC"
+        ],
+        "products": [
+          "CCCCCCCC(O)CC"
+        ],
+        "reaction_key": "MAIN:a55e193249ca03736a93889836ac57328726be6e50da054b4b7a1a2616be5450",
+        "single_pair": true,
+        "removed_participants": [
+          {
+            "side": "substrate",
+            "smiles": "O=O",
+            "role": "dioxygen",
+            "rule": "closed_inorganic_list"
+          },
+          {
+            "side": "product",
+            "smiles": "O",
+            "role": "water",
+            "rule": "closed_inorganic_list"
+          },
+          {
+            "side": "product",
+            "smiles": "[H+]",
+            "role": "proton",
+            "rule": "closed_inorganic_list"
+          },
+          {
+            "side": "substrate",
+            "smiles": "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c1[nH]c(=O)[nH]c(=O)c1N2",
+            "role": "FMNH2",
+            "rule": "opposite_redox_carrier_pair"
+          },
+          {
+            "side": "product",
+            "smiles": "Cc1cc2nc3c(=O)nc([O-])nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C",
+            "role": "FMN",
+            "rule": "opposite_redox_carrier_pair"
+          }
+        ],
+        "problems": [],
+        "main_charge_stereochemistry_and_multiplicity_preserved": true,
+        "full_reaction": {
+          "substrates": [
+            "CCCCCCCCCC",
+            "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c1[nH]c(=O)[nH]c(=O)c1N2",
+            "O=O"
+          ],
+          "products": [
+            "CCCCCCCC(O)CC",
+            "Cc1cc2nc3c(=O)nc([O-])nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C",
+            "O",
+            "[H+]"
+          ]
+        }
+      }
+    ],
+    "source_assertions": [
+      {
+        "assertion_id": "14e62f8068d036be61cc2e8a08a0950dddce42efd0bbd9cdd6757a71e9a55d50",
+        "source": "UniProt_API",
+        "source_locator": "Q0D1W9:comment:2",
+        "publication_ids": [
+          "PMID:32147902"
+        ],
+        "normalized_full_component_reaction_keys": [
+          "RXN:0793593ed01561924794f2cb69b211042c858d8e5c17de63b453299a1a640420"
+        ]
+      },
+      {
+        "assertion_id": "84dbf09aaa6ed9c1ef0b578cd90ff41b75108a0766f0fcec3f248ab6c4ef45d5",
+        "source": "SwissProt",
+        "source_locator": "Q0D1W9:comment:3",
+        "publication_ids": [
+          "PMID:32147902"
+        ],
+        "normalized_full_component_reaction_keys": [
+          "RXN:0793593ed01561924794f2cb69b211042c858d8e5c17de63b453299a1a640420"
+        ]
+      },
+      {
+        "assertion_id": "d1a973411e9d1edbedaed40ede73e3ac0f70f42226d96d4cdb947529052b891d",
+        "source": "P450Rdb",
+        "source_locator": "csv_row:3437",
+        "publication_ids": [
+          "PMID:32147902"
+        ],
+        "normalized_full_component_reaction_keys": [
+          "RXN:ed7efdd3fabe0d760b6317293dd3b072ed3a61d39dc6ee9e09b9ce8497ea12f4"
+        ]
+      }
+    ],
+    "interpretation": "distinct source-level component expressions collapse to one role-stripped main transformation; this adds linkage, not an independent experiment"
+  },
+  "carbon_coproduct_retention": {
+    "selection_rule": "pre-existing audited multicomponent reaction retaining the explicit carbon-containing coproduct CO2",
+    "reaction_key": "MAIN:7fbfd2623e74aeb4110e66e434e2bd84bcb3bf8db7a2a9d2da4a2baed367c765",
+    "transformation": {
+      "substrates": [
+        "[NH3+][C@@H](Cc1ccc(O)cc1)C(=O)[O-]"
+      ],
+      "products": [
+        "O/N=C/Cc1ccc(O)cc1",
+        "O=C=O"
+      ],
+      "single_pair": false
+    },
+    "edges": [
+      {
+        "sequence_sha256": "dc72389741af56847b7a4baeddbdaf0e99df7b3d81bc3866e163a2608f41633c",
+        "reaction_key": "MAIN:7fbfd2623e74aeb4110e66e434e2bd84bcb3bf8db7a2a9d2da4a2baed367c765",
+        "publication_ids": [
+          "PMID:26361733",
+          "PMID:7876084"
+        ],
+        "assertion_ids": [
+          "d12b2e16950cf521714065149cba933e42c607283f1220e16a6408edf7d8ef97",
+          "ed0cac7a81db0fb70f239934b982e0903387d56e55dfda9ef1c4c1e673721de8"
+        ],
+        "accessions": [
+          "Q43135"
+        ],
+        "taxids": [
+          "4558"
+        ],
+        "sources": [
+          "SwissProt",
+          "UniProt_API"
+        ],
+        "source_lineages": [
+          "UniProt"
+        ],
+        "full_reaction_keys": [
+          "RXN:1934b6c6b5fcddcb0735289ad1ce4db094e5731151751e8153cf1dd64c95d041"
+        ],
+        "assayed_construct_verified": false,
+        "CYP_domain_activity_attribution_verified": false,
+        "source_scope": "multi_source_reference_sequence_development_core",
+        "historical_exposure": "DEVELOPMENT_EXPOSED_OR_UNVERIFIED"
+      }
+    ],
+    "interpretation": "CO2 is retained because role assignment is chemical and provenance-aware rather than a blanket small-molecule deletion rule"
+  },
+  "name_structure_quarantine": {
+    "selection_rule": "first deterministic source-order record labelled FMNH2 whose supplied structure resolves to oxidized FMN",
+    "canonical_smiles": "Cc1cc2nc3c(=O)nc([O-])nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])[O-])c2cc1C",
+    "formula_status": "match",
+    "locator": "csv_row:3679",
+    "name": "FMNH2",
+    "raw_formula": "C17H18N4O9P-3",
+    "raw_smiles": "CC1=CC2=C(C=C1C)N(C3=NC(=NC(=O)C3=N2)[O-])C[C@@H]([C@@H]([C@@H](COP(=O)([O-])[O-])O)O)O",
+    "role": "product",
+    "slot": 3,
+    "source": "P450Rdb",
+    "structure_status": "valid",
+    "interpretation": "the record is quarantined rather than silently relabelled or admitted"
+  },
+  "external_supported_high_score": {
+    "selection_rule": "highest isoform-specific score among strict scaffold+lineage external rows with source label 1",
+    "isoform": "CYP3A4",
+    "compound_inchikey": "MWQCHHACWWAQLJ-UHFFFAOYSA-N",
+    "scaffold_group": "ring:O=C1CN=C(c2ccccc2)c2ccccc2N1CC1CC1",
+    "label": 1,
+    "sources": [
+      "DrugBank"
+    ],
+    "strata": {
+      "all_parseable_unique": true,
+      "exact_novel": true,
+      "scaffold_novel": true,
+      "lineage_eligible": true,
+      "scaffold_and_lineage_eligible": true
+    },
+    "pooled_chemical_knn": 0.4715969289097777,
+    "isoform_specific_knn": 0.970920061653956,
+    "canonical_smiles": "O=C1CN=C(c2ccccc2)c2cc(Cl)ccc2N1CC1CC1",
+    "external_source_locators": [
+      {
+        "file": "CYP3A4_trainingset.csv",
+        "split": "training",
+        "row": 515,
+        "source": "DrugBank",
+        "name": "Prazepam"
+      }
+    ],
+    "max_training_Tanimoto": 0.6399999856948853,
+    "nearest_same_isoform_training_evidence": [
+      {
+        "compound_inchikey": "AAOVKJBEBIDNHE-UHFFFAOYSA-N",
+        "Tanimoto": 0.6399999856948853,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "3A4 train",
+            "row": 704
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "YFSXBSRGIRSXAD-UHFFFAOYSA-N",
+        "Tanimoto": 0.5254237055778503,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-1.xls",
+            "sheet": "3A4 test",
+            "row": 61
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "CDCHDCWJMGXXRH-UHFFFAOYSA-N",
+        "Tanimoto": 0.5,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "3A4 train",
+            "row": 754
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "VREFGVBLTWBCJP-UHFFFAOYSA-N",
+        "Tanimoto": 0.4912280738353729,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "3A4 train",
+            "row": 490
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "GJSLOMWRLALDCT-UHFFFAOYSA-N",
+        "Tanimoto": 0.4754098355770111,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "3A4 train",
+            "row": 464
+          }
+        ]
+      }
+    ],
+    "interpretation": "illustrative output, not mechanistic proof or assay-harmonized validation"
+  },
+  "external_unsupported_high_score": {
+    "selection_rule": "highest isoform-specific score among strict scaffold+lineage external rows with source label 0",
+    "isoform": "CYP2D6",
+    "compound_inchikey": "PNCPYILNMDWPEY-UHFFFAOYSA-N",
+    "scaffold_group": "ring:c1ccc(OCCNCCc2ccc3c(c2)CCN3)cc1",
+    "label": 0,
+    "sources": [
+      "Yamashita"
+    ],
+    "strata": {
+      "all_parseable_unique": true,
+      "exact_novel": true,
+      "scaffold_novel": true,
+      "lineage_eligible": true,
+      "scaffold_and_lineage_eligible": true
+    },
+    "pooled_chemical_knn": 0.5211587903208038,
+    "isoform_specific_knn": 0.9619375257178445,
+    "canonical_smiles": "CC(Cc1cc2c(c(C(=N)O)c1)N(CCCO)CC2)NCCOc1ccccc1OCC(F)(F)F",
+    "external_source_locators": [
+      {
+        "file": "CYP2D6_trainingset.csv",
+        "split": "training",
+        "row": 1163,
+        "source": "Yamashita",
+        "name": "silodosin"
+      }
+    ],
+    "max_training_Tanimoto": 0.3255814015865326,
+    "nearest_same_isoform_training_evidence": [
+      {
+        "compound_inchikey": "DRHKJLXJIQTDTD-UHFFFAOYSA-N",
+        "Tanimoto": 0.3255814015865326,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "2D6 train",
+            "row": 1267
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "PIOWWGLKYJRCSY-UHFFFAOYSA-N",
+        "Tanimoto": 0.3076923191547394,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "2D6 train",
+            "row": 682
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "VIAVBPFRYASSKF-UHFFFAOYSA-N",
+        "Tanimoto": 0.2777777910232544,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "2D6 train",
+            "row": 394
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "GWFGPUOJJHYUTD-UHFFFAOYSA-N",
+        "Tanimoto": 0.2763157784938812,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-1.xls",
+            "sheet": "2D6 test",
+            "row": 172
+          }
+        ]
+      },
+      {
+        "compound_inchikey": "IQUFSXIQAFPIMR-UHFFFAOYSA-N",
+        "Tanimoto": 0.2702702581882477,
+        "same_isoform_label": 1,
+        "same_isoform_source_locators": [
+          {
+            "member": "Supplementary Material-2.xls",
+            "sheet": "2D6 train",
+            "row": 773
+          }
+        ]
+      }
+    ],
+    "interpretation": "illustrative output, not mechanistic proof or assay-harmonized validation"
+  }
+}

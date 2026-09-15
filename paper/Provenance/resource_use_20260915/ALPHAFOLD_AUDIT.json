@@ -1,0 +1,17 @@
+{
+  "decision": "EXCLUDE_FROM_CURRENT_ANALYTICAL_RESOURCES",
+  "scope": "Current core, matched structure and ordered-site analyses; not a claim that AlphaFold was never downloaded or explored.",
+  "raw_consumed_entries": 56,
+  "alphafold_in_consumed_raw_inputs": 0,
+  "deposited_PDB_coordinate_files": 1072,
+  "primary_core_structure_representatives": 36,
+  "all_primary_representatives_resolve_to_PDB_manifest": true,
+  "structure_manifests_checked": [
+    "structure_mapping_audit_02/input_manifest.json",
+    "structure_matched_02/input_manifest.json",
+    "ordered_anchor_01/input_manifest.json",
+    "ordered_site_features_01/input_manifest.json"
+  ],
+  "alphafold_paths_in_these_manifests": 0,
+  "download_inventory_is_not_analytical_use": true
+}

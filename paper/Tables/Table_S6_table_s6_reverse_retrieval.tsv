@@ -1,0 +1,4 @@
+cell	primary_method	taxids	taxid_macro_mrr	documented_positive_coverage	permutation_exact_p	accepted
+seen_reaction__new_positive	mmseqs_weighted_positive	21	0.19887325187626162	0.5660377358490566	0.88	False
+unseen_reaction__new_positive	mmseqs_homology_chemical_transport	133	0.5477818285704138	0.9519230769230769	0.03	False
+unseen_reaction__represented_positive	mmseqs_homology_chemical_transport	17	0.5626851708106697	1.0	0.01	False

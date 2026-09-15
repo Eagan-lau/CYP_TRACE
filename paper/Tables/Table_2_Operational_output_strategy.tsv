@@ -1,0 +1,4 @@
+﻿query	required_support	returned_output	evaluated_scope	unsupported_inference
+Known human isoform plus compound	Valid structure; one of the nine fixed model isoforms	Within-isoform rank score, neighbours and exposure flags	Six isoforms evaluated externally; three development-only	No catalytic probability, rate, product identity or new-protein transfer
+Exact protein sequence plus normalized reaction	A documented exact sequence–reaction edge	Traceable database assertions and publication identifiers	Evidence retrieval and index fidelity	Lookup is not a newly validated prediction
+General request without a qualifying exact edge	No tested general prediction route met all admission criteria	Unresolved/abstention; no score	Software output contract	Unknown is not a negative reaction

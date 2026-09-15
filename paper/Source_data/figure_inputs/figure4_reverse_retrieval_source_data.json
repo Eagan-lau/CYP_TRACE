@@ -1,0 +1,97 @@
+{
+  "census": {
+    "raw_proteins": 2447,
+    "admitted_candidates": 1803,
+    "admitted_core": 588,
+    "admitted_noncore": 1215,
+    "candidate_taxids": 463,
+    "query_panels": 4880,
+    "query_taxids": 133,
+    "query_reactions": 1167,
+    "positives": 6033,
+    "candidate_min": 2,
+    "candidate_max": 141
+  },
+  "performance": [
+    {
+      "cell": "seen_reaction__new_positive",
+      "label": "Seen reaction\nnew positive",
+      "mrr": {
+        "MMseqs2": 0.19887325187626162,
+        "Label prior": 0.3326477746089836,
+        "Uniform": 0.4257157485666025
+      },
+      "coverage": {
+        "MMseqs2": 0.5660377358490566,
+        "Label prior": 1.0,
+        "Uniform": 1.0
+      },
+      "taxids": 21
+    },
+    {
+      "cell": "unseen_reaction__new_positive",
+      "label": "Unseen reaction\nnew positive",
+      "mrr": {
+        "MMseqs2": 0.5477818285704138,
+        "Label prior": 0.48351530565643513,
+        "Uniform": 0.5321822206398329
+      },
+      "coverage": {
+        "MMseqs2": 0.9519230769230769,
+        "Label prior": 1.0,
+        "Uniform": 1.0
+      },
+      "taxids": 133
+    },
+    {
+      "cell": "unseen_reaction__represented_positive",
+      "label": "Unseen reaction\nrepresented positive",
+      "mrr": {
+        "MMseqs2": 0.5626851708106697,
+        "Label prior": 0.5671596914899328,
+        "Uniform": 0.4125717603863078
+      },
+      "coverage": {
+        "MMseqs2": 1.0,
+        "Label prior": 1.0,
+        "Uniform": 1.0
+      },
+      "taxids": 17
+    }
+  ],
+  "gate_names": [
+    "at_least_20_taxids",
+    "documented_positive_coverage_at_least_0_8",
+    "positive_vs_training_label_count_prior",
+    "positive_vs_uniform_expectation",
+    "protein_permutation_exact_p_at_most_0_05"
+  ],
+  "gates": [
+    [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  ],
+  "accepted": [
+    false,
+    false,
+    false
+  ]
+}
