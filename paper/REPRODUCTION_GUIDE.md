@@ -4,9 +4,9 @@
 
 Download or clone https://github.com/Eagan-lau/CYP_TRACE and use the exact commit
 cited in the manuscript. Software is at the root and paper data are in
-`paper/`. The two submission ZIPs contain these components separately. For
-ZIP use, extract them into sibling directories and give `reviewer_checks.py
---software-root` the software path. No cluster, VPN or credentials are needed.
+`paper/`. The unified submission ZIP preserves this same layout. Extract it
+into a new directory and run the commands below from that directory.
+No cluster, VPN or credentials are needed.
 The GitHub commit is the review access point; no persistent archive DOI has
 yet been assigned.
 
