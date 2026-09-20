@@ -1,27 +1,16 @@
 {
-  "status": "VALIDATED_CODE_DATA_COMPANION",
-  "initial_publication_commit": "f02a84c3785522759ef2538e62c3b30bee026b8c",
-  "public_release_approved": true,
+  "title": "CYP-TRACE: evidence-aware evaluation of cytochrome P450 function prediction",
   "repository_url": "https://github.com/Eagan-lau/CYP_TRACE",
-  "inspected_repository_head": "a52d60723d62c4da0d1324c0f1d2ebd4796f5ec9",
-  "release_tag": null,
+  "public_release_approved": true,
   "archive_doi": null,
-  "authors": [],
-  "release_wide_code_license": "MIT for project-owned code; user confirmed 2026-09-15",
-  "existing_inference_license": "MIT (existing notice retained)",
-  "paper_revision": "V19",
-  "inference_version": "0.1.0 (frozen code/model)",
-  "pending": [
-    "Author/provider permission or approved review access for historical P450Rdb inputs",
-    "Full mixed-source raw and model-refit reproduction not covered by public packet",
-    "Persistent archive deposition and DOI"
-  ],
+  "archive_status": "not_deposited",
+  "code_license": "MIT; third-party data retain source-specific terms",
+  "inference_version": "0.1.0",
+  "reproduction_command": "python run_acceptance.py --output acceptance_run",
   "open_biological_subset": {
     "sequences": 375,
     "reactions": 639,
     "edges": 1232
   },
-  "reproducibility_supplement": "V20",
-  "acceptance": "paper/Provenance/V20_ACCEPTANCE.json",
-  "new_raw_third_party_inputs": false
+  "access_statement": "paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md"
 }

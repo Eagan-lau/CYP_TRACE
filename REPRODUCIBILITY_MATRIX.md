@@ -1,4 +1,4 @@
-# Reproduction scope: V20 code/data supplement to the V19 manuscript
+# Computational reproduction scope
 
 Detailed commands, data dictionary and access boundaries are in
 [`paper/REPRODUCTION_GUIDE.md`](paper/REPRODUCTION_GUIDE.md).
@@ -19,12 +19,11 @@ Detailed commands, data dictionary and access boundaries are in
 
 P450Rdb historical files have no verified redistribution permission, and the
 current official downloads differ from the frozen input. They were not uploaded.
-CLEAN weights and BRENDA/SABIO-RK bulk exports are also omitted. Open biological
-and human datasets support real reuse without silently substituting current
-provider snapshots for the original general-CYP analysis.
+CLEAN weights and BRENDA/SABIO-RK bulk exports are also omitted. The open
+biological subset and human datasets are supplied with their source identifiers
+and transformations.
 
 Run `python run_acceptance.py --output acceptance_run` after installing
 `requirements-reproduction.txt` and `./inference`. The detailed access note is
 [`paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md`](paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md).
-Passing this suite does not certify the outstanding third-party access route
-or the journal's acceptance of a restricted-data arrangement.
+The historical third-party access arrangement remains unresolved.

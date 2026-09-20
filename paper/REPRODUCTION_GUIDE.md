@@ -12,7 +12,7 @@ yet been assigned.
 
 ## Install and run
 
-The software supports Python 3.10 or newer; the complete V20 acceptance suite
+The software supports Python 3.10 or newer; the complete acceptance suite
 was tested on Python 3.12.14. `requirements-reproduction.txt` pins its scientific
 dependencies. Install these in a fresh environment:
 
@@ -65,8 +65,7 @@ inspectable. `Provenance/original_logistic_functions.py.txt` preserves the
 historical functions, and `reproduce_logistic.py` is their portable implementation.
 
 The integrity checker verifies file hashes; the other commands perform the
-listed numerical/biological operations. A hash match alone is not a scientific
-reproduction test.
+listed numerical and biological operations.
 
 ## Open biological inputs
 
@@ -81,11 +80,10 @@ python -m cyptrace_pipeline build-evidence-index --dataset-dir rebuilt_open_core
 ```
 
 The 375-sequence / 639-reaction / 1,232-edge subset preserves the UniProt
-component of the original development core. API and Swiss-Prot are one
-annotation lineage. This is not representative sampling of all CYP biology,
-a new test or a replacement for the full mixed-source cohort. Admission
-decisions remain frozen. Rebuilding verifies admitted evidence and chemistry
-but does not repeat cross-source ambiguity screening. See
+component of the development core. API and Swiss-Prot are one annotation
+lineage. Admission decisions remain frozen; reconstruction verifies the
+admitted evidence and chemistry. Full mixed-source qualification additionally
+requires cross-source ambiguity screening. See
 `DATA_DICTIONARY.md` and `ATTRIBUTION_OPEN_CORE.md`.
 
 ## Original human data and downloads
@@ -116,28 +114,20 @@ inputs, search/feature assets and separately obtained CLEAN resources.
 supplied data to figures. Public fixed-prediction checks do not replace these
 upstream requirements.
 
-No explicit raw redistribution licence was located for P450Rdb in the checked
-terms. Current files also differ from the frozen snapshot: 3,849 versus 3,821
-reaction records and 1,015 versus 1,012 protein records, with changed fields
-and hashes. HTTPS failed certificate validation. An official HTTP response
-was examined without credentials, but not accepted as a historical input;
-TLS verification was not disabled. Details and exact historical hashes are
-in `Provenance/p450_current_download_audit.json`.
+P450Rdb redistribution permission has not been established. The provider files
+checked on 15 September 2026 differ from the frozen snapshot: 3,849 versus
+3,821 reaction records and 1,015 versus 1,012 protein records. File hashes and
+acquisition details are in `Provenance/p450_current_download_audit.json`.
 
 Closing full mixed-source raw reproduction requires a provider-approved
 reviewer route for those exact historical files or redistribution permission.
-The author's local copy is not presented as a public archive. The current
-provider version must not be silently substituted. BRENDA raw archives and
-SABIO-RK exports are not bundled; source-specific access is recorded in S1a.
+Exact reconstruction requires the recorded historical snapshot. BRENDA raw
+archives and SABIO-RK exports are not bundled; source-specific access is recorded in S1a.
 CLEAN research-use weights must be acquired from their source.
 
 The resource-by-resource access routes, distinction between licensing and
 technical omissions, and outstanding reviewer-access decision are documented
 in `RESTRICTED_DATA_AND_REVIEWER_ACCESS.md`.
-
-The open biological subset and complete normalized human dataset provide
-real reusable examples. They do not certify a full mixed-source model refit
-or a journal's acceptance of the remaining access arrangements.
 
 ## Tables, figures and documentation
 

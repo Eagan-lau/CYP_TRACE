@@ -1,16 +1,14 @@
-# Reviewer entry point
+# Reviewing the computational results
 
-Use [REPRODUCTION_GUIDE.md](REPRODUCTION_GUIDE.md) for current instructions.
-The repository now supplies query-level general-CYP results and an openly
-reusable biological subset alongside saved-score evaluation and fixed-human
-inference. This replaces the previous attachment-only guide.
+The [reproduction guide](REPRODUCTION_GUIDE.md) lists installation requirements,
+commands and inputs. The [result map](RESULT_REPRODUCTION_MAP.tsv) identifies
+the source data and executable checks for each main figure.
 
-From the repository root, run `python paper/reviewer_checks.py --software-root .`
-for integrity and saved-score checks, `python paper/reproduce_general_metrics.py`
-for assertion/query-level recalculation, and
-`python paper/rebuild_open_core.py --output rebuilt_open_core` for biological
-reconstruction using frozen admission decisions.
+From the repository root, run `python run_acceptance.py --output acceptance_run`
+after installing the pinned dependencies and `./inference`. The output contains
+per-command logs and a machine-readable summary. The suite recalculates
+saved-prediction metrics, reconstructs and tests the open biological subset,
+rebuilds the human kNN asset and repeats the exploratory logistic comparison.
 
-Complete mixed-source raw rebuilding and model refitting have additional
-input requirements, listed in the full guide. A passing checksum test does
-not certify those unexecuted operations.
+Historical inputs needed for complete mixed-source upstream refitting are
+listed in [the data-access statement](RESTRICTED_DATA_AND_REVIEWER_ACCESS.md).

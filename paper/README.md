@@ -1,14 +1,14 @@
 # CYP-TRACE: paper data and analysis
 
-Companion to *Separating evidence coverage from candidate ranking in cytochrome
-P450 function prediction*, manuscript V13. Start with [REPRODUCTION_GUIDE.md](REPRODUCTION_GUIDE.md).
+Companion to *CYP-TRACE: evidence-aware evaluation of cytochrome P450 function
+prediction*. Start with [REPRODUCTION_GUIDE.md](REPRODUCTION_GUIDE.md).
 
 This package includes 30 supplementary tables; assertion- and query-level
 records for recalculating general-CYP results; original human substrate label
 inputs; and an open UniProt–Rhea subset with 375 sequences, 639 reactions and
 1,232 edges. Software, normalized human data and inference assets are at the
 repository root. The biological subset belongs to the published development
-data, not a new independent test.
+data and retains its original admission decisions.
 
 From the repository root:
 

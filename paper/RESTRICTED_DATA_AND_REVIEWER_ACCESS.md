@@ -1,88 +1,65 @@
 # Data access and reconstruction scope
 
-This note accompanies *CYP-TRACE: evidence-aware evaluation of cytochrome P450
-function prediction*. It distinguishes the publicly runnable analyses from
-historical inputs that are not distributed. All paths below are repository-relative.
+This statement accompanies *CYP-TRACE: evidence-aware evaluation of cytochrome
+P450 function prediction*. Paths are relative to the code repository.
 
-## Publicly accessible material
+## Public data and software
 
-The code/data companion provides original human label files, normalized
-development and external labels, the frozen human model, candidate-level and
-query-level evaluation records, supplementary tables, and analysis code.
-`paper/RESULT_REPRODUCTION_MAP.tsv` links the six main figures to their inputs
-and executable checks. `paper/Tables/Table_index.tsv` locates all 30 supplementary
-table files, including S22. Downloads are accessible without cluster credentials
-or a VPN. Source attribution remains separate from the MIT code licence.
+The package provides original and normalized human substrate labels, a frozen
+human kNN model, candidate- and query-level evaluation records, supplementary
+tables and analysis code. `paper/RESULT_REPRODUCTION_MAP.tsv` links each main
+figure to its inputs and executable checks. `paper/Tables/Table_index.tsv`
+locates all 30 supplementary table files, including S22. The files can be
+downloaded without cluster credentials or a VPN.
 
-The general evidence reconstruction example contains 375 sequences, 639
-reactions and 1,232 UniProt–Rhea relationships. It reconstructs admitted evidence
-and tests each relationship against the lookup implementation. The full
-mixed-source development core in the paper contains 600 sequences, 1,341
-reactions and 2,304 relationships. The open example is a source-defined subset
-of that core, not an independent test set or a substitute for its full upstream
-reconstruction. The full mixed-source index is not distributed.
+The open UniProt–Rhea subset contains 375 sequences, 639 reactions and 1,232
+relationships. It preserves the admitted UniProt component of the full
+mixed-source development core, which contains 600 sequences, 1,341 reactions
+and 2,304 relationships. Reconstruction and lookup tests cover the open
+subset. Reproduction of the full mixed-source model conclusions from this
+subset has not been established.
 
-For the human analysis, both original and normalized public labels are supplied.
-`paper/reproduce_logistic.py` rebuilds fingerprints from normalized structures,
-selects parameters on the five recorded development folds and then performs
-the exploratory external comparison. Selection and evaluation are separate
-commands; external labels do not enter the selection command. The original
-model-class comparison was introduced after external inspection and retains
-that exploratory status. This addition does not change any reported result.
+Human analyses include all 3,035 strict external labels, saved scores,
+reconstruction of the frozen kNN asset and recalculation of its predictions.
+The logistic implementation repeats parameter selection using development
+folds, then fits the selected models and evaluates the external labels.
+This model-class comparison was introduced after external inspection and
+remains exploratory.
 
-## Inputs not distributed
+## Separately acquired inputs
 
-| Input | Role in this study | Reason for omission and access route | What remains public |
-|---|---|---|---|
-| Historical P450Rdb v2 reaction and protein files | Mixed-source evidence qualification and general-CYP development core | An explicit redistribution licence or provider-approved reviewer route has not been established. Access is controlled by the P450Rdb provider, via its [download page](https://www.cellknowledge.com.cn/p450rdb_v2/download.html). The authors cannot promise permission or historical-file availability. | File sizes and SHA-256 identifiers in `paper/Provenance/p450_current_download_audit.json`; assertion-decision records, saved candidate/query metrics and reconstruction code. Raw exports and the full biological index are excluded. |
-| CLEAN training/model assets | Pretrained EC context, exposure stratification and reaction pruning | Separately obtained research-use assets. Readers should follow the terms and asset instructions in the [CLEAN repository](https://github.com/tttianhao/CLEAN). No redistribution authorization is asserted here. | Analysis implementation and saved pruning comparisons. Re-evaluation from these predictions does not rerun CLEAN. |
-| Historical BRENDA bulk archive | Biochemical-context and accession-linked EC audit; not an added core sequence–reaction source | This release does not redistribute the bulk archive. The project records CC BY 4.0 with provider acceptance/DSI notices; omission is not a claim that the data are categorically proprietary. Obtain data under the provider's terms at [BRENDA downloads](https://www.brenda-enzymes.org/download.php). Current downloads need not match the recorded archive. | Audit summaries, source identifiers, acquisition references and code. |
-| Historical SABIO-RK exports | Annotation-resolution audit; no assertions admitted to the exact core | Redistribution terms for the historical exports were not certified. Direct acquisition is through [SABIO-RK](https://sabiork.h-its.org/), subject to the provider's access rules. | Audit categories and counts; no bulk raw export. |
+| Input | Analytical role | Access route and distribution status |
+|---|---|---|
+| Historical P450Rdb reaction and protein files | Mixed-source evidence qualification and general-CYP development core | Obtain from the [P450Rdb provider](https://www.cellknowledge.com.cn/p450rdb_v2/download.html). Redistribution and a provider-approved reviewer route for the historical snapshot have not been established. Raw files and the full mixed-source index are excluded. Recorded sizes and hashes are in `paper/Provenance/p450_current_download_audit.json`; derived assertion decisions and query metrics are supplied. |
+| CLEAN training and model assets | Pretrained EC context, exposure stratification and reaction pruning | Obtain under the terms and asset instructions in the [CLEAN repository](https://github.com/tttianhao/CLEAN). The package supplies analysis code and saved pruning comparisons; running these comparisons from saved predictions does not rerun CLEAN. |
+| Historical BRENDA bulk archive | Biochemical context and accession-linked EC audit | Obtain through [BRENDA downloads](https://www.brenda-enzymes.org/download.php). Project acquisition records identify CC BY 4.0 with provider acceptance/DSI notices. The bulk archive is omitted; audit summaries, source identifiers and acquisition references are supplied. BRENDA contributes no additional exact core edges. |
+| Historical SABIO-RK exports | Annotation-resolution audit | Obtain through [SABIO-RK](https://sabiork.h-its.org/) under the provider's terms. Redistribution terms for the historical exports were not certified. Audit categories and counts are supplied; no SABIO-RK assertions enter the exact core. |
 
-The P450Rdb audit on 15 September 2026 found different provider files: 3,849
-reaction records versus 3,821 historically, and 1,015 protein records versus
-1,012 historically. The byte hashes also differ. The current download is
-therefore not silently substituted for the frozen input. An ordinary download
-link does not establish access to that historical snapshot.
+The P450Rdb files checked on 15 September 2026 differ from the study snapshot:
+3,849 versus 3,821 reaction records and 1,015 versus 1,012 protein records,
+with different hashes. Exact reconstruction therefore requires the historical
+files. Permission and historical-copy enquiries must be addressed to the
+provider; no approved application procedure or response time is known.
 
-No controlled-access application service has been established by the authors
-for these third-party files. Queries about permission or historical copies
-must be directed to the respective provider; approval criteria and response
-times are not known. The authors hold no permission to promise confidential
-reviewer redistribution of P450Rdb. No such raw files are present in this release.
+Complete general-CYP upstream refitting also requires the source inputs,
+sequence-search tools, feature generation and model assets identified in
+Table S1a. PDB coordinates and ESM resources are obtained through their
+respective providers. These technical dependencies are distinct from the
+unresolved historical P450Rdb permission.
 
-Some remaining dependencies are technical, not licensing restrictions.
-General-CYP sequence searches, feature generation and model refitting require
-the complete historical inputs, external tool installations and model assets.
-PDB coordinates and ESM resources have their own source routes in Table S1a;
-they are not represented here as prohibited material. The current acceptance
-suite does not repeat those upstream computations. Earlier plotting scripts
-are included, but final author-edited figure layouts are supplied separately.
+## Reproduction and reuse
 
-## What the acceptance result establishes
+`python run_acceptance.py --output acceptance_run` checks payload hashes,
+recalculates saved-prediction metrics, reconstructs and queries the open
+evidence subset, rebuilds the frozen human asset and repeats kNN inference
+and the exploratory logistic analysis. Commands, environments and results are
+recorded in `ACCEPTANCE.json` and per-command logs.
 
-`python run_acceptance.py --output acceptance_run` checks the packaged file
-hashes, recalculates saved-prediction metrics, rebuilds and tests the public
-biological evidence subset, rebuilds the frozen human kNN asset, recalculates
-its external scores, and repeats logistic selection, fitting and its paired
-external interval. It records each command, exit status, software versions,
-result files and log hashes. A passing result establishes these named
-operations, not an unrestricted end-to-end reconstruction of every analysis.
+The supported operations are specified in `REPRODUCIBILITY_MATRIX.md`.
+They exclude a complete mixed-source upstream refit and pixel-identical
+recreation of final author-edited figure layouts. Project-owned code is MIT;
+third-party data retain their source terms and attribution.
 
-The public biological example and human datasets contain actual biological
-records rather than synthetic stand-ins. The UniProt–Rhea subset has not been
-shown to reproduce the full mixed-source general-CYP model conclusions, and
-the numerical fixtures alone do not establish that it does. The current
-[Digital Discovery data policy](https://www.rsc.org/publishing/publish-with-us/publish-a-journal-article/digital-discovery)
-requires reviewer access and, where data are restricted, a public representative
-dataset supporting similar conclusions. Whether the supplied material meets
-that requirement for the full mixed-source analyses remains an editorial
-question, not a claim certified by this acceptance suite.
-
-## Outstanding access actions
-
-The authors still need either a provider-approved route to the exact historical
-P450Rdb inputs, or an agreed alternative arrangement with the journal. This
-note discloses the gap; it does not replace permission. A persistent archive
-and DOI must also be established for the frozen code/data release. No DOI,
-embargo, access approval or provider response has been invented.
+A provider-approved historical P450Rdb access route or an arrangement agreed
+with the journal is still required. A persistent archival DOI has not yet
+been assigned; the exact GitHub commit identifies the current public package.

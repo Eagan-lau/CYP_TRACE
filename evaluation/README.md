@@ -93,15 +93,9 @@ computational outputs of this study. Credit the original resource as well as
 the CYP-TRACE study when reusing it. Source filtering and additional post-hoc
 audits do not certify all assay-level labels or original-study independence.
 
-The full local revision includes figure-generation code, frozen plotted data,
-normalization audit inputs/code/tables, manuscript sources and render receipts.
-Some local raw/development materials have source-specific redistribution terms;
-they are not included in this portable supplement. The remote historical raw
-capsule is not silently claimed to have been synchronized with this revision.
-
-Project-owned code is MIT (user confirmed 2026-09-15); the included LICENSE
-preserves the selected Eagan-lau/CYP_TRACE repository's existing notice. The
-repository is https://github.com/Eagan-lau/CYP_TRACE, where this evaluation
-subset accompanies the inference code. A persistent archival DOI remains
-pending. This ZIP is an executable review supplement, not a persistent archived
-release. No third-party licence is overridden.
+The repository's `paper/` directory provides source tables, scientific analysis
+code and data-access information. Manuscript and final figure artwork are
+supplied as submission files. Project-owned code is MIT-licensed; third-party
+data retain their source terms. Cite a fixed commit of
+https://github.com/Eagan-lau/CYP_TRACE. Persistent-archive status is recorded
+in the repository's `RELEASE_METADATA.json`.
