@@ -1,0 +1,29 @@
+[
+  {
+    "title": "UniProt REST CYP query",
+    "url": "https://rest.uniprot.org/uniprotkb/search?query=%28xref%3Apfam-PF00067%29&format=tsv&size=1",
+    "status": 200,
+    "resolved_url": "https://rest.uniprot.org/uniprotkb/search?query=%28xref%3Apfam-PF00067%29&format=tsv&size=1",
+    "access_date": "2026-09-22",
+    "sample_sha256": "7e13cdd0abc69296c10421566f2ee4c9eed267fa8f0d95115293955369ad241f",
+    "sample_text": "Entry\tEntry Name\tReviewed\tProtein names\tGene Names\tOrganism\tLength\nA0A075TMP8\tPATI_PENEN\treviewed\tCytochrome P450 monooxygenase patI (EC 1.-.-.-) (Patulin biosynthesis cluster protein I) (m-hydroxybenzyl alcohol hydroxyl"
+  },
+  {
+    "title": "Rhea downloads",
+    "url": "https://ftp.expasy.org/databases/rhea/",
+    "status": 200,
+    "resolved_url": "https://ftp.expasy.org/databases/rhea/",
+    "access_date": "2026-09-22",
+    "sample_sha256": "19d14c2813fb7ae273d1f580a7cd4f340d12e9bc41eb3b12fe1612022fc58dce",
+    "sample_text": "\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n <head>\n  <title>Expasy - FTP Downloads </title>\n  <link rel=\"stylesheet\" href=\"/css/ftp.css\" type=\"text/css\" media=\"screen\" />\n        <link rel=\\\"shortcut icon\\\" href=\\\"/css"
+  },
+  {
+    "title": "NCBI taxonomy downloads",
+    "url": "https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/",
+    "status": 200,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/",
+    "access_date": "2026-09-22",
+    "sample_sha256": "6f32cff3644448e2dcf6b41fac0995183488d8cbaf8fb4b906ac43c0d1a1ff35",
+    "sample_text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<html>\n <head>\n  <title>Index of /pub/taxonomy/new_taxdump</title>\n </head>\n <body>\n<h1>Index of /pub/taxonomy/new_taxdump</h1>\n<pre>Name                    Last mo"
+  }
+]

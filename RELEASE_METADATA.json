@@ -2,8 +2,7 @@
   "title": "CYP-TRACE: evidence-aware evaluation of cytochrome P450 function prediction",
   "repository_url": "https://github.com/Eagan-lau/CYP_TRACE",
   "public_release_approved": true,
-  "archive_doi": null,
-  "archive_status": "not_deposited",
+  "archive_doi": "10.5281/zenodo.22899238",
   "code_license": "MIT; third-party data retain source-specific terms",
   "inference_version": "0.1.0",
   "reproduction_command": "python run_acceptance.py --output acceptance_run",
@@ -12,5 +11,14 @@
     "reactions": 639,
     "edges": 1232
   },
-  "access_statement": "paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md"
+  "access_statement": "paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md",
+  "archive_concept_doi": "10.5281/zenodo.22860951",
+  "archive_git_tag": "submission-20260922",
+  "current_source": "https://github.com/Eagan-lau/CYP_TRACE/tree/submission-20260922",
+  "upstream_commands": "upstream/README.md",
+  "full_core": {
+    "sequences": 600,
+    "reactions": 1341,
+    "edges": 2304
+  }
 }

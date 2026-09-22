@@ -1,0 +1,218 @@
+[
+  {
+    "path": "p450rdb/2. P450s.CSV",
+    "bytes": 685417,
+    "sha256": "41a5b9c20c27fd00615a36aca945836b01d6227ef54f85a8b7d497713a37e8a0",
+    "provider_url": "https://www.cellknowledge.com.cn/p450rdb_v2/download/2.%20P450s.CSV",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "p450rdb/1. Reactions.CSV",
+    "bytes": 5327020,
+    "sha256": "6c99772e73b0f1f3c5ff5c41803fc947ffad0e3c41ffe861ff94751ce6275c31",
+    "provider_url": "https://www.cellknowledge.com.cn/p450rdb_v2/download/1.%20Reactions.CSV",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "rhea/tsv/rhea-directions.tsv",
+    "bytes": 445440,
+    "sha256": "0b62f0cd92991b89e7b6e05707e671e80787527c30192b3d44cf7fc05a5c748f",
+    "provider_url": "https://ftp.expasy.org/databases/rhea/tsv/rhea-directions.tsv",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "rhea/tsv/rhea-reaction-smiles.tsv",
+    "bytes": 11337490,
+    "sha256": "d6e30a597878334d13685f4a215a27b3f35350d167347e07bd89024d7c191069",
+    "provider_url": "https://ftp.expasy.org/databases/rhea/tsv/rhea-reaction-smiles.tsv",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00001.json",
+    "bytes": 412262,
+    "sha256": "736a6c63b170bc42dd5f2f0768280b0ca7d452ebefc2f3a2b22b922963c9d189",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00002.json",
+    "bytes": 373128,
+    "sha256": "20005d6d08a163805c46aa53d04f016fde848832e161521d7e0f2ae61d15a1f0",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00003.json",
+    "bytes": 374888,
+    "sha256": "103f6d70089cec08edb4c1288339654b3931eca6cd0a0f061b24d32941a0531b",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00004.json",
+    "bytes": 410234,
+    "sha256": "cdf5dbbbe9bf062473f4cb98eda0815f7c55fb9b01c47851c0195482beeb6344",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00005.json",
+    "bytes": 417479,
+    "sha256": "4c7b9cf070a80f3c64204733b97744861fef33563f511b6a692fd35237fa3920",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00006.json",
+    "bytes": 410085,
+    "sha256": "772b35dc31252e1cd571183bde993d53cfc96b062bba5bdcd7ac8f1bc3f0e89f",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00007.json",
+    "bytes": 433148,
+    "sha256": "e9a2d0c845546adf3105fbbf271865c964e0f7d9efdd3d7fbc1bce80da1b7bed",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00008.json",
+    "bytes": 531334,
+    "sha256": "8201bbb3bdfe31d03a2f489406b86963a118ad9eabdb3ccfe6efbf18fa13fa27",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00009.json",
+    "bytes": 845578,
+    "sha256": "538d4a23b44172141ecf8fbe6e9a5e7db541725d79368c409e756b7a21a55e4a",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00010.json",
+    "bytes": 844378,
+    "sha256": "c3b2ea7eea44b72919e82ec12d5659c8d40386b114bce5d3b4d874913cc521ab",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00011.json",
+    "bytes": 624849,
+    "sha256": "a24cdbd343c99df588d274f08cdf6e1822fc31437d161665c09bfe30c90fa14d",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00012.json",
+    "bytes": 580315,
+    "sha256": "0368919a732982d0f3c47f0efc893abaede766c4920a5f4d30fb320ed8a98366",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00013.json",
+    "bytes": 577275,
+    "sha256": "50a695d1db00be36183097f4c224b77e968f1ed236286264c95bff3b9b0c7fca",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00014.json",
+    "bytes": 465446,
+    "sha256": "07c148519a536e86fa9ace6a26c8b73801a69a4d5ebe1c4f02333722f5aee678",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00015.json",
+    "bytes": 527489,
+    "sha256": "634f433e67249dbbe9f3009d24a4e351064e10a1bada87cf89249a01ec288c69",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00016.json",
+    "bytes": 423105,
+    "sha256": "b2f8e558a38eab8d0eb4e5e3110728915221fb7c76040e746373682f5352cc27",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00017.json",
+    "bytes": 665335,
+    "sha256": "6b60676e8bda83e6187ce705ad95d37cff0c00e2ea987a4856b53d99147a7795",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00018.json",
+    "bytes": 566317,
+    "sha256": "0cecf0240be8adda96dadf9f55be30ed89c75a84f6be4282e60fa96977c8cbb6",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00019.json",
+    "bytes": 534935,
+    "sha256": "9f58467650d525382fffa71c61fb616a405ebe6a1c4fbbc05f7ae7b7a6edea7f",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00020.json",
+    "bytes": 434094,
+    "sha256": "607bb8ee53674bfcdeb926b535edd270f030bd44725517a41da426a55903c9b5",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00021.json",
+    "bytes": 385069,
+    "sha256": "faae6264a0af70785f01521467dbbef1c9644e379bd40697b3374a6da1f588a1",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/api/cyp_batch_00022.json",
+    "bytes": 79252,
+    "sha256": "65adea731bb979799481d907601cdfb7c45bd75aed96d304955f5af054bc52e7",
+    "provider_url": "https://rest.uniprot.org/uniprotkb/search",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  },
+  {
+    "path": "uniprot/uniprot_sprot.dat.gz",
+    "bytes": 699031150,
+    "sha256": "741bcb144f98b8d10f0369b145d562b6751bfd17c285e936553aeb9cb54ab592",
+    "provider_url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz",
+    "access_route": "provider snapshot required; current-release endpoints may differ",
+    "download_is_exact_snapshot": false
+  }
+]

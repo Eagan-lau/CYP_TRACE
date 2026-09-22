@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "observed": {
+    "sequences": 600,
+    "reactions": 1341,
+    "edges": 2304,
+    "semantic_edges_sha256": "cb3a2a125b97251249cd2b298e8dde707e136b857c3ad2644f90264fd76ad647",
+    "reaction_structures_sha256": "f51b66f009082bc8a865cef1e51d92de514165b0ef5c5751211c6a0ee4b591e9",
+    "fasta_lf_sha256": "3b1f99b5eb9d16403620a14a7cb263836d01abfe2c4d652601776d9b133193de"
+  },
+  "matches": {
+    "sequences": true,
+    "reactions": true,
+    "edges": true,
+    "semantic_edges_sha256": true,
+    "reaction_structures_sha256": true,
+    "fasta_lf_sha256": true
+  },
+  "raw_inputs": [
+    {
+      "input": "p450rdb/2. P450s.CSV",
+      "status": "match"
+    },
+    {
+      "input": "p450rdb/1. Reactions.CSV",
+      "status": "match"
+    },
+    {
+      "input": "rhea/tsv/rhea-directions.tsv",
+      "status": "match"
+    },
+    {
+      "input": "rhea/tsv/rhea-reaction-smiles.tsv",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00001.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00002.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00003.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00004.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00005.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00006.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00007.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00008.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00009.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00010.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00011.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00012.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00013.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00014.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00015.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00016.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00017.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00018.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00019.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00020.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00021.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/api/cyp_batch_00022.json",
+      "status": "match"
+    },
+    {
+      "input": "uniprot/uniprot_sprot.dat.gz",
+      "status": "match"
+    }
+  ],
+  "environment": {
+    "python": "3.11.5",
+    "platform": "Linux",
+    "rdkit": "2026.3.5",
+    "biopython": "1.85"
+  }
+}

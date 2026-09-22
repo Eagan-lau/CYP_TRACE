@@ -88,6 +88,34 @@ def save_vector(path: Path, value: np.ndarray) -> None:
     temporary.replace(path)
 
 
+def optional_prior_cache(folder):
+    """Reuse a complete verified cache when supplied; otherwise compute from FASTA."""
+    paths = [folder / name for name in ("query_manifest.tsv", "unique_query_sequences.fasta", "query_esm1b_embeddings.npy")]
+    if not any(path.exists() for path in paths):
+        return {}, np.empty((0, 1280), dtype=np.float32), []
+    if not all(path.is_file() for path in paths):
+        raise ValueError("Incomplete optional CLEAN cache: provide all three files or none")
+    old_manifest = list(csv.DictReader(paths[0].open(newline=""), delimiter="\t"))
+    old_fasta = fasta(paths[1])
+    old_id_to_hash = {identifier: sequence_hash(sequence) for identifier, sequence in old_fasta}
+    old_hash_to_index = {}
+    for row in old_manifest:
+        if row["clean_input_supported"].lower() != "true":
+            continue
+        index = int(row["clean_embedding_index"])
+        sequence = row["sequence_sha256"]
+        query_id = row["clean_query_id"]
+        if old_id_to_hash.get(query_id) != sequence:
+            raise ValueError("CLEAN FASTA/cache manifest mismatch")
+        if sequence in old_hash_to_index and old_hash_to_index[sequence] != index:
+            raise ValueError("CLEAN cache sequence index conflict")
+        old_hash_to_index[sequence] = index
+    old_esm = np.load(paths[2], allow_pickle=False)
+    if old_esm.shape != (266, 1280) or old_esm.dtype != np.float32 or not np.isfinite(old_esm).all():
+        raise ValueError("Unexpected prior ESM cache matrix")
+    return old_hash_to_index, old_esm, paths
+
+
 def main() -> None:
     import torch
     import esm
@@ -117,24 +145,7 @@ def main() -> None:
     supported = [(identifier, sequence) for identifier, sequence in records if len(sequence) <= MAX_RESIDUES]
 
     old_dir = PROJECT / "data/processed/precutoff_clean_baseline_v1"
-    old_manifest = list(csv.DictReader((old_dir / "query_manifest.tsv").open(newline=""), delimiter="\t"))
-    old_fasta = fasta(old_dir / "unique_query_sequences.fasta")
-    old_id_to_hash = {identifier: sequence_hash(sequence) for identifier, sequence in old_fasta}
-    old_hash_to_index = {}
-    for row in old_manifest:
-        if row["clean_input_supported"].lower() != "true":
-            continue
-        index = int(row["clean_embedding_index"])
-        sequence = row["sequence_sha256"]
-        query_id = row["clean_query_id"]
-        if old_id_to_hash.get(query_id) != sequence:
-            raise ValueError("old CLEAN FASTA/manifest mismatch")
-        if sequence in old_hash_to_index and old_hash_to_index[sequence] != index:
-            raise ValueError("old CLEAN sequence index conflict")
-        old_hash_to_index[sequence] = index
-    old_esm = np.load(old_dir / "query_esm1b_embeddings.npy", allow_pickle=False)
-    if old_esm.shape != (266, 1280) or old_esm.dtype != np.float32 or not np.isfinite(old_esm).all():
-        raise ValueError("old independently verified ESM matrix")
+    old_hash_to_index, old_esm, prior_cache_inputs = optional_prior_cache(old_dir)
 
     reused = 0
     computed = 0
@@ -257,13 +268,11 @@ def main() -> None:
             handle.write(json.dumps(row, sort_keys=True) + "\n")
 
     inputs = [core_fasta, ROOT / "dataset_02/core_edges.json", ROOT / "dataset_02/input_manifest.json",
-              ROOT / "CLEAN_CANDIDATE_PRUNING_V1.md", ROOT / "clean_ec_bridge_01/audit.json",
-              ROOT / "clean_ec_bridge_validation_01/INDEPENDENT_QC.json", split_path, model_source,
+              ROOT / "CLEAN_CANDIDATE_PRUNING_V1.md", split_path, model_source,
               PROJECT / "tools/external/CLEAN_v1_0_0/src/CLEAN/evaluate.py",
               PROJECT / "tools/external/CLEAN_v1_0_0/NON-EXCLUSIVE RESEARCH USE LICENSE FOR CLEAN SOFTWARE.pdf",
-              old_dir / "query_manifest.tsv", old_dir / "unique_query_sequences.fasta",
-              old_dir / "query_esm1b_embeddings.npy", PROJECT / "reports/PRECUTOFF_CLEAN_BASELINE_V1_INDEPENDENT_QC.json",
               Path(__file__)]
+    inputs.extend(prior_cache_inputs)
     for relative in ASSET_HASHES:
         inputs.append(PROJECT / relative)
     write_json(OUTPUT / "input_manifest.json", {str(path.resolve()): digest_file(path) for path in inputs})

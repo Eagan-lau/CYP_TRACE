@@ -32,6 +32,8 @@ def main(output):
     commands=[
         ('payload_integrity',['verify_package.py']),
         ('source_tables',['paper/reviewer_checks.py']),
+        ('portable_upstream_units',['-m','unittest','discover','-s','upstream','-p','test_portability.py','-v']),
+        ('human_raw_rebuild',['upstream/rebuild_human_sources.py','--output',str(output/'human_raw')]),
         ('evaluator_units',['-m','unittest','discover','-s','evaluation','-p','test_evaluator.py','-v']),
         ('figure2_fixed',['evaluation/evaluate_candidates.py','evaluation/figure2_candidates.tsv.gz','--output',str(output/'figure2_fixed.json')]),
         ('figure2_ties',['evaluation/evaluate_candidates.py','evaluation/figure2_candidates.tsv.gz','--ties','average','--output',str(output/'figure2_average.json')]),
@@ -58,9 +60,9 @@ def main(output):
                 payload_manifest_sha256=sha(ROOT/'SHA256SUMS.txt'),
                 runner_sha256=sha(Path(__file__)),commands=[],
                 scope='Public reconstruction and fixed-prediction checks; not full mixed-source upstream refitting',
-                not_run=['Historical mixed-source raw qualification and full atlas reconstruction',
+                not_run=['Complete mixed-source core (separately tested; see upstream/core_acceptance.json)',
                          'General-CYP protein searches/features/model refitting',
-                         'Original human raw normalization and nested kNN selection',
+                         'Original nested kNN selection',
                          'Final author-edited figure layout recreation'],
                 logistic_tuning_data_root_contains_external_data=False)
     for name,args in commands:

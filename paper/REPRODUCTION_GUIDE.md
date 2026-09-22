@@ -7,8 +7,9 @@ cited in the manuscript. Software is at the root and paper data are in
 `paper/`. The unified submission ZIP preserves this same layout. Extract it
 into a new directory and run the commands below from that directory.
 No cluster, VPN or credentials are needed.
-The GitHub commit is the review access point; no persistent archive DOI has
-yet been assigned.
+Archive DOI: https://doi.org/10.5281/zenodo.22899238, corresponding to tag
+`submission-20260922`. It includes portable raw-source reconstruction.
+See the root release metadata and scope matrix.
 
 ## Install and run
 
@@ -102,14 +103,18 @@ historical SHA-256. Existing files are checked rather than overwritten.
 `--include-unused` additionally retrieves supplier fingerprints without
 adding evidence to the paper. Normalized human inputs are in root-level
 `data/`. Source normalization/model-selection code is under
-`Analysis_code/analysis_code/`. Historical upstream scripts retain their
-recorded workspace layout and are not a one-command full upstream rebuild.
+`Analysis_code/analysis_code/`. The repository-root command
+`python upstream/rebuild_human_sources.py --output human_source_run` performs
+tested raw normalization. `upstream/prepare_workspace.py` supplies scripts
+and configurations in a new directory; `upstream/README.md` covers branches.
 
 ## Remaining requirements for a full mixed-source refit
 
-Recreating the mixed-source 600-sequence / 2,304-edge atlas and every general
-model score still requires the historical P450Rdb files, complete source
-inputs, search/feature assets and separately obtained CLEAN resources.
+The complete 600-sequence / 2,304-edge core can be reconstructed using
+`upstream/rebuild_core.py` and its 27-file source manifest. Its acceptance
+receipt records successful reconstruction from the original inputs.
+General model refitting additionally requires search/feature assets and
+separately obtained CLEAN resources.
 `RESULT_REPRODUCTION_MAP.tsv` records executable scope; the figure map links
 supplied data to figures. Public fixed-prediction checks do not replace these
 upstream requirements.

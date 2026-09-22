@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Run with the absolute path of a prepared analysis directory.
+# Install third-party binaries/environments first; numerical arguments are retained.
+set -euo pipefail
+TASK="${1:?Usage: bash this_script.sh /absolute/path/to/workspace/analysis}"
+cd "$TASK"
+TASK="$PWD"
+PROJECT="$(dirname "$TASK")"
+PYTHON="${CYPTRACE_PYTHON:-python}"
+MMSEQS="${CYPTRACE_MMSEQS:-mmseqs}"
+FOLDSEEK="${CYPTRACE_FOLDSEEK:-foldseek}"
+FS="$FOLDSEEK"
+mkdir -p logs
+
+set -euo pipefail
+cd $TASK
+export CYPTRACE_SELECTIVE_ANALYSIS_DIR=$TASK/human_selective_behavior_02
+export CYPTRACE_SELECTIVE_VALIDATION_OUTPUT=$TASK/human_selective_behavior_validation_02
+"$PYTHON" verify_human_selective_behavior.py

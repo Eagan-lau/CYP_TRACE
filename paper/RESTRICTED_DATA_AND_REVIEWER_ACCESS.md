@@ -15,10 +15,15 @@ downloaded without cluster credentials or a VPN.
 The open UniProt–Rhea subset contains 375 sequences, 639 reactions and 1,232
 relationships. It preserves the admitted UniProt component of the full
 mixed-source development core, which contains 600 sequences, 1,341 reactions
-and 2,304 relationships. Reconstruction and lookup tests cover the open
-subset. Reproduction of the full mixed-source model conclusions from this
-subset has not been established.
+and 2,304 relationships. Offline reconstruction and lookup tests cover the
+open subset. Separately, `upstream/rebuild_core.py` was executed against all
+27 original raw inputs and reproduced the complete core, including biological
+edge fields, sequences and reaction identities. The input manifest, hashes and
+acceptance receipt are supplied under `upstream/`. This does not replace the
+requirement for readers to acquire the identical raw files.
 
+Human-source normalization was rerun from the original public supplements;
+all 14,955 development and 14,526 normalized external records matched.
 Human analyses include all 3,035 strict external labels, saved scores,
 reconstruction of the frozen kNN asset and recalculation of its predictions.
 The logistic implementation repeats parameter selection using development
@@ -50,7 +55,8 @@ unresolved historical P450Rdb permission.
 ## Reproduction and reuse
 
 `python run_acceptance.py --output acceptance_run` checks payload hashes,
-recalculates saved-prediction metrics, reconstructs and queries the open
+rebuilds human labels from original source files, recalculates saved-prediction
+metrics, reconstructs and queries the open
 evidence subset, rebuilds the frozen human asset and repeats kNN inference
 and the exploratory logistic analysis. Commands, environments and results are
 recorded in `ACCEPTANCE.json` and per-command logs.
@@ -61,5 +67,8 @@ recreation of final author-edited figure layouts. Project-owned code is MIT;
 third-party data retain their source terms and attribution.
 
 A provider-approved historical P450Rdb access route or an arrangement agreed
-with the journal is still required. A persistent archival DOI has not yet
-been assigned; the exact GitHub commit identifies the current public package.
+with the journal is still required for delivery of the exact original files.
+Archive DOI: https://doi.org/10.5281/zenodo.22899238, corresponding to tag
+`submission-20260922`, including portable source reconstruction. CLEAN is cited
+as an external published tool with its source, version and checkpoints in
+`upstream/README.md`; its research-use terms are not the project's MIT licence.

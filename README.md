@@ -20,10 +20,11 @@ python -m pip install --no-deps ./inference
 python run_acceptance.py --output acceptance_run
 ```
 
-Choose an output directory that does not exist. The 17 checks evaluate file
+Choose an output directory that does not exist. The 19 checks evaluate file
 integrity, saved-prediction metrics, open-evidence reconstruction, human kNN
 inference and development-only logistic selection followed by external
-evaluation. Results, commands and software versions are written to
+evaluation, plus reconstruction of human labels from the original public
+supplements. Results, commands and software versions are written to
 `acceptance_run/ACCEPTANCE.json`. After dependency installation, the checks
 run offline with package-relative inputs.
 
@@ -46,6 +47,7 @@ returns documented evidence, with unresolved outputs for unmatched queries.
 - [Reproduction guide](paper/REPRODUCTION_GUIDE.md): commands and data locations.
 - [Reproduction matrix](REPRODUCIBILITY_MATRIX.md): executable scope for each result.
 - [Result map](paper/RESULT_REPRODUCTION_MAP.tsv): figure-to-input mapping.
+- [Source reconstruction](upstream/README.md): complete-core and human raw-data entry points, source hashes, environments and downstream commands.
 - [Inference guide](inference/README.md): interface and output fields.
 - [Evaluator guide](evaluation/README.md): candidate-table format and ranking conventions.
 
@@ -54,9 +56,11 @@ external evaluation has 3,035 labels across six isoforms. The open biological
 subset contains 375 sequences, 639 reactions and 1,232 relationships. It is
 the UniProt–Rhea component of the study's mixed-source development core.
 
-Complete mixed-source upstream refitting additionally requires historical
-third-party inputs and model assets. Acquisition routes and the unresolved
-historical P450Rdb access arrangement are described in
+The complete 600-sequence / 1,341-reaction / 2,304-edge core was reconstructed
+from the original source files using the supplied portable entry point.
+Those 27 input files are identified in `upstream/core_input_manifest.json`.
+Exact-snapshot acquisition and separately obtained pretrained assets remain
+requirements for a complete upstream refit. They are described in
 [the data-access statement](paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md).
 
 ## Licence and citation
@@ -64,5 +68,7 @@ historical P450Rdb access arrangement are described in
 Project-owned code is MIT-licensed. Data attribution and source-specific terms
 are in [ATTRIBUTION.md](ATTRIBUTION.md) and [LICENSE_SCOPE.md](LICENSE_SCOPE.md).
 Use the exact Git commit when citing or reproducing this package.
-`RELEASE_METADATA.json` records the repository and archive identifiers;
-a persistent archival DOI has not yet been assigned.
+`RELEASE_METADATA.json` records the repository and archive identifiers.
+Archive DOI: <https://doi.org/10.5281/zenodo.22899238>.
+The archive corresponds to tag `submission-20260922` and includes the
+portable source-reconstruction entry points and their input manifests.

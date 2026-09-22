@@ -292,7 +292,7 @@ def figure2(pdf):
     arrow(fig,(113,193),(123,193),GREY)
 
     text(fig,158,171,f"Only {nq}/{tq} panels · 3 groups",ha="center",weight="bold")
-    audit=json.loads((ROOT/'tables/figure2_tie_audit.json').read_text())
+    audit=json.loads((ROOT.parent/'Source_data/analysis_tables/figure2_tie_audit.json').read_text())
     shared=[r for r in audit['eligible_common_panels'] if r['method']=='mmseqs_top1']
     text(fig,146,177,"Targets /\ncandidates",ha="right",color=GREY)
     text(fig,167,177,"Fixed-tie\nRR",ha="right",color=GREY)
@@ -680,7 +680,7 @@ def main():
             "font_pt":7,"page_mm":[210,297],"figures":p.RECORDS,
             "input_sha256":{x.name:hashlib.sha256(x.read_bytes()).hexdigest() for x in sorted(p.INPUT.iterdir()) if x.is_file()},
             "source_code_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-            "figure2_tie_audit_sha256":hashlib.sha256((ROOT/'tables/figure2_tie_audit.json').read_bytes()).hexdigest(),
+            "figure2_tie_audit_sha256":hashlib.sha256((ROOT.parent/'Source_data/analysis_tables/figure2_tie_audit.json').read_bytes()).hexdigest(),
             "primitive_code_sha256":hashlib.sha256((ROOT/"figure_primitives.py").read_bytes()).hexdigest(),
             "figure6_layout_code_sha256":hashlib.sha256((ROOT/"figure6_software_layout.py").read_bytes()).hexdigest(),
             "figure6_example_builder_code_sha256":hashlib.sha256((ROOT/"build_figure6_runtime_example.py").read_bytes()).hexdigest()}

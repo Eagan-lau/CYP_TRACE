@@ -1,0 +1,18 @@
+{
+  "model": "esm2_t33_650M_UR50D",
+  "model_url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt",
+  "regression_url": "https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-contact-regression.pt",
+  "model_expected_bytes": 2604537549,
+  "regression_expected_bytes": 3687,
+  "representation_layer": 33,
+  "dimension": 1280,
+  "maximum_window_residues": 1022,
+  "window_overlap_residues": 256,
+  "long_sequence_policy": "Overlapping windows; average each residue over its windows, then mean all original residues. Never truncate. Long-sequence windowed features are flagged.",
+  "residue_storage": "float16; global mean computed before conversion and stored float32",
+  "sequence_source": "dataset_02/core_sequences.fasta only",
+  "pretraining_database": "UR50/D 2021_04 (official model table)",
+  "pretraining_sequence_exposure_certified": false,
+  "supervised_finetuning": false,
+  "use": "Fresh unsupervised global and positional features; not calibrated catalytic probabilities or certified independent predictions"
+}

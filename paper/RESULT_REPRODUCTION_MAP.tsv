@@ -1,6 +1,6 @@
 figure	input	command	scope
 1	Source_data/general_metrics/identity_assertion_audit.jsonl.gz	python paper/reproduce_general_metrics.py	Recompute 2304 union, 797 MAIN overlap, 31 full overlap from assertion decisions; raw qualification not rerun
-2	../evaluation/figure2_candidates.tsv.gz	python evaluation/evaluate_candidates.py evaluation/figure2_candidates.tsv.gz --ties average	Saved-score decomposition and exact tie averaging
+2	../evaluation/figure2_candidates.tsv.gz	python evaluation/evaluate_candidates.py evaluation/figure2_candidates.tsv.gz --ties average --output figure2_average.json	Saved-score decomposition and exact tie averaging
 3	Source_data/general_metrics/clean_pruning_01/; Source_data/general_metrics/interaction_paired_sequence_01/; Source_data/general_metrics/structure_paired_02/	python paper/reproduce_general_metrics.py	Pruning strata/intervals and paired point estimates; no protein-model refit
 4	Source_data/general_metrics/reverse_baselines_01/	python paper/reproduce_general_metrics.py	Taxid-macro MRR and positive/candidate coverage from per-panel metric records
 5	../evaluation/strict_external_scores.tsv; ../data/; Source_data/raw_development/; Source_data/raw_external/	python evaluation/check_external.py; python paper/reproduce_external_intervals.py --output intervals.json; python test_inference.py	AP and original paired scaffold intervals from scores, plus actual kNN inference; no repeated nested kNN selection

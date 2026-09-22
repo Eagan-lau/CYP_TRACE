@@ -27,7 +27,7 @@ from rdkit import Chem
 from rdkit.Chem import rdDepictor
 
 ROOT = Path(__file__).resolve().parent
-INPUT = ROOT / "inputs"
+INPUT = ROOT.parent / "Source_data" / "figure_inputs"
 OUT = ROOT / "exports"
 OUT.mkdir(exist_ok=True)
 MM = 1 / 25.4
