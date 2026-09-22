@@ -17,8 +17,9 @@ Detailed commands, data dictionary and access boundaries are in
 | Final figure artwork | Submission PDFs retained with the manuscript | Earlier plotting code does not reproduce final author layout edits pixel for pixel |
 | Persistent archive | DOI 10.5281/zenodo.22899238; tag submission-20260922 | Includes portable source-reconstruction entry points, manifests and ordered commands |
 
-P450Rdb historical files have no verified redistribution permission, and the
-current official downloads differ from the frozen input. They were not uploaded.
+The P450Rdb v2.0 study files were downloaded on 29 July 2026 and are identified
+by their sizes and hashes in `upstream/core_input_manifest.json`. Raw files
+are acquired from the provider rather than redistributed in this package.
 CLEAN weights and BRENDA/SABIO-RK bulk exports are also omitted. The open
 biological subset and human datasets are supplied with their source identifiers
 and transformations.
@@ -27,5 +28,5 @@ Run `python run_acceptance.py --output acceptance_run` after installing
 `requirements-reproduction.txt` and `./inference`. The detailed access note is
 [`paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md`](paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md).
 The complete-core entry point and human-source reconstruction are documented
-in [`upstream/README.md`](upstream/README.md). A successful source rebuild does
-not certify third-party delivery of the identical snapshot to readers.
+in [`upstream/README.md`](upstream/README.md). Exact reconstruction uses the
+inputs identified by the manifest; provider download contents may change.

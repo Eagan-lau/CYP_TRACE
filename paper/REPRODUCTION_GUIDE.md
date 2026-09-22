@@ -119,19 +119,17 @@ separately obtained CLEAN resources.
 supplied data to figures. Public fixed-prediction checks do not replace these
 upstream requirements.
 
-P450Rdb redistribution permission has not been established. The provider files
-checked on 15 September 2026 differ from the frozen snapshot: 3,849 versus
-3,821 reaction records and 1,015 versus 1,012 protein records. File hashes and
-acquisition details are in `Provenance/p450_current_download_audit.json`.
-
-Closing full mixed-source raw reproduction requires a provider-approved
-reviewer route for those exact historical files or redistribution permission.
-Exact reconstruction requires the recorded historical snapshot. BRENDA raw
+The P450Rdb v2.0 reaction and protein files were downloaded on 29 July 2026
+from the [official download page](https://www.cellknowledge.com.cn/p450rdb_v2/download.html).
+They contain 3,821 reaction records and 1,012 protein records. File identities
+are recorded in `../upstream/core_input_manifest.json`. Provider downloads
+may be updated, so exact reconstruction uses the dated inputs in that manifest.
+P450Rdb raw files are acquired from the provider. BRENDA raw
 archives and SABIO-RK exports are not bundled; source-specific access is recorded in S1a.
 CLEAN research-use weights must be acquired from their source.
 
-The resource-by-resource access routes, distinction between licensing and
-technical omissions, and outstanding reviewer-access decision are documented
+The resource-by-resource access routes and the distinction between bundled
+and separately acquired inputs are documented
 in `RESTRICTED_DATA_AND_REVIEWER_ACCESS.md`.
 
 ## Tables, figures and documentation

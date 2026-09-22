@@ -1,6 +1,8 @@
 [
   {
     "path": "p450rdb/2. P450s.CSV",
+    "download_date": "2026-07-29",
+    "download_date_basis": "author-reported",
     "bytes": 685417,
     "sha256": "41a5b9c20c27fd00615a36aca945836b01d6227ef54f85a8b7d497713a37e8a0",
     "provider_url": "https://www.cellknowledge.com.cn/p450rdb_v2/download/2.%20P450s.CSV",
@@ -9,6 +11,8 @@
   },
   {
     "path": "p450rdb/1. Reactions.CSV",
+    "download_date": "2026-07-29",
+    "download_date_basis": "author-reported",
     "bytes": 5327020,
     "sha256": "6c99772e73b0f1f3c5ff5c41803fc947ffad0e3c41ffe861ff94751ce6275c31",
     "provider_url": "https://www.cellknowledge.com.cn/p450rdb_v2/download/1.%20Reactions.CSV",

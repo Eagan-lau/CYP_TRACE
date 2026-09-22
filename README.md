@@ -59,6 +59,9 @@ the UniProt–Rhea component of the study's mixed-source development core.
 The complete 600-sequence / 1,341-reaction / 2,304-edge core was reconstructed
 from the original source files using the supplied portable entry point.
 Those 27 input files are identified in `upstream/core_input_manifest.json`.
+The P450Rdb v2.0 reaction and protein files were downloaded on **29 July 2026**.
+Their filenames, sizes and SHA-256 checksums identify the study inputs;
+the website-reference access date of 22 September 2026 records a later link check.
 Exact-snapshot acquisition and separately obtained pretrained assets remain
 requirements for a complete upstream refit. They are described in
 [the data-access statement](paper/RESTRICTED_DATA_AND_REVIEWER_ACCESS.md).

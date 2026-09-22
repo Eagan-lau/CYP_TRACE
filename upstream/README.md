@@ -25,6 +25,9 @@ To retrieve the external files again, use
 `core_input_manifest.json` lists all 27 original consumed files, provider
 URLs, byte counts and SHA-256 hashes. Arrange acquired inputs under `RAW/`
 with its `p450rdb/`, `rhea/` and `uniprot/` subdirectories exactly as listed.
+The P450Rdb v2.0 reaction and protein files were downloaded on **29 July 2026**
+from the [official download page](https://www.cellknowledge.com.cn/p450rdb_v2/download.html).
+Their download date, byte counts and hashes are recorded in the manifest.
 Install `requirements-core.txt`, then run:
 
 ```sh
@@ -43,8 +46,8 @@ This entry point was executed successfully on Linux with Python 3.11.5;
 the machine-readable receipt is `core_acceptance.json`. Original input bytes
 were supplied for that test. Public provider URLs are acquisition routes,
 not a guarantee that a changing download still serves the same snapshot.
-P450Rdb source files are not redistributed here; obtaining the exact original
-snapshot remains a separate access requirement. The bundled UniProt–Rhea
+P450Rdb source files are acquired from the provider, not redistributed here.
+Use the dated inputs identified by the manifest for exact reconstruction. The bundled UniProt–Rhea
 subset has its own offline reconstruction in `paper/rebuild_open_core.py`.
 
 ## 3. General analyses and model fitting
